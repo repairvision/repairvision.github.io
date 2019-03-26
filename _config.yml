@@ -3,7 +3,7 @@ name: ReVision
 job_title: A Tool for History-based Model Repair Recommendations
 email: mohrndorf@informatik.uni-siegen.de
 description:
-avatar:
+avatar: /logo.png
 favicon: /favicon.ico
 twitter_handler:
 analytics_code:
