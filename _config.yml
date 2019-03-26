@@ -53,10 +53,10 @@ defaults:
       path: ""
       type: "posts"
     values:
-      comments: "true"
+      comments: "false"
 
 # Serving
-url: ""
+url: "https://repairvision.github.io/"
 baseurl: ""
 
 # Includes
