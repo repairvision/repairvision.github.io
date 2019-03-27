@@ -2,6 +2,7 @@
 layout: page
 title:  "Repair Examples"
 permalink: "/repairexamples/"
+order: 1
 ---
 
 <h1 class="title">Examples of Model Inconsistencies</h1>

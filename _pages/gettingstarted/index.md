@@ -2,6 +2,7 @@
 layout: page
 title:  "Getting Started"
 permalink: "/gettingstarted/"
+order: 5
 ---
 
 <h2>Example Project</h2>

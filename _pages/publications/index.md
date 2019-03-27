@@ -1,7 +1,8 @@
 ---
 layout: page
-title:  "Evaluation"
-permalink: "/evaluation/"
+title:  "Publications"
+permalink: "/publications/"
+order: 6
 ---
 
 <figure>
