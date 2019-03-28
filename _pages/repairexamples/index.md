@@ -5,6 +5,8 @@ permalink: "/repairexamples/"
 order: 1
 ---
 
+{% assign imagesurl = site.url | append: "/" | append page.path | remove: page.name %}
+
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
 # Create Interface Operation
@@ -12,7 +14,7 @@ In this section we give some minimal examples of model inconsistencies and their
 This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure 1</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
 <figure class="alignleft">
-	<img width="250" src="{{site.url}}/{{page.path}}/images/create_interface_operation/model_a.svg" />
+	<img width="250" src="{{ imagesurl }}/images/create_interface_operation/model_a.svg" />
 	<figcaption>Fig. 1: Create Interface Operation - Model A</figcaption>
 </figure>
 
