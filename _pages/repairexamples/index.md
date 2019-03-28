@@ -5,6 +5,9 @@ permalink: "/repairexamples/"
 order: 1
 ---
 
+TEST: {{page.name}}
+TEST: {% append page.path | remove: page.name %}
+
 {% assign imagesurl = site.url | append: "/" | append page.path | remove: page.name %}
 
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
