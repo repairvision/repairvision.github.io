@@ -5,18 +5,15 @@ permalink: "/repairexamples/"
 order: 1
 ---
 
-<h1 class="title">Examples of Model Inconsistencies</h1>
-<p>
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
-</p>
 
-<h2>Create Interface Operation</h2>
-<p>
+# Create Interface Operation
+
 This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure 1</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
-</p>
+
 <div class="figure">
-	<a href="images/create_interface_operation/model_a.svg" target="_blank"><img id="fig:create_interface_operation.model_a" src="images/create_interface_operation/model_a.svg"></a>
-	<p class="label">Fig. 1: Create Interface Operation - Model A</p>
+<a href="{{page.path}}/images/create_interface_operation/model_a.svg" target="_blank"><img id="fig:create_interface_operation.model_a" src="images/create_interface_operation/model_a.svg"></a>
+<p class="label">Fig. 1: Create Interface Operation - Model A</p>
 </div>
 <p>
 In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:create_interface_operation.model_b">Figure 2</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
