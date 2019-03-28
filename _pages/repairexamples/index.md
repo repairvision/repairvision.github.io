@@ -11,6 +11,16 @@ In this section we give some minimal examples of model inconsistencies and their
 
 This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure 1</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
+<figure class="alignleft">
+	<img width="250" src="{{page.path}}/images/create_interface_operation/model_a.svg" />
+	<figcaption>Fig. 1: Create Interface Operation - Model A</figcaption>
+</figure>
+
+<figure class="alignleft">
+	<img width="250" src="/images/create_interface_operation/model_a.svg" />
+	<figcaption>Fig. 1: Create Interface Operation - Model A</figcaption>
+</figure>
+
 <div class="figure">
 <a href="{{page.path}}/images/create_interface_operation/model_a.svg" target="_blank"><img id="fig:create_interface_operation.model_a" src="images/create_interface_operation/model_a.svg"></a>
 <p class="label">Fig. 1: Create Interface Operation - Model A</p>
@@ -34,7 +44,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 3: Create Interface Operation - Model C</p>
 </div>
 
-<h2>Create Message Signature</h2>
+#Create Message Signature
 <p>
 This is a standard example motivating the problem of editing multiple model views of a model which depend on each other. It serves as running example, among others, in <a href="#MnJC17">[MnJC17]</a> and <a href="#TOLR2017">[TOLR2017]</a>.
 </p>
