@@ -11,7 +11,7 @@ order: 1
 
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
-# Create Interface Operation
+### Create Interface Operation
 
 This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure 1</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
@@ -40,7 +40,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 3: Create Interface Operation - Model C</p>
 </div>
 
-#Create Message Signature
+### Create Message Signature
 <p>
 This is a standard example motivating the problem of editing multiple model views of a model which depend on each other. It serves as running example, among others, in <a href="#MnJC17">[MnJC17]</a> and <a href="#TOLR2017">[TOLR2017]</a>.
 </p>
@@ -73,7 +73,8 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 6: Create Message Signature - Model C</p>
 </div>
 
-<h2>Create Transition and Event</h2>
+### Create Transition and Event
+
 <p>
 An similar example of the previous one has been depicted in <a href="POKK17">[POKK17]</a> between state machines and class diagramms. <a href="#fig:create_transition_and_event.model_a">Figure 7</a> shows an UML model consisting of the class A and the state machine StateMachineA. The state machine consistes of the two states A and B. A consistency rule may demand that a transition is always triggered by an event, which usually refer to an operation of a class.
 </p>
@@ -100,7 +101,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 9: Create Transition and Event - Model C</p>
 </div>
 
-<h2>Invert Inheritance</h2>
+### Invert Inheritance
 <p>
 This example has been extracted from <a href="#MnGC13">[MnGC13]</a>. <a href="#fig:invert_inheritance.model_a">Figure 10</a> depicts an UML class diagram consisting of the classes A and B. The class A inherits form the class B via the genralization relation. A consistency rule demands that such a generalization relation must be acyclic.
 </p>
@@ -127,7 +128,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 12: Invert Inheritance - Model C</p>
 </div>
 
-<h2>Reconnect Transition</h2>
+### Reconnect Transition
 <p>
 Another example briefly mentioned in <a href="#TOLR2017">[TOLR2017]</a> is the deletion of the target state of a transition. <a href="#fig:reconnect_transition.model_a">Figure 13</a> depicts an UML state machine consisting of the states A, B and C. The states A and B are connected via the transtion triggered by the event op.
 </p>
@@ -155,7 +156,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 15: Reconnect Transition - Model C</p>
 </div>
 
-<h2>Replace Operation Return Parameter</h2>
+### Replace Operation Return Parameter
 <p>
 This example has been extracted from <a href="#PjSM15">[PjSM15]</a>. <a href="#fig:replace_operation_return_parameter.model_a">Figure 16</a> depicts an UML class diagram consisting of the class A. The class contains an operation op() with a return parameter of the type Integer.
 A consistency rule demands that an operation must not have more than one return parameter.
@@ -183,7 +184,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 	<p class="label">Fig. 18: Replace Operation Return Parameter - Model C</p>
 </div>
 
-<h2>References</h2>
+### References
 <ul>
 <li id="MnGC13">N. Macedo, T. Guimarães and A. Cunha, "Model repair and transformation with Echo," <em>2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, Silicon Valley, CA, 2013, pp. 694-697.<br>doi: 10.1109/ASE.2013.6693135<br> keywords: {software maintenance;EMF framework;Echo;Eclipse plugin;OCL;OMG standard languages;QVT-R;bidirectional model transformations;development method;inconsistency detection automation;meta-models;model repair;model-driven engineering;software project;solver based engine;Computational modeling;Maintenance engineering;Metals;Object oriented modeling;Semantics;Standards;Unified modeling language},<br>URL:&nbsp;<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6693135&amp;isnumber=6693054">http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6693135&amp;isnumber=6693054</a></li>
 <li id="MnJC17">N. Macedo, T. Jorge and A. Cunha, "A Feature-Based Classification of Model Repair Approaches," in <em>IEEE Transactions on Software Engineering</em>, vol. 43, no. 7, pp. 615-640, July 1 2017.<br>doi: 10.1109/TSE.2016.2620145<br> keywords: {pattern classification;software maintenance;MDE;consistency management;feature-based classification system;model repair approach;model-driven engineering;Context;Feature extraction;Maintenance engineering;Software engineering;Systematics;Taxonomy;Unified modeling language;Model-driven engineering, consistency management, inconsistency handling, model repair},<br>URL:&nbsp;<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7605502&amp;isnumber=7981478">http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7605502&amp;isnumber=7981478</a></li>
