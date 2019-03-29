@@ -6,10 +6,10 @@ order: 1
 ---
 
 {% capture folderpath %}
-{{ site.url }}{{ page.path | remove: page.name }}
+{{ site.url }}{{ page.path | remove: page.name }/}
 {% endcapture %}
 
-{% assign fig = 0 %}
+{% increment fig %}
 
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
@@ -205,10 +205,10 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 * remove the old return parameter as shown in <a href="#fig:replace_operation_return_parameter.model_c">Figure 18</a>.</li>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/replace_operation_return_parameter/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:replace_operation_return_parameter.model_b" src="{{folderpath}}images/replace_operation_return_parameter/model_b.svg" />
+	<a href="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" target="_blank">
+	<img style="width: 400px" id="fig:replace_operation_return_parameter.model_c" src="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Replace Operation Return Parameter - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {% increment fig %}: Replace Operation Return Parameter - Model C</figcaption>
 </figure>
 
 ### References
