@@ -44,7 +44,7 @@
 <script>
 <!-- Nivo Slider Load-->
 jQuery(window).load(function() {
-	$('.nivoSlider').nivoSlider({
+	jQuery('.nivoSlider').nivoSlider({
 		effect:'boxRandom',
       boxCols:2,                     
       boxRows:2,
@@ -55,5 +55,5 @@ jQuery(window).load(function() {
 	});
 });
 
-$('.noFooter').on('click', function() {window.location.href ='http://www.soslignes-ecrivain-public.fr/Inner-zoom-plugin-Nivo-Slider.html';});
+jQuery('.noFooter').on('click', function() {window.location.href ='http://www.soslignes-ecrivain-public.fr/Inner-zoom-plugin-Nivo-Slider.html';});
 </script>
