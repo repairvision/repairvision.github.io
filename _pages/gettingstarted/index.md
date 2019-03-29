@@ -13,7 +13,7 @@ order: 5
 
 * Eclipse Platform: <a href="https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen1a" target="new">Eclipse Oxygen Modeling Tools</a> (Includes the Eclipse Modeling Framework).
 
-__The newest version of ReVision can be obtained from the following _update site_:__
+**The newest version of ReVision can be obtained from the following _update site_:**
 
 * _https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
 * Please install a SVN-Connector for repository integration, e.g.:
