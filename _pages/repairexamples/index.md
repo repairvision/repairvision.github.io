@@ -15,9 +15,10 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Create Interface Operation
 
-This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure 1</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
+This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure {{fig_create_interface_operation}}</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
 <figure class="aligncenter">
+	{% assign fig_create_interface_operation = fig | plus: 1 %}
 	<a href="{{folderpath}}images/create_interface_operation/model_a.svg" target="_blank">
 	<img style="width: 400px" id="fig:create_interface_operation.model_a" src="{{folderpath}}images/create_interface_operation/model_a.svg" />
 	</a>
