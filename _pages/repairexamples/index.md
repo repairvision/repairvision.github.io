@@ -28,191 +28,211 @@ This example is a simplified version of the running example in <a href="#TOLR201
 	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_a }}: Create Interface Operation - Model A</figcaption>
 </figure>
 
-In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:create_interface_operation.model_b">Figure 2</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
+In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:{{ fig_create_interface_operation_model_a }}">Figure {{ fig_create_interface_operation_model_b }}</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_interface_operation/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_interface_operation.model_b" src="{{folderpath}}images/create_interface_operation/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_interface_operation_model_a }}" src="{{folderpath}}images/create_interface_operation/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Interface Operation - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_a }}: Create Interface Operation - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the operation signature op() from the interface IA, i.e. perform a simple undo.
 * remove the association between the interface IA and the class A.
-* Add a new operation op() in class A, i.e. implement the operation op() of the interface IA as shown in <a href="#fig:create_interface_operation.model_c">Figure 3</a>.
+* Add a new operation op() in class A, i.e. implement the operation op() of the interface IA as shown in <a href="#fig:{{ fig_create_interface_operation_model_c }}">Figure 3</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_interface_operation/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_interface_operation.model_c" src="{{folderpath}}images/create_interface_operation/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_interface_operation_model_c }}" src="{{folderpath}}images/create_interface_operation/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Interface Operation - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_c }}: Create Interface Operation - Model C</figcaption>
 </figure>
 
 ### Create Message Signature
 
+{% assign fig_create_message_signature_a = fig | plus: 1 %}
+{% assign fig_create_message_signature_b = fig | plus: 1 %}
+{% assign fig_create_message_signature_c = fig | plus: 1 %}
+
 This is a standard example motivating the problem of editing multiple model views of a model which depend on each other. It serves as running example, among others, in <a href="#MnJC17">[MnJC17]</a> and <a href="#TOLR2017">[TOLR2017]</a>.
 
-<a href="#fig:create_message_signature.model_a">Figure 4</a> shows an UML model from different point of views. The class diagram represents the static structure of the system and consists of the two classes A and B and an association connecting the classes via the properties a and b. The sequence diagram represents the dynamic view, i.e. the behavoir of one scenario using liflines and messages. A lifline represents a property of a class, e.g., a:A represents the property a of the class A.
+<a href="#fig:{{ fig_create_message_signature_a }}>Figure {{ fig_create_message_signature_a }}</a> shows an UML model from different point of views. The class diagram represents the static structure of the system and consists of the two classes A and B and an association connecting the classes via the properties a and b. The sequence diagram represents the dynamic view, i.e. the behavoir of one scenario using liflines and messages. A lifline represents a property of a class, e.g., a:A represents the property a of the class A.
 
 A consistency rule demands that the signature of a message in a sequence diagram must be identical to the signature of an operation of the class referenced by the receiving lifeline.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_message_signature/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_message_signature.model_a" src="{{folderpath}}images/create_message_signature/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_message_signature_a }}" src="{{folderpath}}images/create_message_signature/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Message Signature - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_message_signature_a }}: Create Message Signature - Model A</figcaption>
 </figure>
 
-In <a href="#fig:create_message_signature.model_b">Figure 5</a> a new message with the signature op is added to the sequence diagram leading to an inconsistency. The class B referenced by the receiving lifeline of the message op does not contain an operation having the same signature like the message.
+In <a href="#fig:{{ fig_create_message_signature_b }}">Figure {{ fig_create_message_signature_b }}</a> a new message with the signature op is added to the sequence diagram leading to an inconsistency. The class B referenced by the receiving lifeline of the message op does not contain an operation having the same signature like the message.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_message_signature/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_message_signature.model_b" src="{{folderpath}}images/create_message_signature/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_message_signature_b }}" src="{{folderpath}}images/create_message_signature/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Message Signature - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_message_signature_b }}: Create Message Signature - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the message with the signature op, i.e. perform a simple undo
-* add a new operation having the same signature like the new message as shown in <a href="#fig:create_message_signature.model_c">Figure 6</a>.
+* add a new operation having the same signature like the new message as shown in <a href="#fig:{{ fig_create_message_signature_c }}">Figure {{ fig_create_message_signature_c }}</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_message_signature/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_message_signature.model_c" src="{{folderpath}}images/create_message_signature/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_message_signature_c }}" src="{{folderpath}}images/create_message_signature/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Message Signature - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_message_signature_c }}: Create Message Signature - Model C</figcaption>
 </figure>
 
 ### Create Transition and Event
 
-An similar example of the previous one has been depicted in <a href="POKK17">[POKK17]</a> between state machines and class diagramms. <a href="#fig:create_transition_and_event.model_a">Figure 7</a> shows an UML model consisting of the class A and the state machine StateMachineA. The state machine consistes of the two states A and B. A consistency rule may demand that a transition is always triggered by an event, which usually refer to an operation of a class.
+{% assign fig_create_transition_and_event_a = fig | plus: 1 %}
+{% assign fig_create_transition_and_event_b = fig | plus: 1 %}
+{% assign fig_create_transition_and_event_c = fig | plus: 1 %}
+
+An similar example of the previous one has been depicted in <a href="POKK17">[POKK17]</a> between state machines and class diagramms. <a href="#fig:{{ fig_create_transition_and_event_a }}">Figure {{ fig_create_transition_and_event_a }}</a> shows an UML model consisting of the class A and the state machine StateMachineA. The state machine consistes of the two states A and B. A consistency rule may demand that a transition is always triggered by an event, which usually refer to an operation of a class.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_transition_and_event.model_a" src="{{folderpath}}images/create_transition_and_event/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_a }}" src="{{folderpath}}images/create_transition_and_event/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Transition and Event - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_a }}: Create Transition and Event - Model A</figcaption>
 </figure>
 
-In <a href="#fig:create_transition_and_event.model_b">Figure 8</a> a transition is added to the state machine leading to an inconsistency. The event of the new transition does not refer to an operation.
+In <a href="#fig:{{ fig_create_transition_and_event_b }}">Figure {{ fig_create_transition_and_event_b }}</a> a transition is added to the state machine leading to an inconsistency. The event of the new transition does not refer to an operation.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_transition_and_event.model_b" src="{{folderpath}}images/create_transition_and_event/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_b }}" src="{{folderpath}}images/create_transition_and_event/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Transition and Event - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_b }}: Create Transition and Event - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the transition, i.e. perform a simple undo
-* set the operation op of class A as event of the transition that as illustratrated in <a href="#fig:create_transition_and_event.model_c">Figure 8</a> using equal names
+* set the operation op of class A as event of the transition that as illustratrated in <a href="#fig:{{ fig_create_transition_and_event_c }}">Figure {{ fig_create_transition_and_event_c }}</a> using equal names
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_transition_and_event.model_c" src="{{folderpath}}images/create_transition_and_event/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_c }}" src="{{folderpath}}images/create_transition_and_event/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Transition and Event - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_c }}: Create Transition and Event - Model C</figcaption>
 </figure>
 
 ### Invert Inheritance
 
-This example has been extracted from <a href="#MnGC13">[MnGC13]</a>. <a href="#fig:invert_inheritance.model_a">Figure 10</a> depicts an UML class diagram consisting of the classes A and B. The class A inherits form the class B via the genralization relation. A consistency rule demands that such a generalization relation must be acyclic.
+{% assign fig_invert_inheritance_a = fig | plus: 1 %}
+{% assign fig_invert_inheritance_b = fig | plus: 1 %}
+{% assign fig_invert_inheritance_c = fig | plus: 1 %}
+
+This example has been extracted from <a href="#MnGC13">[MnGC13]</a>. <a href="#fig:{{ fig_invert_inheritance_a }}">Figure {{ fig_invert_inheritance_a }}</a> depicts an UML class diagram consisting of the classes A and B. The class A inherits form the class B via the genralization relation. A consistency rule demands that such a generalization relation must be acyclic.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/invert_inheritance/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:invert_inheritance.model_a" src="{{folderpath}}images/invert_inheritance/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_invert_inheritance_a }}" src="{{folderpath}}images/invert_inheritance/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Invert Inheritance - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_invert_inheritance_a }}: Invert Inheritance - Model A</figcaption>
 </figure>
 
-In <a href="#fig:invert_inheritance.model_b">Figure 11</a> the consistency rule is violated by the creation of the new generalization relation from the class B to the class A.
+In <a href="#fig:{{ fig_invert_inheritance_b }}">Figure {{ fig_invert_inheritance_b }}</a> the consistency rule is violated by the creation of the new generalization relation from the class B to the class A.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/invert_inheritance/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:invert_inheritance.model_b" src="{{folderpath}}images/invert_inheritance/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_invert_inheritance_b }}" src="{{folderpath}}images/invert_inheritance/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Invert Inheritance - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_invert_inheritance_b }}: Invert Inheritance - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the new generalization, i.e. perform a simple undo
-* remove the old generalization from class A to class B as shown in <a href="#fig:invert_inheritance.model_c">Figure 12</a>.
+* remove the old generalization from class A to class B as shown in <a href="#fig:{{ fig_invert_inheritance_c }}">Figure {{ fig_invert_inheritance_c }}</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/invert_inheritance/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:invert_inheritance.model_c" src="{{folderpath}}images/invert_inheritance/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_invert_inheritance_c }}" src="{{folderpath}}images/invert_inheritance/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Invert Inheritance - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_invert_inheritance_c }}: Invert Inheritance - Model C</figcaption>
 </figure>
 
 ### Reconnect Transition
 
-Another example briefly mentioned in <a href="#TOLR2017">[TOLR2017]</a> is the deletion of the target state of a transition. <a href="#fig:reconnect_transition.model_a">Figure 13</a> depicts an UML state machine consisting of the states A, B and C. The states A and B are connected via the transtion triggered by the event op.
+{% assign fig_reconnect_transition_a = fig | plus: 1 %}
+{% assign fig_reconnect_transition_b = fig | plus: 1 %}
+{% assign fig_reconnect_transition_c = fig | plus: 1 %}
+
+Another example briefly mentioned in <a href="#TOLR2017">[TOLR2017]</a> is the deletion of the target state of a transition. <a href="#fig:{{ fig_reconnect_transition_a }}">Figure {{ fig_reconnect_transition_a }}</a> depicts an UML state machine consisting of the states A, B and C. The states A and B are connected via the transtion triggered by the event op.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/reconnect_transition/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:reconnect_transition.model_a" src="{{folderpath}}images/reconnect_transition/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_reconnect_transition_a }}" src="{{folderpath}}images/reconnect_transition/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Reconnect Transition - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_reconnect_transition_a }}: Reconnect Transition - Model A</figcaption>
 </figure>
 
-In <a href="#fig:reconnect_transition.model_b">Figure 14</a>  the target state B of the transition is removed which leads to an inconsistency, since every transition must have extaxtly one source and target state.
+In <a href="#fig:{{ fig_reconnect_transition_b }}">Figure {{ fig_reconnect_transition_b }}</a>  the target state B of the transition is removed which leads to an inconsistency, since every transition must have extaxtly one source and target state.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/reconnect_transition/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:reconnect_transition.model_b" src="{{folderpath}}images/reconnect_transition/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_reconnect_transition_b }}" src="{{folderpath}}images/reconnect_transition/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Reconnect Transition - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_reconnect_transition_b }}: Reconnect Transition - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * re-create the state B and set it as target state of the transition, i.e. perform a simple undo
 * remove the transition
-* set the state C as target state of the transition as shown in <a href="#fig:reconnect_transition.model_c">Figure 15</a>.
+* set the state C as target state of the transition as shown in <a href="#fig:{{ fig_reconnect_transition_c }}">Figure {{ fig_reconnect_transition_c }}</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/reconnect_transition/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:reconnect_transition.model_c" src="{{folderpath}}images/reconnect_transition/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_reconnect_transition_c }}" src="{{folderpath}}images/reconnect_transition/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Reconnect Transition - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_reconnect_transition_c }}: Reconnect Transition - Model C</figcaption>
 </figure>
 
 ### Replace Operation Return Parameter
 
-This example has been extracted from <a href="#PjSM15">[PjSM15]</a>. <a href="#fig:replace_operation_return_parameter.model_a">Figure 16</a> depicts an UML class diagram consisting of the class A. The class contains an operation op() with a return parameter of the type Integer. A consistency rule demands that an operation must not have more than one return parameter.
+{% assign fig_replace_operation_return_parameter_a = fig | plus: 1 %}
+{% assign fig_replace_operation_return_parameter_b = fig | plus: 1 %}
+{% assign fig_replace_operation_return_parameter_c = fig | plus: 1 %}
+
+This example has been extracted from <a href="#PjSM15">[PjSM15]</a>. <a href="#fig:{{ fig_replace_operation_return_parameter_a }}">Figure {{ fig_replace_operation_return_parameter_a }}</a> depicts an UML class diagram consisting of the class A. The class contains an operation op() with a return parameter of the type Integer. A consistency rule demands that an operation must not have more than one return parameter.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/replace_operation_return_parameter/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:replace_operation_return_parameter.model_a" src="{{folderpath}}images/replace_operation_return_parameter/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_replace_operation_return_parameter_a }}" src="{{folderpath}}images/replace_operation_return_parameter/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Replace Operation Return Parameter - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_replace_operation_return_parameter_a }}: Replace Operation Return Parameter - Model A</figcaption>
 </figure>
 
-In <a href="#fig:replace_operation_return_parameter.model_b">Figure 17</a> a further return parameter of the type String is added to the operation op which violates the consistency rule. 
+In <a href="#fig:{{ fig_replace_operation_return_parameter_b }}">Figure {{ fig_replace_operation_return_parameter_b }}</a> a further return parameter of the type String is added to the operation op which violates the consistency rule. 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/replace_operation_return_parameter/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:replace_operation_return_parameter.model_b" src="{{folderpath}}images/replace_operation_return_parameter/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_replace_operation_return_parameter_b }}" src="{{folderpath}}images/replace_operation_return_parameter/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Replace Operation Return Parameter - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_replace_operation_return_parameter_b }}: Replace Operation Return Parameter - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the new return parameter, i.e. perform a simple undo</li>
-* remove the old return parameter as shown in <a href="#fig:replace_operation_return_parameter.model_c">Figure 18</a>.</li>
+* remove the old return parameter as shown in <a href="#fig:{{ fig_replace_operation_return_parameter_c }}">Figure {{ fig_replace_operation_return_parameter_c }}</a>.</li>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:replace_operation_return_parameter.model_c" src="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" />
+	<img style="width: 400px" id="fig:{{ fig_replace_operation_return_parameter_c }}" src="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Replace Operation Return Parameter - Model C</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_replace_operation_return_parameter_c }}: Replace Operation Return Parameter - Model C</figcaption>
 </figure>
 
 ### References
