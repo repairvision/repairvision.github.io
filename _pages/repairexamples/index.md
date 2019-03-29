@@ -15,9 +15,9 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Create Interface Operation
 
-{% assign fig_create_interface_operation_model_a = fig | plus: 1 %}
-{% assign fig_create_interface_operation_model_b = fig | plus: 1 %}
-{% assign fig_create_interface_operation_model_c = fig | plus: 1 %}
+{% assign fig_create_interface_operation_model_a = increment fig %}
+{% assign fig_create_interface_operation_model_b = increment fig %}
+{% assign fig_create_interface_operation_model_c = increment fig %}
 
 This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:{{ fig_create_interface_operation_model_a }}">Figure {{ fig_create_interface_operation_model_a }}</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
@@ -41,7 +41,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 
 * remove the operation signature op() from the interface IA, i.e. perform a simple undo.
 * remove the association between the interface IA and the class A.
-* Add a new operation op() in class A, i.e. implement the operation op() of the interface IA as shown in <a href="#fig:{{ fig_create_interface_operation_model_c }}">Figure 3</a>.
+* Add a new operation op() in class A, i.e. implement the operation op() of the interface IA as shown in <a href="#fig:{{ fig_create_interface_operation_model_c }}">Figure {{ fig_create_interface_operation_model_c }}</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_interface_operation/model_c.svg" target="_blank">
