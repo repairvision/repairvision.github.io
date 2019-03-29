@@ -26,11 +26,16 @@ order: 5
 {% endcapture %}
 
 <!-- Load jQuery -->
-<script src="{{ site.url }}/assets/js/jquery-1.12.2.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery.nivo.slider.pack.3.2.js"></script>
+
 <!-- Load Nivo Slider files -->
 <script src="{{ site.url }}/assets/js/jquery.nivo.slider.pack.3.2.js"></script>
 <script src="{{ site.url }}/assets/js/nivo-inner-zoom-min.js"></script>
+
 <link rel="stylesheet" href="{{ site.url }}/assets/css/demo34-nivo-slider.css" type="text/css">
+
+<!-- Common to all pages -->
+<script src="{{ site.url }}/assets/js/custom5-S.js" ></script>
 
 <!-- Nivo slider -->
 <div style="text-align: center">    
