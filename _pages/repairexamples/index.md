@@ -9,7 +9,7 @@ order: 1
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-{% increment fig %}
+{% assign fig = 1 %}
 
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
@@ -214,9 +214,9 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 ### References
 
 <ul>
-<li id="MnGC13">N. Macedo, T. Guimarães and A. Cunha, "Model repair and transformation with Echo," <em>2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, Silicon Valley, CA, 2013, pp. 694-697. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6693135&amp;isnumber=6693054" target="_blank">link</a></li>
-<li id="MnJC17">N. Macedo, T. Jorge and A. Cunha, "A Feature-Based Classification of Model Repair Approaches," in <em>IEEE Transactions on Software Engineering</em>, vol. 43, no. 7, pp. 615-640, July 1 2017. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7605502&amp;isnumber=7981478" target="_blank">link</a></li>
-<li id="POKK17">C. Pietsch, M. Ohrndorf, U. Kelter and T. Kehrer, "Incrementally slicing editable submodels," <em>2017 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, Urbana, IL, 2017, pp. 913-918. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8115704&amp;isnumber=8115603" target="_blank">link</a></li>
-<li id="PjSM15">Jorge Pinna Puissant, Ragnhild Van Der Straeten, and Tom Mens. 2015. Resolving model inconsistencies using automated regression planning. Software & Systems Modeling 14, 1 (2015), 461–481. <a href="https://link.springer.com/article/10.1007/s10270-013-0317-9" target="_blank">link</a></li>
-<li id="TOLR2017">Gabriele Taentzer, Manuel Ohrndorf, Yngve Lamo, Adrian Rutle:Change-Preserving Model Repair. FASE 2017: 283-299 <a href="https://link.springer.com/chapter/10.1007/978-3-662-54494-5_16" target="_blank">link</a></li>
+<li id="MnGC13">N. Macedo, T. Guimarães and A. Cunha, "Model repair and transformation with Echo," <em>2013 28th IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, Silicon Valley, CA, 2013, pp. 694-697. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6693135&amp;isnumber=6693054" target="_blank">read</a></li>
+<li id="MnJC17">N. Macedo, T. Jorge and A. Cunha, "A Feature-Based Classification of Model Repair Approaches," in <em>IEEE Transactions on Software Engineering</em>, vol. 43, no. 7, pp. 615-640, July 1 2017. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7605502&amp;isnumber=7981478" target="_blank">read</a></li>
+<li id="POKK17">C. Pietsch, M. Ohrndorf, U. Kelter and T. Kehrer, "Incrementally slicing editable submodels," <em>2017 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, Urbana, IL, 2017, pp. 913-918. <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8115704&amp;isnumber=8115603" target="_blank">read</a></li>
+<li id="PjSM15">Jorge Pinna Puissant, Ragnhild Van Der Straeten, and Tom Mens. 2015. Resolving model inconsistencies using automated regression planning. Software & Systems Modeling 14, 1 (2015), 461–481. <a href="https://link.springer.com/article/10.1007/s10270-013-0317-9" target="_blank">read</a></li>
+<li id="TOLR2017">Gabriele Taentzer, Manuel Ohrndorf, Yngve Lamo, Adrian Rutle:Change-Preserving Model Repair. FASE 2017: 283-299 <a href="https://link.springer.com/chapter/10.1007/978-3-662-54494-5_16" target="_blank">read</a></li>
 </ul>
