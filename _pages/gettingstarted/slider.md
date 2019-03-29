@@ -43,7 +43,7 @@
 
 <script>
 <!-- Nivo Slider Load-->
-$(window).load(function() {
+jQuery(window).load(function() {
 	$('.nivoSlider').nivoSlider({
 		effect:'boxRandom',
       boxCols:2,                     
