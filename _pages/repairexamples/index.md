@@ -31,13 +31,13 @@ This example is a simplified version of the running example in <a href="#TOLR201
 	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_a }}: Create Interface Operation - Model A</figcaption>
 </figure>
 
-In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:{{ fig_create_interface_operation_model_a }}">Figure {{ fig_create_interface_operation_model_b }}</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
+In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:{{ fig_create_interface_operation_model_b }}">Figure {{ fig_create_interface_operation_model_b }}</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_interface_operation/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_create_interface_operation_model_a }}" src="{{folderpath}}images/create_interface_operation/model_b.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_interface_operation_model_b }}" src="{{folderpath}}images/create_interface_operation/model_b.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_a }}: Create Interface Operation - Model B</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_b }}: Create Interface Operation - Model B</figcaption>
 </figure>
 
 The introcued inconsistency could be fixed in several ways, e.g.:
@@ -64,7 +64,7 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 
 This is a standard example motivating the problem of editing multiple model views of a model which depend on each other. It serves as running example, among others, in <a href="#MnJC17">[MnJC17]</a> and <a href="#TOLR2017">[TOLR2017]</a>.
 
-<a href="#fig:{{ fig_create_message_signature_a }}>Figure {{ fig_create_message_signature_a }}</a> shows an UML model from different point of views. The class diagram represents the static structure of the system and consists of the two classes A and B and an association connecting the classes via the properties a and b. The sequence diagram represents the dynamic view, i.e. the behavoir of one scenario using liflines and messages. A lifline represents a property of a class, e.g., a:A represents the property a of the class A.
+<a href="#fig:{{ fig_create_message_signature_a }}">Figure {{ fig_create_message_signature_a }}</a> shows an UML model from different point of views. The class diagram represents the static structure of the system and consists of the two classes A and B and an association connecting the classes via the properties a and b. The sequence diagram represents the dynamic view, i.e. the behavoir of one scenario using liflines and messages. A lifline represents a property of a class, e.g., a:A represents the property a of the class A.
 
 A consistency rule demands that the signature of a message in a sequence diagram must be identical to the signature of an operation of the class referenced by the receiving lifeline.
 
@@ -243,8 +243,8 @@ In <a href="#fig:{{ fig_replace_operation_return_parameter_b }}">Figure {{ fig_r
 
 The introcued inconsistency could be fixed in several ways, e.g.:
 
-* remove the new return parameter, i.e. perform a simple undo</li>
-* remove the old return parameter as shown in <a href="#fig:{{ fig_replace_operation_return_parameter_c }}">Figure {{ fig_replace_operation_return_parameter_c }}</a>.</li>
+* remove the new return parameter, i.e. perform a simple undo
+* remove the old return parameter as shown in <a href="#fig:{{ fig_replace_operation_return_parameter_c }}">Figure {{ fig_replace_operation_return_parameter_c }}</a>.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/replace_operation_return_parameter/model_c.svg" target="_blank">
