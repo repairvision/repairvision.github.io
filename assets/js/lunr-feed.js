@@ -21,6 +21,17 @@ var index = lunr(function () {
     {% assign count = count | plus: 1 %}
 {% endfor %}
 
+{% for post in site.pages %}
+    index.add({
+      title: {{post.title | jsonify}},
+      category: {{post.category | jsonify}},
+      content: {{post.content | strip_html | jsonify}},
+      tags: {{post.tags | jsonify}},
+      id: {{count}}
+    });
+    {% assign count = count | plus: 1 %}
+{% endfor %}
+
 var store = [{% for post in site.posts %}{
     "title": {{post.title | jsonify}},
     "link": {{ post.url | jsonify }},
