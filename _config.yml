@@ -56,7 +56,7 @@ defaults:
       comments: "false"
 
 # Serving
-url: "https://repairvision.github.io/"
+url: "https://repairvision.github.io"
 baseurl: ""
 
 # Includes
