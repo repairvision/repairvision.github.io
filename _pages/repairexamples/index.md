@@ -6,7 +6,7 @@ order: 1
 ---
 
 {% capture folderpath %}
-{{ site.url }}{{ page.path | remove: page.name }/}
+{{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
 {% increment fig %}
