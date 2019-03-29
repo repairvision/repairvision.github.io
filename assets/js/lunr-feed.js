@@ -21,8 +21,7 @@ var index = lunr(function () {
     {% assign count = count | plus: 1 %}
 {% endfor %}
 
-{% for page in site.pages %}
-{% if post.title %}
+{% for page in site.pages %}{% if page.title %}
     index.add({
       title: {{page.title | jsonify}},
       category: {{page.categories | jsonify}},
@@ -31,8 +30,9 @@ var index = lunr(function () {
       id: {{count}}
     });
     {% assign count = count | plus: 1 %}
-{% endif %}
-{% endfor %}
+{% endif %}{% endfor %}
+
+{% assign firstPage = false %}
 
 var store = [{% for post in site.posts %}{
     "title": {{post.title | jsonify}},
@@ -41,17 +41,16 @@ var store = [{% for post in site.posts %}{
     "date": {{ post.date | date: '%B %-d, %Y' | jsonify }},
     "category": {{ post.category | jsonify }},
     "excerpt": {{ post.content | strip_html | truncatewords: 20 | jsonify }}
-{% unless forloop.last %},{% endunless %}{% endfor %}       
-{% for page in site.pages %}
-{% if post.title %}
+}{% unless forloop.last %},{% endunless %}{% endfor %}      
+{% for page in site.pages %}{% if page.title %}
+{% if firstPage == false %}{% assign firstPage = true %},{% endif %}
     "title": {{page.title | jsonify}},
     "link": {{ page.url | jsonify }},
     "image": {{ page.image | jsonify }},
     "date": {{ page.date | date: '%B %-d, %Y' | jsonify }},
     "category": {{ page.categories | jsonify }},
     "excerpt": {{ page.content | strip_html | truncatewords: 20 | jsonify }}
-{% endif %}            
-}{% unless forloop.last %},{% endunless %}{% endfor %}]
+{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]
 
 $(document).ready(function() {
     $('#search-input').on('keyup', function () {
