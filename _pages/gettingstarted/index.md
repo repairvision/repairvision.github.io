@@ -21,4 +21,4 @@ order: 5
 
 ### Quick Introduction
 
-<iframe src="https://repairvision.github.io/_pages/gettingstarted/slider.html"></iframe>
+[Quick Introduction](https://repairvision.github.io/_pages/gettingstarted/slider.html")
