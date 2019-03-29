@@ -5,7 +5,7 @@ permalink: "/repairexamples/"
 order: 1
 ---
 
-{% capture  %}
+{% capture folderpath %}
 {{ site.url }}{{ page.path | remove: page.name }}
 {% endcapture %}
 
