@@ -1,0 +1,56 @@
+<html>
+<body>
+        
+<!-- Load jQuery -->
+<script src="https://repairvision.github.io/assets/js/jquery-1.7.2.min.js"></script>
+
+<!-- Load Nivo Slider files -->
+<script src="https://repairvision.github.io/assets/js/jquery.nivo.slider.pack.3.2.js"></script>
+
+<script src="https://repairvision.github.io/assets/js/nivo-inner-zoom-min.js"></script>
+
+<link rel="stylesheet" href="https://repairvision.github.io/assets/css/demo34-nivo-slider.css" type="text/css" />
+
+<!-- Common to all pages -->
+<script src="https://repairvision.github.io/assets/js/custom5-S.js"></script>
+
+<!-- Nivo slider -->
+<div style="text-align: center">    
+	<div id="NivosliderD34oo" style="display: inline-block; width:90%; border:1px solid #611543;">
+		<div class="nivoSlider"> 
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/01.png" title="&lt;strong&gt;Installation:&lt;/strong&gt; Download the Eclipse Modeling Tools" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/02.png" title="Install New Software..." alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/03.png" title="Copy and past the update site URL" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/04.png" title="Install ReVision (and required projects)" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/05.png" title="Open the version control system SVN perspective" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/06.png" title="Copy and past the VoD example repository URL" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/07.png" title="Check out the UML project" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/08.png" title="Open the Papyrus diagrams" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/09.png" title="Go to Window -&gt; Show View -&gt; Other..." alt="" />	
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/10.png" title="Open the Model Repair View" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/11.png" title="Validate the opened UML model" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/12.png" title="Select the inconsistency to be repaired" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/13.png" title="Set the repair parameters" alt="" />
+			<img src="https://repairvision.github.io/_pages/gettingstarted/images/14.png" title="Apply the repair" alt="" />
+		</div>
+	</div>
+</div>
+
+<script>
+<!-- Nivo Slider Load-->
+jQuery(window).load(function() {
+	jQuery('.nivoSlider').nivoSlider({
+		effect:'boxRandom',
+      boxCols:2,                     
+      boxRows:2,
+		pauseOnHover:true,
+      afterLoad:function () {NivoInnerZoom()},
+      beforeChange:function () {IZhide()},
+		afterChange:function () {NivoInnerZoom()}
+	});
+});
+</script>
+
+
+</body>
+</html>
