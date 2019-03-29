@@ -19,9 +19,7 @@ var index = lunr(function () {
       id: {{count}}
     });
     {% assign count = count | plus: 1 %}
-{% endfor %}
-
-{% for page in site.pages %}{% if page.title %}
+{% endfor %}{% for page in site.pages %}{% if page.title %}
     index.add({
       title: {{page.title | jsonify}},
       category: {{page.categories | jsonify}},
@@ -33,7 +31,6 @@ var index = lunr(function () {
 {% endif %}{% endfor %}
 
 {% assign firstPage = false %}
-
 var store = [{% for post in site.posts %}{
     "title": {{post.title | jsonify}},
     "link": {{ post.url | jsonify }},
@@ -41,9 +38,8 @@ var store = [{% for post in site.posts %}{
     "date": {{ post.date | date: '%B %-d, %Y' | jsonify }},
     "category": {{ post.category | jsonify }},
     "excerpt": {{ post.content | strip_html | truncatewords: 20 | jsonify }}
-}{% unless forloop.last %},{% endunless %}{% endfor %}      
-{% for page in site.pages %}{% if page.title %}
-{% if firstPage == false %}{% assign firstPage = true %},{% endif %}
+}{% unless forloop.last %},{% endunless %}{% endfor %}{% for page in site.pages %}{% if page.title %}{% if firstPage == false %}{% assign firstPage = true %},{% endif %}
+{
     "title": {{page.title | jsonify}},
     "link": {{ page.url | jsonify }},
     "image": {{ page.image | jsonify }},
