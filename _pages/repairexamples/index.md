@@ -109,7 +109,7 @@ An similar example of the previous one has been depicted in <a href="POKK17">[PO
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_a }}" src="{{folderpath}}images/create_transition_and_event/model_a.svg" />
+	<img style="width: 600px" id="fig:{{ fig_create_transition_and_event_a }}" src="{{folderpath}}images/create_transition_and_event/model_a.svg" />
 	</a>
 	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_a }}: Create Transition and Event - Model A</figcaption>
 </figure>
@@ -118,7 +118,7 @@ In <a href="#fig:{{ fig_create_transition_and_event_b }}">Figure {{ fig_create_t
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_b.svg" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_b }}" src="{{folderpath}}images/create_transition_and_event/model_b.svg" />
+	<img style="width: 600px" id="fig:{{ fig_create_transition_and_event_b }}" src="{{folderpath}}images/create_transition_and_event/model_b.svg" />
 	</a>
 	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_b }}: Create Transition and Event - Model B</figcaption>
 </figure>
@@ -130,14 +130,14 @@ The introcued inconsistency could be fixed in several ways, e.g.:
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/create_transition_and_event/model_c.svg" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_create_transition_and_event_c }}" src="{{folderpath}}images/create_transition_and_event/model_c.svg" />
+	<img style="width: 600px" id="fig:{{ fig_create_transition_and_event_c }}" src="{{folderpath}}images/create_transition_and_event/model_c.svg" />
 	</a>
 	<figcaption style="text-align: center">Fig. {{ fig_create_transition_and_event_c }}: Create Transition and Event - Model C</figcaption>
 </figure>
 
 ### Invert Inheritance
 
-{% assign ig = fig | plus: 1 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_invert_inheritance_a = fig %}
 {% assign fig = fig | plus: 1 %}
 {% assign fig_invert_inheritance_b = fig %}
