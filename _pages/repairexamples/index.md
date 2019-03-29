@@ -9,20 +9,23 @@ order: 1
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-{% assign fig = 1 %}
+{% assign fig = 0 %}
 
 In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
 ### Create Interface Operation
 
-This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:create_interface_operation.model_a">Figure {{fig_create_interface_operation}}</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
+{% assign fig_create_interface_operation_model_a = fig | plus: 1 %}
+{% assign fig_create_interface_operation_model_b = fig | plus: 1 %}
+{% assign fig_create_interface_operation_model_c = fig | plus: 1 %}
+
+This example is a simplified version of the running example in <a href="#TOLR2017">[TOLR2017]</a>. <a href="#fig:{{ fig_create_interface_operation_model_a }}">Figure {{ fig_create_interface_operation_model_a }}</a> depicts an UML class diagram consisting of an interface IA and a class A implementing this interface. A consistency rule demands that a class must implement all methods of the respective interface.
 
 <figure class="aligncenter">
-	{% assign fig_create_interface_operation = fig | plus: 1 %}
 	<a href="{{folderpath}}images/create_interface_operation/model_a.svg" target="_blank">
-	<img style="width: 400px" id="fig:create_interface_operation.model_a" src="{{folderpath}}images/create_interface_operation/model_a.svg" />
+	<img style="width: 400px" id="fig:{{ fig_create_interface_operation_model_a }}" src="{{folderpath}}images/create_interface_operation/model_a.svg" />
 	</a>
-	<figcaption style="text-align: center">Fig. {% increment fig %}: Create Interface Operation - Model A</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_create_interface_operation_model_a }}: Create Interface Operation - Model A</figcaption>
 </figure>
 
 In a next stept the interface IA is extended by a the operation signature op() as shown in <a href="#fig:create_interface_operation.model_b">Figure 2</a> introducing an inconsistency regarding the consisteny rule mentioned above. The implementation of the operation is missing in class A.
