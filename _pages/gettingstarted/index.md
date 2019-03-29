@@ -15,7 +15,7 @@ order: 5
 
 __The newest version of ReVision can be obtained from the following _update site_:__
 
-* _http://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
+* _https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
 * Please install a SVN-Connector for repository integration, e.g.:
 * _https://dl.bintray.com/subclipse/releases/subclipse/latest/_
 
