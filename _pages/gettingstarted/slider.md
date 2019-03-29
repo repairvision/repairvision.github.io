@@ -5,6 +5,11 @@
 <!-- Load jQuery -->
 <script src="{{ site.url }}/assets/js/jquery-1.7.2.min.js"></script>
 
+<script>
+   var $x = jQuery.noConflict();
+   alert("Version: "+$x.fn.jquery);
+</script>
+
 <!-- Load Nivo Slider files -->
 <script src="{{ site.url }}/assets/js/jquery.nivo.slider.pack.3.2.js"></script>
 <script src="{{ site.url }}/assets/js/nivo-inner-zoom-min.js"></script>
