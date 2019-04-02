@@ -21,18 +21,15 @@ order: 5
 
 ### Quick Introduction
 
-[Quick Introduction](https://repairvision.github.io/_pages/gettingstarted/slider.html)
-
-
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
 {% assign fig = 0 %}
 
-In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
 
-### Step1:...
+
+### Step1: 
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step1 = fig %}
@@ -45,8 +42,9 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: Get Started </figcaption>
 </figure>
 
+To begin with, first open Eclipse IDE as the following figure in which you see the welcome Screen and Get Started Features...
 
-### Step2:...
+### Step2:
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step2 = fig %}
@@ -59,6 +57,7 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: How to install new Software </figcaption>
 </figure>
 
+Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu.
 
 ### Step3:...
 
@@ -73,6 +72,7 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step3 }}: Download wizard for the Updating websites </figcaption>
 </figure>
 
+Now, you should see an installation wizard within which you can search for the RepairVision Tool or you can copy the url link of the update website and straightly paste it in the browsing field. Afterward, you can proceed the installation by just selecting the tool and clicking next...
 
 ### Step4:...
 
@@ -87,6 +87,8 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to Save and Apply changes </figcaption>
 </figure>
 
+After finishing the installation of the Revision Tool, you're supposed to restart the Eclipse IDE to apply the changes and adding the Tool to the IDE...
+
 ### Step5:...
 
 {% assign fig = fig | plus: 1 %}
@@ -100,6 +102,7 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
+In this step, you should add the Repository. To do so, click open perspective from "Window" menu and select "SVN Repository Exploring", then click on "Open" Button.
 
 ### Step6:...
 
@@ -114,6 +117,7 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Set the location of the Repository </figcaption>
 </figure>
 
+In this step, you should add the Repository url link in "Github" by clicking on "New Repository Location" from "File" menu. At the end, click on "Finish" button.
 
 ### Step7:...
 
@@ -125,9 +129,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/07.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Browsing the Repository </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: properties of the UML Example created by RepairVision Tool </figcaption>
 </figure>
 
+Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE...
 
 ### Step8:...
 
@@ -142,6 +147,7 @@ In this section we give some minimal examples of model inconsistencies and their
 	<figcaption style="text-align: center">Fig. {{ fig_step8 }}: Opening the UML Example </figcaption>
 </figure>
 
+Here, the representations of the UML Example's Class Diagram are shown in different window panes in the editor...
 
 ### Step9:...
 
@@ -153,9 +159,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/09.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step9 }}" src="{{folderpath}}images/09.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step9 }}: Having the view of the UML Diagram  </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step9 }}: Having the view of the UML Diagram Editor </figcaption>
 </figure>
 
+For having the view of the UML Example's Class Diagram, you should go to "Window" and "Show View", then "Other" and select the Editor to be added in the EClipse IDE just like shown in the figure...
 
 ### Step10:...
 
@@ -167,9 +174,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/10.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step10 }}" src="{{folderpath}}images/10.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: the Wizard for adding the UML's Diagram view to the bottom left panel of the workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Adding the Model Repair Tool Plugin in to the Eclipse Workspace </figcaption>
 </figure>
 
+Now, It's time to start using the "RepairVision" tool by just adding the "ModelRepair" Plugin in the "Show View" wizard...
 
 ### Step11:...
 
@@ -181,9 +189,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/11.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step11 }}" src="{{folderpath}}images/11.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the view of the UML Diagram in the bottom left panel of the workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the Model Repair Tool Window panel in the Eclipse workspace </figcaption>
 </figure>
 
+After inserting the "Model Repair" Plugin, the "Model Repair" window pane with the detailed tool features is appeared in the right side panel of the Eclipse IDE... 
 
 ### Step12:...
 
@@ -195,9 +204,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/12.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step12 }}" src="{{folderpath}}images/12.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step12}}: Representation of the UML Model and its Class Diagram in parallel </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step12}}: Validation of the Input UML Example Class Diagram </figcaption>
 </figure>
 
+In this step, you can validate the input UML Example's Class Diagram and observe its status and result (Failure or Success!) in the right panel of the EClipse IDE...
 
 ### Step13:...
 
@@ -209,9 +219,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/13.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step13 }}" src="{{folderpath}}images/13.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Representation of the UML Model and its Class Diagram in parallel </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Recognizing inconsistencies by means of RepairVision Tool and showing the detailed specifications in its panel  </figcaption>
 </figure>
 
+In this step you can follow the recognized inconsistencies if there is any and all the details and specifications of the inconsistencies and the needed changes to resolve them are depicted in terms of High-Level Edit Operations...
 
 ### Step14:...
 
@@ -223,5 +234,10 @@ In this section we give some minimal examples of model inconsistencies and their
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/14.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step14 }}" src="{{folderpath}}images/14.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Representation of the UML Model and its Class Diagram in parallel </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Appying the recommended model changes by the RepairVision Tool</figcaption>
 </figure>
+
+Finally, You can Apply the recommended changes for resolving the consistencies and soon after checking the results.
+
+
+
