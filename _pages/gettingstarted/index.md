@@ -22,3 +22,25 @@ order: 5
 ### Quick Introduction
 
 [Quick Introduction](https://repairvision.github.io/_pages/gettingstarted/slider.html)
+
+
+{% capture folderpath %}
+{{ site.url }}/{{ page.path | remove: page.name }}
+{% endcapture %}
+
+{% assign fig = 0 %}
+
+In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
+
+### Step1:...
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step1 = fig %}
+
+<a href="#fig:{{ fig_step1 }}">Figure {{ fig_step1 }}</a>
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/01.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step1 }}" src="{{folderpath}}images/01.png""/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: LABEL </figcaption>
+</figure>
