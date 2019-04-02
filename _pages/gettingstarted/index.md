@@ -41,6 +41,6 @@ In this section we give some minimal examples of model inconsistencies and their
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/01.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step1 }}" src="{{folderpath}}images/01.png""/></a>
+	<img style="width: 400px" id="fig:{{ fig_step1 }}" src="{{folderpath}}images/01.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: LABEL </figcaption>
 </figure>
