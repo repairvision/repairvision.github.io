@@ -48,7 +48,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step2:...
 
-{% assign fig = fig | plus: 2 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step2 = fig %}
 
 <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a>
@@ -62,7 +62,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step3:...
 
-{% assign fig = fig | plus: 3 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step3 = fig %}
 
 <a href="#fig:{{ fig_step3 }}">Figure {{ fig_step3 }}</a>
@@ -76,7 +76,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step4:...
 
-{% assign fig = fig | plus: 4 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step4 = fig %}
 
 <a href="#fig:{{ fig_step4 }}">Figure {{ fig_step4 }}</a>
@@ -89,7 +89,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step5:...
 
-{% assign fig = fig | plus: 5 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step5 = fig %}
 
 <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }}</a>
@@ -103,7 +103,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step6:...
 
-{% assign fig = fig | plus: 6 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step6 = fig %}
 
 <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>
@@ -117,7 +117,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step7:...
 
-{% assign fig = fig | plus: 7 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step7 = fig %}
 
 <a href="#fig:{{ fig_step7 }}">Figure {{ fig_step7 }}</a>
@@ -131,7 +131,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step8:...
 
-{% assign fig = fig | plus: 8 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step8 = fig %}
 
 <a href="#fig:{{ fig_step8 }}">Figure {{ fig_step8 }}</a>
@@ -145,7 +145,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step9:...
 
-{% assign fig = fig | plus: 9 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step9 = fig %}
 
 <a href="#fig:{{ fig_step9 }}">Figure {{ fig_step9 }}</a>
@@ -159,7 +159,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step10:...
 
-{% assign fig = fig | plus: 10 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step10 = fig %}
 
 <a href="#fig:{{ fig_step10 }}">Figure {{ fig_step10 }}</a>
@@ -173,7 +173,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step11:...
 
-{% assign fig = fig | plus: 11 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step11 = fig %}
 
 <a href="#fig:{{ fig_step11 }}">Figure {{ fig_step11 }}</a>
@@ -187,7 +187,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step12:...
 
-{% assign fig = fig | plus: 12 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step12 = fig %}
 
 <a href="#fig:{{ fig_step12 }}">Figure {{ fig_step12 }}</a>
@@ -201,7 +201,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step13:...
 
-{% assign fig = fig | plus: 13 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step13 = fig %}
 
 <a href="#fig:{{ fig_step13 }}">Figure {{ fig_step13 }}</a>
@@ -215,7 +215,7 @@ In this section we give some minimal examples of model inconsistencies and their
 
 ### Step14:...
 
-{% assign fig = fig | plus: 14 %}
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step14 = fig %}
 
 <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>
