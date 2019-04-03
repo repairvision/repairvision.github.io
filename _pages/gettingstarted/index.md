@@ -44,7 +44,7 @@ order: 5
 
 To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ fig_step1 }}">Figure {{ fig_step1 }}</a> in which you see the welcome Screen and Get Started Features...
 
-##### Step 1.2:
+##### Step 1.2: Install RepairVision Tool 
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step2 = fig %}
@@ -57,7 +57,6 @@ To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ f
 
 Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu. See figure below <a href="#fig:{{ fig_step4 }}">Figure {{ fig_step2 }} </a>
 
-##### Step 1.3:...
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step3 = fig %}
@@ -70,7 +69,6 @@ Now you should install the RepairVision Tool from the Eclipse Downloader wizard 
 
 Now, you should see an installation wizard within which you can search for the RepairVision Tool or you can copy the url link of the update website and straightly paste it in the browsing field. Afterward, you can proceed the installation by just selecting the tool and clicking next... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
 
-##### Step 1.4:...
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step4 = fig %}
@@ -86,7 +84,7 @@ After finishing the installation of the Revision Tool, you're supposed to restar
 
 #### Step 2: Setting up the Example Project
 
-##### Step 2.1:...
+##### Step 2.1: Adding the Repository
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step5 = fig %}
@@ -99,7 +97,6 @@ After finishing the installation of the Revision Tool, you're supposed to restar
 
 In this step, you should add the Repository. To do so, click open perspective from "Window" menu and select "SVN Repository Exploring", then click on "Open" Button. As shown if figure below <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }} </a>
 
-##### Step 2.2:...
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step6 = fig %}
@@ -126,7 +123,7 @@ In this step, you should add the Repository url link in "Github" by clicking on 
 Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
 
 
-##### Step 3.1:...
+##### Step 3.1:Opening the Editor
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step8 = fig %}
@@ -139,7 +136,6 @@ Now, It's time to check out the example you've inserted from Github Repository. 
 
 Here, the representations of the UML Example's Class Diagram are shown in different window panes in the editor... See figure below <a href="#fig:{{ fig_step8 }}"> Figure {{ fig_step8 }} </a>
 
-##### Step 3.2:...
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step9 = fig %}
@@ -152,7 +148,7 @@ Here, the representations of the UML Example's Class Diagram are shown in differ
 
 For having the view of the UML Example's Class Diagram, you should go to "Window" and "Show View", then "Other" and select the Editor to be added in the EClipse IDE just like shown in the figure... <a href="#fig:{{ fig_step9 }}">Figure {{ fig_step9 }} </a>
 
-##### Step 3.3:...
+##### Step 3.3: Adding the ModelRepair Tool Plugin
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step10 = fig %}
@@ -160,13 +156,13 @@ For having the view of the UML Example's Class Diagram, you should go to "Window
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/10.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step10 }}" src="{{folderpath}}images/10.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Adding the Model Repair Tool Plugin in to the Eclipse Workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Adding the ModelRepair Tool Plugin in to the Eclipse Workspace </figcaption>
 </figure>
 
 Now, It's time to start using the "RepairVision" tool by just adding the "ModelRepair" Plugin in the "Show View" wizard... See figure below <a href="#fig:{{ fig_step10 }}">Figure {{ fig_step10 }} </a>
 
 
-##### Step 3.4:...
+##### Step 3.4: ModelRepair Tool Editor
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step11 = fig %}
@@ -174,12 +170,12 @@ Now, It's time to start using the "RepairVision" tool by just adding the "ModelR
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/11.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step11 }}" src="{{folderpath}}images/11.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the Model Repair Tool Window panel in the Eclipse workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the ModelRepair Tool Window panel in the Eclipse workspace </figcaption>
 </figure>
 
 After inserting the "Model Repair" Plugin, the "Model Repair" window pane with the detailed tool features is appeared in the right side panel of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }} </a>
 
-##### Step 3.5:...
+##### Step 3.5: Validating Input UML Class Diagram
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step12 = fig %}
@@ -192,7 +188,7 @@ After inserting the "Model Repair" Plugin, the "Model Repair" window pane with t
 
 In this step, you can validate the input UML Example's Class Diagram and observe its status and result (Failure or Success!) in the right panel of the EClipse IDE... See figure below <a href="#fig:{{ fig_step12 }}"> Figure {{ fig_step12 }} </a>
 
-##### Step 3.6:...
+##### Step 3.6: Recognizing Inconsistencies in RepairVision Tool
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step13 = fig %}
@@ -206,7 +202,7 @@ In this step, you can validate the input UML Example's Class Diagram and observe
 In this step you can follow the recognized inconsistencies if there is any and all the details and specifications of the inconsistencies and the needed changes to resolve them are depicted in terms of High-Level Edit Operations... See figure below <a href="#fig:{{ fig_step13 }}"> Figure {{ fig_step13 }} </a>
 
 
-##### Step 3.7:...
+##### Step 3.7: Resolving Inconsistencies
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step17 = fig %}
