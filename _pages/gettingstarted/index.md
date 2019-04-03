@@ -21,6 +21,8 @@ order: 5
 
 ### Quick Introduction
 
+In this Section, we illustrate the essential steps for using our Tool called "RepairVision". First, we point out the tips of its installation. Second, we continue with a running example and will create a project. At the end, testing the running example is depicted.
+
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
