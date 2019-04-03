@@ -55,7 +55,7 @@ To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ f
 	<figcaption style="text-align: center">Fig. {{ fig_step1.2 }}: How to install new Software </figcaption>
 </figure>
 
-Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu. See figure below <a href="#fig:{{ fig_step1.2 }}" target="_blank" >Figure {{ fig_step1.2 }} </a>
+Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu. See figure below <a href={{folderpath}}images/02.png target="_blank" >Figure {{ fig_step1.2 }} </a>
 
 ##### Step 1.3:...
 
