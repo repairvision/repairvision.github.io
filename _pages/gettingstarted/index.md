@@ -123,7 +123,7 @@ In this step, you should add the Repository url link in "Github" by clicking on 
 Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
 
 
-##### Step 3.1:Opening the Editor
+##### Step 3.1: Opening the Editor
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step8 = fig %}
@@ -148,7 +148,7 @@ Here, the representations of the UML Example's Class Diagram are shown in differ
 
 For having the view of the UML Example's Class Diagram, you should go to "Window" and "Show View", then "Other" and select the Editor to be added in the EClipse IDE just like shown in the figure... <a href="#fig:{{ fig_step9 }}">Figure {{ fig_step9 }} </a>
 
-##### Step 3.3: Adding the ModelRepair Tool Plugin
+##### Step 3.2: Adding the ModelRepair Tool Plugin
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step10 = fig %}
@@ -162,7 +162,7 @@ For having the view of the UML Example's Class Diagram, you should go to "Window
 Now, It's time to start using the "RepairVision" tool by just adding the "ModelRepair" Plugin in the "Show View" wizard... See figure below <a href="#fig:{{ fig_step10 }}">Figure {{ fig_step10 }} </a>
 
 
-##### Step 3.4: ModelRepair Tool Editor
+##### Step 3.3: ModelRepair Tool Editor
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step11 = fig %}
@@ -175,7 +175,7 @@ Now, It's time to start using the "RepairVision" tool by just adding the "ModelR
 
 After inserting the "Model Repair" Plugin, the "Model Repair" window pane with the detailed tool features is appeared in the right side panel of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }} </a>
 
-##### Step 3.5: Validating Input UML Class Diagram
+##### Step 3.4: Validating Input UML Class Diagram
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step12 = fig %}
@@ -188,7 +188,7 @@ After inserting the "Model Repair" Plugin, the "Model Repair" window pane with t
 
 In this step, you can validate the input UML Example's Class Diagram and observe its status and result (Failure or Success!) in the right panel of the EClipse IDE... See figure below <a href="#fig:{{ fig_step12 }}"> Figure {{ fig_step12 }} </a>
 
-##### Step 3.6: Recognizing Inconsistencies in RepairVision Tool
+##### Step 3.5: Recognizing Inconsistencies in RepairVision Tool
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step13 = fig %}
@@ -202,7 +202,7 @@ In this step, you can validate the input UML Example's Class Diagram and observe
 In this step you can follow the recognized inconsistencies if there is any and all the details and specifications of the inconsistencies and the needed changes to resolve them are depicted in terms of High-Level Edit Operations... See figure below <a href="#fig:{{ fig_step13 }}"> Figure {{ fig_step13 }} </a>
 
 
-##### Step 3.7: Resolving Inconsistencies
+##### Step 3.6: Resolving Inconsistencies
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step17 = fig %}
