@@ -132,8 +132,6 @@ Now, It's time to check out the example you've inserted from Github Repository. 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step8 = fig %}
 
-<a href="#fig:{{ fig_step8  }}">Figure {{ fig_step8  }}</a>
-
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/08.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step8 }}" src="{{folderpath}}images/08.png"/></a>
@@ -146,8 +144,6 @@ Here, the representations of the UML Example's Class Diagram are shown in differ
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step9 = fig %}
-
-<a href="#fig:{{ fig_step9 }}">Figure {{ fig_step9 }}</a>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/09.png" target="_blank">
