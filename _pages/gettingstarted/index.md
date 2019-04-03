@@ -42,7 +42,7 @@ order: 5
 	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: Get Started </figcaption>
 </figure>
 
-To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ fig_step1 }}" target="_blank">Figure {{ fig_step1 }}</a> in which you see the welcome Screen and Get Started Features...
+To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ fig_step1 }}">Figure {{ fig_step1 }}</a> in which you see the welcome Screen and Get Started Features...
 
 ##### Step 1.2:
 
@@ -55,7 +55,7 @@ To begin with, first open Eclipse IDE as the following figure <a href="#fig:{{ f
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: How to install new Software </figcaption>
 </figure>
 
-Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu. See figure below <a href={{folderpath}}images/02.png target="_blank" >Figure {{ fig_step2 }} </a>
+Now you should install the RepairVision Tool from the Eclipse Downloader wizard which includes update websites of various tools and frameworks. To do so, click on Help and select Install New Software from the Options Menu. See figure below <a href="#fig:{{ fig_step4 }}">Figure {{ fig_step2 }} </a>
 
 ##### Step 1.3:...
 
@@ -68,7 +68,7 @@ Now you should install the RepairVision Tool from the Eclipse Downloader wizard 
 	<figcaption style="text-align: center">Fig. {{ fig_step3 }}: Download wizard for the Updating websites </figcaption>
 </figure>
 
-Now, you should see an installation wizard within which you can search for the RepairVision Tool or you can copy the url link of the update website and straightly paste it in the browsing field. Afterward, you can proceed the installation by just selecting the tool and clicking next... See figure below <a href="#fig:{{ fig_step3 }}" target="_blank"> Figure {{ fig_step3 }} </a>
+Now, you should see an installation wizard within which you can search for the RepairVision Tool or you can copy the url link of the update website and straightly paste it in the browsing field. Afterward, you can proceed the installation by just selecting the tool and clicking next... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
 
 ##### Step 1.4:...
 
@@ -81,7 +81,7 @@ Now, you should see an installation wizard within which you can search for the R
 	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to Save and Apply changes </figcaption>
 </figure>
 tep1:
-After finishing the installation of the Revision Tool, you're supposed to restart the Eclipse IDE to apply the changes and adding the Tool to the IDE... See figure below <a href="#fig:{{ fig_step4 }}" target="_blank">Figure {{ fig_step4 }} </a>
+After finishing the installation of the Revision Tool, you're supposed to restart the Eclipse IDE to apply the changes and adding the Tool to the IDE... See figure below <a href="#fig:{{ fig_step4 }}">Figure {{ fig_step4 }} </a>
 
 
 #### Step 2: Setting up the Example Project
@@ -98,7 +98,7 @@ tep1:
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
-In this step, you should add the Repository. To do so, click open perspective from "Window" menu and select "SVN Repository Exploring", then click on "Open" Button. As shown if figure below <a href="#fig:{{ fig_step5 }}" target="_blank">Figure {{ fig_step5 }} </a>
+In this step, you should add the Repository. To do so, click open perspective from "Window" menu and select "SVN Repository Exploring", then click on "Open" Button. As shown if figure below <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }} </a>
 
 ##### Step 2.2:...
 
@@ -111,7 +111,7 @@ In this step, you should add the Repository. To do so, click open perspective fr
 	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Set the location of the Repository </figcaption>
 </figure>
 
-In this step, you should add the Repository url link in "Github" by clicking on "New Repository Location" from "File" menu. At the end, click on "Finish" button. See figure below  <a href="#fig:{{ fig_step6 }}" target="_blank">Figure {{ fig_step6 }} </a>
+In this step, you should add the Repository url link in "Github" by clicking on "New Repository Location" from "File" menu. At the end, click on "Finish" button. See figure below  <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }} </a>
 
 ### Step3: Testing an Example
 
@@ -124,7 +124,7 @@ In this step, you should add the Repository url link in "Github" by clicking on 
 	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: properties of the UML Example created by RepairVision Tool </figcaption>
 </figure>
 
-Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step3 }}" target="_blank"> Figure {{ fig_step3 }} </a>
+Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
 
 
 ##### Step 3.1:...
@@ -140,7 +140,7 @@ Now, It's time to check out the example you've inserted from Github Repository. 
 	<figcaption style="text-align: center">Fig. {{ fig_step8 }}: Opening the UML Example </figcaption>
 </figure>
 
-Here, the representations of the UML Example's Class Diagram are shown in different window panes in the editor... See figure below <a href="#fig:{{ fig_step8 }}" target="_blank"> Figure {{ fig_step8 }} </a>
+Here, the representations of the UML Example's Class Diagram are shown in different window panes in the editor... See figure below <a href="#fig:{{ fig_step8 }}"> Figure {{ fig_step8 }} </a>
 
 ### Step 3.2:...
 
@@ -155,7 +155,7 @@ Here, the representations of the UML Example's Class Diagram are shown in differ
 	<figcaption style="text-align: center">Fig. {{ fig_step9 }}: Having the view of the UML Diagram Editor </figcaption>
 </figure>
 
-For having the view of the UML Example's Class Diagram, you should go to "Window" and "Show View", then "Other" and select the Editor to be added in the EClipse IDE just like shown in the figure... <a href="#fig:{{ fig_step9 }}" target="_blank">Figure {{ fig_step9 }} </a>
+For having the view of the UML Example's Class Diagram, you should go to "Window" and "Show View", then "Other" and select the Editor to be added in the EClipse IDE just like shown in the figure... <a href="#fig:{{ fig_step9 }}">Figure {{ fig_step9 }} </a>
 
 ### Step 3.3:...
 
@@ -168,7 +168,7 @@ For having the view of the UML Example's Class Diagram, you should go to "Window
 	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Adding the Model Repair Tool Plugin in to the Eclipse Workspace </figcaption>
 </figure>
 
-Now, It's time to start using the "RepairVision" tool by just adding the "ModelRepair" Plugin in the "Show View" wizard... See figure below <a href="#fig:{{ fig_step10 }}" target="_blank">Figure {{ fig_step10 }} </a>
+Now, It's time to start using the "RepairVision" tool by just adding the "ModelRepair" Plugin in the "Show View" wizard... See figure below <a href="#fig:{{ fig_step10 }}">Figure {{ fig_step10 }} </a>
 
 
 ### Step 3.4:...
@@ -182,7 +182,7 @@ Now, It's time to start using the "RepairVision" tool by just adding the "ModelR
 	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the Model Repair Tool Window panel in the Eclipse workspace </figcaption>
 </figure>
 
-After inserting the "Model Repair" Plugin, the "Model Repair" window pane with the detailed tool features is appeared in the right side panel of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step11 }}" target="_blank"> Figure {{ fig_step11 }} </a>
+After inserting the "Model Repair" Plugin, the "Model Repair" window pane with the detailed tool features is appeared in the right side panel of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }} </a>
 
 ### Step 3.5:...
 
@@ -195,7 +195,7 @@ After inserting the "Model Repair" Plugin, the "Model Repair" window pane with t
 	<figcaption style="text-align: center">Fig. {{ fig_step12}}: Validation of the Input UML Example Class Diagram </figcaption>
 </figure>
 
-In this step, you can validate the input UML Example's Class Diagram and observe its status and result (Failure or Success!) in the right panel of the EClipse IDE... See figure below <a href="#fig:{{ fig_step12 }}"  target="_blank"> Figure {{ fig_step12 }} </a>
+In this step, you can validate the input UML Example's Class Diagram and observe its status and result (Failure or Success!) in the right panel of the EClipse IDE... See figure below <a href="#fig:{{ fig_step12 }}"> Figure {{ fig_step12 }} </a>
 
 ### Step 3.6:...
 
@@ -208,7 +208,7 @@ In this step, you can validate the input UML Example's Class Diagram and observe
 	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Recognizing inconsistencies by means of RepairVision Tool and showing the detailed specifications in its panel  </figcaption>
 </figure>
 
-In this step you can follow the recognized inconsistencies if there is any and all the details and specifications of the inconsistencies and the needed changes to resolve them are depicted in terms of High-Level Edit Operations... See figure below <a href="#fig:{{ fig_step13 }}" target="_blank"> Figure {{ fig_step13 }} </a>
+In this step you can follow the recognized inconsistencies if there is any and all the details and specifications of the inconsistencies and the needed changes to resolve them are depicted in terms of High-Level Edit Operations... See figure below <a href="#fig:{{ fig_step13 }}"> Figure {{ fig_step13 }} </a>
 
 
 ### Step 3.7:...
@@ -222,7 +222,7 @@ In this step you can follow the recognized inconsistencies if there is any and a
 	<figcaption style="text-align: center">Fig. {{ fig_step17 }}: Appying the recommended model changes by the RepairVision Tool</figcaption>
 </figure>
 
-Finally, You can Apply the recommended changes for resolving the consistencies and soon after checking the results. As shown in the following figure <a href="#fig:{{ fig_step17 }}"  target="_blank">Figure {{ fig_step17 }} </a>
+Finally, You can Apply the recommended changes for resolving the consistencies and soon after checking the results. As shown in the following figure <a href="#fig:{{ fig_step17 }}">Figure {{ fig_step17 }} </a>
 
 
 
