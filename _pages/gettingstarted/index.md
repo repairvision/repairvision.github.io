@@ -111,7 +111,7 @@ In this step, you should add the Repository. To do so, click open perspective fr
 
 In this step, you should add the Repository url link in "Github" by clicking on "New Repository Location" from "File" menu. At the end, click on "Finish" button. See figure below  <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }} </a>
 
-### Step3: Testing an Example
+### Step 3: Testing an Example
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step7 = fig %}
@@ -122,7 +122,7 @@ In this step, you should add the Repository url link in "Github" by clicking on 
 	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: properties of the UML Example created by RepairVision Tool </figcaption>
 </figure>
 
-Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }} </a>
+Now, It's time to check out the example you've inserted from Github Repository. To do so, right click on the Uml Example and select "Check Out" from option menu. Afterwards, you'll see the specifications of the example on the "SVN Repository Browser" window pane in the bottom of the Eclipse IDE... See figure below <a href="#fig:{{ fig_step7 }}"> Figure {{ fig_step7 }} </a>
 
 
 ##### Step 3.1: Opening the Editor
