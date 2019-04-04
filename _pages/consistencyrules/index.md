@@ -17,11 +17,8 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
 
 * An EAttribute of an EClass has an EDataType, e.g. volume : Integer
-
 * An EAttribute has the property <transient>, which indicates (transient=true/false), if this EAttribute should be saved when saving the EClass.
-
 * The EDataType (Integer) has a property <serializable>, which indicates (serializable=true/false), if values of this data type (e.g. 10, 30, …) can be saved in a XML file. 
-
 * An EAttribute can only be not transient (transient=false), if the used data type is serializable (serializable=true).
 
 <figure class="aligncenter">
