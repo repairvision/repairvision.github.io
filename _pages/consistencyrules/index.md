@@ -18,13 +18,8 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 {% assign fig = fig | plus: 1 %}
 {% assign fig1 = fig %}
 
-<a href="#fig:{{ fig1 }}">Figure {{ fig1 }}
+<a href="#fig:{{ fig1 }}" target="_blank"> 
 
-figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie10.png" >
-	<img style="width: 3640px" id="fig:{{ fig1 }}" src="{{folderpath}}images/Folie10.png"/></a>
-	
-</figure>
+"{{folderpath}}images/Folie10.png"
 
-target="_blank"
 </a>
