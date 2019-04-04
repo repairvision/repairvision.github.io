@@ -12,6 +12,7 @@ order: 2
 In this Section, we demonstrate the set of constraints for Ecore which we have yet defined and evaluated with ReVision. In the following, we represent the consistency rules and their descriptions by two kind of grammars: the Object Constraint Language (OCL) as defined by the [Object Managment Group](https://www.omg.org/spec/OCL/About-OCL/) and our First-Order Logic Language (FOL) that we've defined for ReVision.
 
 * [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
+* [Two Features can not both be IDs](#two-features-can-not-both-be-ids)
 
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
 
@@ -55,3 +56,6 @@ context EAttribute attribute : (
 implies isEqual(attribute.eType.EDataType::serializable, true)
 ```
 
+### Two Features can not both be IDs
+
+and so on...
