@@ -12,7 +12,12 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 <html>
   <body>
 
- <a href="https://github.com/repairvision/repairvision.github.io/blob/master/_pages/consistencyrules/images/Folie10.PNG" alt="Image Description" target="_blank" style="display: inline-block; width: 300px; height; 200px;">  Rule 1
+{% capture folderpath %}
+{{ site.url }}/{{ page.path | remove: page.name }}
+{% endcapture %}
+
+
+ <a href="{{folderpath}}images/Folie10.PNG" alt="Image Description" target="_blank" style="display: inline-block; width: 300px; height; 200px;">  Rule 1
  </a>                                                                                                                         
                                                                                                                                                                                                                                                          
   </body>
