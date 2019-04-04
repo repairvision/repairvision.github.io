@@ -9,6 +9,8 @@ order: 2
 
 In this Section, we demonstrate the set of Consistency Rules which have been defined in our tool called "RepairVision". As it can be seen in the following content, We represent the Rules and their descriptions by two state of the art Grammars comprising the OCL and FOL.
 
+<html>
+  <body>
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
@@ -18,3 +20,6 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 Rule 1
 
 </a>
+
+</body>
+</html>
