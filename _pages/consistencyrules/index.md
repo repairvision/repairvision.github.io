@@ -15,6 +15,6 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 
 <a href="{{folderpath}}images/Folie10.png" target="_blank"> 
 
-"Rule 1"
+Rule 1
 
 </a>
