@@ -13,12 +13,7 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-{% assign fig = 0 %}
-
-{% assign fig = fig | plus: 1 %}
-{% assign fig1 = fig %}
-
-<a href="#fig:{{ fig1 }}" target="_blank"> 
+<a href="Rule 1" target="_blank"> 
 
 "{{folderpath}}images/Folie10.png"
 
