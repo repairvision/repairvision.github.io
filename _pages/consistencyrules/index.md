@@ -9,11 +9,19 @@ order: 2
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-In this Section, we demonstrate the set of consistency rules for Ecore which we have yet defined and evaluated with ReVision. In the following, we represent the rules and their descriptions by two kind of grammars: the Object Constraint Language (OCL) as defined by the [Object Managment Group](https://www.omg.org/spec/OCL/About-OCL/) and our First-Order Logic Language (FOL) that we defined for ReVision.
+In this Section, we demonstrate the set of constraints for Ecore which we have yet defined and evaluated with ReVision. In the following, we represent the consistency rules and their descriptions by two kind of grammars: the Object Constraint Language (OCL) as defined by the [Object Managment Group](https://www.omg.org/spec/OCL/About-OCL/) and our First-Order Logic Language (FOL) that we've defined for ReVision.
 
 * [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
 
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
+
+* An EAttribute of an EClass has an EDataType, e.g. volume : Integer
+
+* An EAttribute has the property <transient>, which indicates (transient=true/false), if this EAttribute should be saved when saving the EClass.
+
+* The EDataType (Integer) has a property <serializable>, which indicates (serializable=true/false), if values of this data type (e.g. 10, 30, …) can be saved in a XML file. 
+
+* An EAttribute can only be not transient (transient=false), if the used data type is serializable (serializable=true).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
@@ -22,7 +30,28 @@ In this Section, we demonstrate the set of consistency rules for Ecore which we 
 	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
-#### OCL Grammar
- 
-#### FOL Grammar
+#### OCL Constraint
+
+```
+constraint TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable
+message 'The attribute is not transient so it must have a data type that is serializable'
+
+context EAttribute
+
+inv TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable:
+self.transient and self.eType.oclIsTypeOf(EDataType) implies (self.eType.oclAsType(EDataType).serializable)
+```
+
+#### FOL Constraint
+
+```
+constraint TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable
+message 'The attribute is not transient so it must have a data type that is serializable'
+
+context EAttribute attribute : (
+        isEqual(attribute.transient, false) and 
+        isInstanceOf(attribute.eType, EDataType)
+)
+implies isEqual(attribute.eType.EDataType::serializable, true)
+```
 
