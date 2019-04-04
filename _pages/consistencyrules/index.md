@@ -12,7 +12,8 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 <html>
   <body>
 
-<a href="https://www.w3schools.com" target="_blank"> Rule 1 </a>
-
+ <a href="../images/Folie10.png.jpg"" alt="Image Description" target="_blank" style="display: inline-block; width: 3640px; height; 2520px;"> Rule 1
+ </a>                                                                                                                         
+                                                                                                                                                                                                                                                         
   </body>
 </html>
