@@ -5,30 +5,24 @@ permalink: "/consistencyrules/"
 order: 2
 ---
 
-### Consistency Rules
-
-In this Section, we demonstrate the set of Consistency Rules which have been defined in our tool called "ReVision". As it can be seen in the following content, We represent the Rules and their descriptions by two state of the art Grammars comprising the OCL and FOL.
-
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-#### 1 Rule1 
-##### 1.1 OCL Grammar
+In this Section, we demonstrate the set of consistency rules for Ecore which we have yet defined and evaluated with ReVision. In the following, we represent the rules and their descriptions by two kind of grammars: the Object Constraint Language (OCL) as defined by the [Object Managment Group](https://www.omg.org/spec/OCL/About-OCL/) and our First-Order Logic Language (FOL) that we defined for ReVision.
 
-[The Attribute is not Transient So it must have a Data Type that is Serializable](eattributetransientandserializable.md)
+* [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
 
-##### 1.2 Description
-
-{% assign fig = fig | plus: 1 %}
-{% assign fig_step1 = fig %}
+### The Attribute is not Transient So it must have a Data Type that is Serializable
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step1 }}" src="{{folderpath}}images/Folie10.PNG"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: Description of the Rule1 </figcaption>
+		<img style="width: 100%" src="{{folderpath}}images/Folie10.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
+#### OCL Grammar
  
-##### 1.3 FOL Grammar
+#### FOL Grammar
 
