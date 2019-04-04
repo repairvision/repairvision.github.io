@@ -13,8 +13,8 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 {{ site.url }}/{{ page.path | remove: page.name }}
 {% endcapture %}
 
-<a href="Rule 1" target="_blank"> 
+<a href="{{folderpath}}images/Folie10.png" target="_blank"> 
 
-"{{folderpath}}images/Folie10.png"
+"Rule 1"
 
 </a>
