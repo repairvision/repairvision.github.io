@@ -12,7 +12,7 @@ In this Section, we demonstrate the set of Consistency Rules which have been def
 <html>
   <body>
 
- <a href="/images/Folie10.png" alt="Image Description" target="_blank" style="display: inline-block; width: 300px; height; 200px;">  Rule 1
+ <a href="https://github.com/repairvision/repairvision.github.io/edit/master/_pages/consistencyrules/index.md" alt="Image Description" target="_blank" style="display: inline-block; width: 300px; height; 200px;">  Rule 1
  </a>                                                                                                                         
                                                                                                                                                                                                                                                          
   </body>
