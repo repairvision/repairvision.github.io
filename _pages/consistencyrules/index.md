@@ -13,6 +13,24 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 
 * [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
 * [Two Features can not both be IDs](#two-features-can-not-both-be-ids)
+* [A Class that is an Interface must also be Abstract]
+* [There may not be two Features named]
+* [A Container Reference must have UpperBound Of Not]
+* [A Containment or bidirectional Reference must be Unique if its UpperBound is different from]
+* [A Containment Reference of a Type with a Container Feature that requires Instances to be Contained elsewhere can not be populated]
+* [The Opposite Of a Containment Reference must not be a Containment Reference]
+* [The Opposite of a Transient Reference must be Transient if it is Proxy Resolving]
+* [The Opposite of the Opposite may not be a Reference different from this one]
+* [The Opposite may not be its own Opposite]
+* [The Default Value Literal must be a Valid Literal of the Attributes Type]
+* [There may not be two Operations and with the same Signature]
+* [There may not be an Operation with the same Signature as an Accessor Method for Feature]
+* [There may not be two Parameters named]
+* [There may not be two Classifiers named]
+* [The Typed Element must have a Type]
+* [The Required Feature of must be set]
+* [The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier]
+* [The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters]
 
 
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
