@@ -13,24 +13,24 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 
 * [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
 * [Two Features can not both be IDs](#two-features-can-not-both-be-ids)
-* [A Class that is an Interface must also be Abstract]
-* [There may not be two Features named]
-* [A Container Reference must have UpperBound Of Not]
-* [A Containment or bidirectional Reference must be Unique if its UpperBound is different from]
-* [A Containment Reference of a Type with a Container Feature that requires Instances to be Contained elsewhere can not be populated]
-* [The Opposite Of a Containment Reference must not be a Containment Reference]
-* [The Opposite of a Transient Reference must be Transient if it is Proxy Resolving]
-* [The Opposite of the Opposite may not be a Reference different from this one]
-* [The Opposite may not be its own Opposite]
-* [The Default Value Literal must be a Valid Literal of the Attributes Type]
-* [There may not be two Operations and with the same Signature]
-* [There may not be an Operation with the same Signature as an Accessor Method for Feature]
-* [There may not be two Parameters named]
-* [There may not be two Classifiers named]
-* [The Typed Element must have a Type]
-* [The Required Feature of must be set]
-* [The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier]
-* [The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters]
+* [A Class that is an Interface must also be Abstract](#a-class-that-is-an-interface-must-also-be-abstract)
+* [There may not be two Features named](#there-may-not-be-two-features-named)
+* [A Container Reference must have UpperBound Of Not](#a-container-reference-must-have-upperbound-of-not)
+* [A Containment or bidirectional Reference must be Unique if its UpperBound is different from](#a-containment-or-bidirectional-reference-must-be-unique-if-its-upperbound-is-different-from)
+* [A Containment Reference of a Type with a Container Feature that requires Instances to be Contained elsewhere can not be populated](#a-containment-reference-of-a-type-with-a-container-feature-that-requires-instances-to-be-contained-elsewhere-can-not-be-populated)
+* [The Opposite Of a Containment Reference must not be a Containment Reference](#the-opposite-of-a-containment-reference-must-not-be-a-containment-reference)
+* [The Opposite of a Transient Reference must be Transient if it is Proxy Resolving](#the-opposite-of-a-transient-reference-must-be-transient-if-it-is-proxy-resolving)
+* [The Opposite of the Opposite may not be a Reference different from this one](#the-opposite-of-the-opposite-may-not-be-a-reference-different-from-this-one)
+* [The Opposite may not be its own Opposite](#the-opposite-may-not-be-its-own-opposite)
+* [The Default Value Literal must be a Valid Literal of the Attributes Type](#the-default-value-literal-must-be-a-valid-literal-of-the-attributes-type)
+* [There may not be two Operations and with the same Signature](#there-may-not-be-two-operations-and-with-the-same-signature)
+* [There may not be an Operation with the same Signature as an Accessor Method for Feature](#there-may-not-be-an-operation-with-the-same-signature-as-an-accessor-method-for-feature)
+* [There may not be two Parameters named](#there-may-not-be-two-parameters-named)
+* [There may not be two Classifiers named](#there-may-not-be-two-classifiers-named)
+* [The Typed Element must have a Type](#the-typed-element-must-have-a-type)
+* [The Required Feature of must be set](#the-required-feature-of-must-be-set)
+* [The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier](#the-generic-type-associated-with-the-classifier-should-have-type-arguments-to-match-the-number-of-type-parameters-of-the-classifier)
+* [The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters](#the-generic-type-associated-with-the-classifier-must-not-have-arguments-when-the-classifier-has-type-parameters)
 
 
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
