@@ -59,6 +59,12 @@ implies isEqual(attribute.eType.EDataType::serializable, true)
 * An EClass can have exactly one EAttribute which is defined as an ID property.
 * (The same also applies for the set of all properties that will be passed down via inheritance!)
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie6.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie6.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -106,6 +112,12 @@ isEqual(attribute.iD, true) implies
 * Or an abstract class: interface=false and abstract=true
 * Or a concrete class: interface=false and abstract=false
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie10.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -135,6 +147,12 @@ implies isEqual(eClass.abstract, true)
 * Two references or properties with the same name are not permitted in one EClass.
 * (The same also applies for the set of all references or properties that will be passed down via inheritance!)
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie14.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie14.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -201,6 +219,12 @@ forAll(EClass eClassX in getClosure(eClass, eSuperTypes) :
 * This opposed reference is called container reference.
 * A container reference must always have a maximum upper bound of 1, because in a (syntax) tree a child element may have maximum one parent element.
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie18.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie18.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -229,6 +253,12 @@ implies isEqual(ref.upperBound, 1)
 
 * The property >unique< of an EReferenz indicates, that a list of references of a model instance must not contain duplicates. Within one model instance, an element may not be referenced repeatedly. 
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie22.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie22.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -260,6 +290,12 @@ implies isEqual(ref.unique, true)
 * An EClass with a unique container (container reference with upper bound = 1) can not have other alternate containers.
 * (The same also applies for the set of all references that will be passed down via inheritance!)
     
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie26.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie26.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -322,6 +358,12 @@ forAll(EClass typeClosure in getClosure(ref.eType, eSuperTypes) :
 * A container reference may not be defined as containment reference at the same time.
 * In other words, opposed containment references may not exist.
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie30.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie30.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -360,7 +402,12 @@ isEqual(eReference.eOpposite.containment, false)
 * The property <transient> of an EReference determine that references of a model instance will not be saved. 
 * This property must be consistent for bidirectional references.
 
-
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie34.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie34.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -397,6 +444,12 @@ isEqual(reference.eOpposite.transient, true)
 
 * A bidirectional reference in ecore always consists of a pair of references, not of a number of references!
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie38.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie38.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -428,6 +481,12 @@ implies isEqual(reference.eOpposite.eOpposite, reference)
 
 * A bidirectional reference in ecore always consists of a pair of references, not of just one reference!
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie42.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie42.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
     
 #### OCL Constraint
 
@@ -457,6 +516,12 @@ context EReference reference : not(isEqual(reference.eOpposite, reference))
 * Alternatively, the default value can be empty (<null>).
 * An empty string (<““>) is not permitted!
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie46.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie46.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -513,6 +578,12 @@ and
 * Another reason for this issue, is that each Operation should have a special purpose to be applied on a meta model or a part of it. So, The signature of an Operation is a very important issue to be considered, specially in the bigger and more complicated projects in which there are a lot of Operations a long side each other and some of them will probably have kind of overlapping based on their aims and they may look somehow similar. Thus, the signatures should be carefully defined to have kind of discrimination and not making any confusion or conflicts. 
 * In addition, It is better to define an Operation based on the standards already referred in order to facilitate the readibility and scalability termics specially in the context of big projects . . .
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie50.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie50.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -589,6 +660,12 @@ context EOperation eOperation :
 * Alternatively, the visibility of an operation can be suppressed for the generator by a special EAnnotation.
 * (The same also applies for the set of all operations or properties that will be passed down via inheritance!) 
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie54.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie54.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -692,7 +769,12 @@ forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes)
 * Regarding the explanations depicted in the Operation context, An Operation should always have unique specifications like: unique name, unique parameters and the other unique properties. Otherwise, It would be considered as an internal error or fault in the Ecore Framework which would be highlighted in red color.
 * Moreover, having multiple parameters with the same name is considered as a syntax error in EMF ecore models. 
 
-
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie58.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie58.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -730,6 +812,12 @@ context EParameter eParameter :
 
 * It is also not permitted to have multiple Classifiers with the same name in EMF ecore models. Since the Classifiers are important model components to be instanciated or modified and stored in an arbitrary model in the model versioning systems such as git whenever needed, they should also be unique based on the standards of OMG like: having unique names, unique features, unique properties and so on, not to make any confusion or conflict. 
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie62.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie62.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -764,6 +852,12 @@ context EPackage package :
 
 * According to the ecore meta model standards, each EtypedElement must have an eType as the defined DataType like: EInt, EString, . . . Otherwise, It will be considered as a syntactic Error.
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie66.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie66.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -791,6 +885,12 @@ isInstanceOf(eTypedElement, EOperation) or not(isEmpty(eTypedElement.eType))
 
 * According to the ecore meta model standards, each Feature (EAttribute) of an EClass should have a DataType. Otherwise, It will be considered as a syntactic Error.
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie70.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie70.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -830,7 +930,12 @@ context EModelElement eModelElement : // TODO: Support EObject
 * According to the ecore meta model standards, each Generic Type associated with the Classifier should have Type Arguments to be matched with the number of the parameters of the Classifier.
 * As it can be seen in the following diagram of the Ecore Generic Types meta model, the number of input Type Parameters of an Eoperation should be absolutely matched with the number of the input Type Parameters of a Classifier. Otherwise, a syntactic error will be appeared indicating the missing or redundant parameters of this Type Parameters sets comparison.
 
-
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie74.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie74.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
@@ -859,6 +964,12 @@ context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), si
 * According to the ecore meta model standards, each Generic Type associated with the Classifier should have Type Arguments to be matched with the number of the parameters of the Classifier. If the Type Parameters of a Classifier are not considered in accordance with the input parameters of an arbitrary Eoperation of that Classifier or in case of being null (Empty) for them, a syntactic error will be appeared indicating the missing or non-existent of the Parameters.
 * As it can be seen in the following diagram of the Ecore Generic Types meta model, the number of input Type Parameters of an Eoperation should be absolutely matched with the number of the input Type Parameters of a Classifier. Otherwise, a syntactic error will be appeared indicating the missing or redundant parameters of this Type Parameters sets comparison.
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie79.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie79.PNG"/>
+	</a>
+	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
 
 #### OCL Constraint
 
