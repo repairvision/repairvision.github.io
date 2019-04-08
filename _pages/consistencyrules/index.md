@@ -44,7 +44,6 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 	<a href="{{folderpath}}images/Folie2.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie2.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -81,7 +80,6 @@ implies isEqual(attribute.eType.EDataType::serializable, true)
 	<a href="{{folderpath}}images/Folie6.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie6.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -134,7 +132,6 @@ isEqual(attribute.iD, true) implies
 	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie10.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -169,7 +166,6 @@ implies isEqual(eClass.abstract, true)
 	<a href="{{folderpath}}images/Folie14.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie14.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -241,7 +237,6 @@ forAll(EClass eClassX in getClosure(eClass, eSuperTypes) :
 	<a href="{{folderpath}}images/Folie18.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie18.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -275,7 +270,6 @@ implies isEqual(ref.upperBound, 1)
 	<a href="{{folderpath}}images/Folie22.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie22.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -312,7 +306,6 @@ implies isEqual(ref.unique, true)
 	<a href="{{folderpath}}images/Folie26.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie26.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -380,7 +373,6 @@ forAll(EClass typeClosure in getClosure(ref.eType, eSuperTypes) :
 	<a href="{{folderpath}}images/Folie30.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie30.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -424,7 +416,6 @@ isEqual(eReference.eOpposite.containment, false)
 	<a href="{{folderpath}}images/Folie34.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie34.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -466,7 +457,6 @@ isEqual(reference.eOpposite.transient, true)
 	<a href="{{folderpath}}images/Folie38.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie38.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -503,7 +493,6 @@ implies isEqual(reference.eOpposite.eOpposite, reference)
 	<a href="{{folderpath}}images/Folie42.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie42.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
     
 #### OCL Constraint
@@ -538,7 +527,6 @@ context EReference reference : not(isEqual(reference.eOpposite, reference))
 	<a href="{{folderpath}}images/Folie46.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie46.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -600,7 +588,6 @@ and
 	<a href="{{folderpath}}images/Folie50.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie50.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -682,7 +669,6 @@ context EOperation eOperation :
 	<a href="{{folderpath}}images/Folie54.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie54.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -791,7 +777,6 @@ forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes)
 	<a href="{{folderpath}}images/Folie58.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie58.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -834,7 +819,6 @@ context EParameter eParameter :
 	<a href="{{folderpath}}images/Folie62.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie62.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -874,7 +858,6 @@ context EPackage package :
 	<a href="{{folderpath}}images/Folie66.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie66.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -907,7 +890,6 @@ isInstanceOf(eTypedElement, EOperation) or not(isEmpty(eTypedElement.eType))
 	<a href="{{folderpath}}images/Folie70.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie70.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
 </figure>
 
 #### OCL Constraint
@@ -952,7 +934,13 @@ context EModelElement eModelElement : // TODO: Support EObject
 	<a href="{{folderpath}}images/Folie74.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie74.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
+
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie74.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie75.PNG"/>
+	</a>
 </figure>
 
 #### OCL Constraint
@@ -986,7 +974,13 @@ context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), si
 	<a href="{{folderpath}}images/Folie79.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie79.PNG"/>
 	</a>
-	<figcaption style="text-align: center">Example with Abstract Syntax Graph</figcaption>
+</figure>
+
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie79.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie80.PNG"/>
+	</a>
 </figure>
 
 #### OCL Constraint
