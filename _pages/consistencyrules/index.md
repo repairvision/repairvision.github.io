@@ -938,7 +938,7 @@ context EModelElement eModelElement : // TODO: Support EObject
 
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie74.PNG" target="_blank">
+	<a href="{{folderpath}}images/Folie75.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie75.PNG"/>
 	</a>
 </figure>
@@ -978,7 +978,7 @@ context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), si
 
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie79.PNG" target="_blank">
+	<a href="{{folderpath}}images/Folie80.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie80.PNG"/>
 	</a>
 </figure>
