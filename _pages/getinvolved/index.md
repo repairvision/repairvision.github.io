@@ -5,4 +5,4 @@ permalink: "/getinvolved/"
 order: 6
 ---
 
-Coming soon...
+[Project on GitHub](https://github.com/repairvision/repairvision/graphs/contributors)
