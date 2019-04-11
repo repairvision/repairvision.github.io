@@ -14,7 +14,7 @@
 
  mySVG.addEventListener("load",function() {
       var svgDoc = mySVG.contentDocument;
-	alert(svgDoc);
+	alert(svgDoc.getElementsByTagName('rect'));
 	  Draggable.create(svgDoc.getElementsByTagName('rect'), {type:"x,y"})
 Draggable.create(svgDoc.getElementsByTagName('text'), {type:"x,y"})
 Draggable.create(svgDoc.getElementsByTagName('line'), {type:"x,y"})
