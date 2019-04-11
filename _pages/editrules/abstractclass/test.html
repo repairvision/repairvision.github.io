@@ -11,18 +11,15 @@
 <script>
 
  var mySVG = document.getElementById("SVG");
- var svgDoc;
- mySVG.addEventListener("load",function() {
-      svgDoc = mySVG.contentDocument;
 
- }, false);
-	
-      alert(svgDoc);
+ mySVG.addEventListener("load",function() {
+      var svgDoc = mySVG.contentDocument;
+	alert(svgDoc);
 	  Draggable.create(svgDoc.getElementsByTagName('rect'), {type:"x,y"})
 Draggable.create(svgDoc.getElementsByTagName('text'), {type:"x,y"})
 Draggable.create(svgDoc.getElementsByTagName('line'), {type:"x,y"})
 Draggable.create(svgDoc.getElementsByTagName('image'), {type:"x,y"})
-
+ }, false);
 
 </script>
 
