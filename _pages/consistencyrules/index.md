@@ -916,15 +916,11 @@ self.oclIsKindOf(EModelElement) and
 constraint TheRequiredFeatureOfMustBeSet
 message 'The required feature must be set'
 
-context EModelElement eModelElement : // TODO: Support EObject
-//(isInstanceOf(eModelElement, EAttribute) implies not(isEmpty(eModelElement.EAttribute::eAttributeType))) and // NOTE: derived reference
+context EModelElement eModelElement :
 (isInstanceOf(eModelElement, EAttribute) implies not(isEmpty(eModelElement.EAttribute::eType))) and
 (isInstanceOf(eModelElement, EFactory) implies not(isEmpty(eModelElement.EFactory::ePackage))) and
 (isInstanceOf(eModelElement, EPackage) implies not(isEmpty(eModelElement.EPackage::eFactoryInstance))) and
-//isInstanceOf(eModelElement, EReference) implies not(isEmpty(eModelElement.EReference::eReferenceType)) // NOTE: derived reference
 (isInstanceOf(eModelElement, EReference) implies not(isEmpty(eModelElement.EReference::eType)))
-// TODO: Support EObject, Expression to derive eRawType
-//(isInstanceOf(eModelElement, EGenericType) implies not(isEmpty(eModelElement.EGenericType::eRawType)))
 ```
 
 ### The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier
@@ -957,7 +953,7 @@ message 'The generic type associated with the classifier is missing type argumen
 context EGenericType
 
 inv TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier: 
-self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size())=(self.eTypeArguments->size()) 
+self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size()) >= (self.eTypeArguments->size()) 
 ```
 
 #### FOL Constraint
@@ -966,8 +962,7 @@ self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size())=(s
 constraint TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier
 message 'The generic type associated with the classifier is missing type arguments to match the number of type parameters of the classifier'
 
-context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), size(eType.eTypeArguments))
-//context EGenericType eType : isGreaterEqual(size(eType.eTypeArguments), size(eType.eClassifier.eTypeParameters))
+context EGenericType eType : isGreaterEqual(size(eType.eTypeArguments), size(eType.eClassifier.eTypeParameters))
 ```
 
 ### The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters
@@ -975,7 +970,7 @@ context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), si
 * A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
 * If such a case, the attribute, parameter or reference must bound all type parameters to type arguments.
 * A type argument can be another EClass or type parameter of the containing class of the attribute, parameter or reference.
-* A type argument can also be an bound/unbound wildcard '? extends TYPE'/'?'.
+* A type argument can also be an bound/unbound wildcard '?' extends TYPE'/'?'.
 * The number of type arguments must exactly match the number of defined type parameters.
 
 <figure class="aligncenter">
@@ -998,7 +993,7 @@ constraint TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheC
 message 'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
 
 inv TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters: 
-self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size())=(self.eTypeArguments->size()) 
+self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size()) <= (self.eTypeArguments->size()) 
 ```
 
 #### FOL Constraint
@@ -1007,9 +1002,5 @@ self.oclIsTypeOf(EGenericType) and (self.eClassifier.eTypeParameters->size())=(s
 constraint TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters
 message 'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
 
-context EGenericType eType : isEqual(size(eType.eClassifier.eTypeParameters), size(eType.eTypeArguments))
-//context EGenericType eType : isSmallerEqual(size(eType.eTypeArguments), size(eType.eClassifier.eTypeParameters))
+context EGenericType eType : isSmallerEqual(size(eType.eTypeArguments), size(eType.eClassifier.eTypeParameters))
 ```
-
-
-
