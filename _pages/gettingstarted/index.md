@@ -190,7 +190,7 @@ In this step, we will validate the video-on-demand example model. In the view of
 * __Recognized Changes:__ ReVision recognized these changes as origin of the defect of the inconsistency. Those changes were extracted from the version history of the model.
 * __Complementing Changes:__ The changes that are proposed by ReVision to repair the selected inconsistency. The set of both change (Recognized and Complementing) refer to the consistency-preserving edit operation 'Move Operation And Sync Message'.
 
-You can select the change sets or parameters and ReVision will highlight them in model editor.
+You can select the change sets or parameters and ReVision will highlight them in model editor (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/13.png" target="_blank">
@@ -198,10 +198,10 @@ You can select the change sets or parameters and ReVision will highlight them in
 	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Recognizing inconsistencies by means of RepairVision Tool and showing the detailed specifications in its panel  </figcaption>
 </figure>
 
-Finally, you can apply the repair for resolving the inconsistency and soon after checking the results (see <a href="#fig:{{ fig_step17 }}">Figure {{ fig_step17 }}</a>).
+Finally, you can apply the repair for resolving the inconsistency and soon after checking the results (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/14.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step17 }}" src="{{folderpath}}images/14.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step17 }}: Appying the recommended model changes by the RepairVision Tool</figcaption>
+	<img style="width: 400px" id="fig:{{ fig_step14 }}" src="{{folderpath}}images/14.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Appying the recommended model changes by the RepairVision Tool</figcaption>
 </figure>
