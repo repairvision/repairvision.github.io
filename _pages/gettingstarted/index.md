@@ -15,10 +15,11 @@ order: 5
 
 **The newest version of ReVision can be obtained from the following _update site_:**
 
-* _https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
+ _https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
 
 **Please install a SVN-Connector for repository integration, e.g.:**
-* _https://dl.bintray.com/subclipse/releases/subclipse/latest/_
+
+_https://dl.bintray.com/subclipse/releases/subclipse/latest/_
 
 ### Quick Introduction
 
@@ -87,6 +88,8 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 ##### Step 1.2: Install the ReVision Plug-in
 
 Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the [URL of the ReVision updatesite](#download-and-installation). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
+
+Repeat the installation process to install the [SVN-Connector from its update site](#download-and-installation). 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
