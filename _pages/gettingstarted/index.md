@@ -22,7 +22,7 @@ order: 5
 
 ### Quick Introduction
 
-In this Section, we illustrate the essential steps to install and work with ReVision. First, we show the [installation](#installation) of ReVision. Second, we [setting up a running example](#setting-up-the-example-project). At the end, we show how to find and repair inconsistencies in the running example by [using ReVision](#repairing-inconsistencies-with-revision).
+In this Section, we illustrate the essential steps to install and work with ReVision. First, we show the [installation](#step-1-installation) of ReVision. Second, we [setting up a running example](#step-2-setting-up-the-example-project). At the end, we show how to find and repair inconsistencies in the running example by [using ReVision](#step-3-repairing-inconsistencies-with-revision).
 
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
