@@ -21,7 +21,7 @@ order: 5
 
 ### Quick Introduction
 
-In this Section, we illustrate the essential steps to install and work with ReVision. First, we point out the tips of its installation. Second, we continue with a running example and will create a project. At the end, testing the running example is depicted.
+In this Section, we illustrate the essential steps to install and work with ReVision. First, we show the [installation](installation) of ReVision. Second, we [setting up a running example](setting up-the-example-project). At the end, we show how to find and repair inconsistencies in the running example by [using ReVision](repairing-inconsistencies-with-revision).
 
 {% capture folderpath %}
 {{ site.url }}/{{ page.path | remove: page.name }}
@@ -44,7 +44,7 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: Get Started </figcaption>
 </figure>
 
-##### Step 1.2: Install RepairVision Tool 
+##### Step 1.2: Install the ReVision Plug-in
 
 Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the [URL of the ReVision updatesite](#download-and-installation). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step4 }}">Figure {{ fig_step2 }}</a> below.
 
@@ -105,7 +105,7 @@ In this step, you should add the [Example Project](repository URL) by clicking o
 	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Set the location of the Repository </figcaption>
 </figure>
 
-### Step 3: Testing an Example
+### Step 3: Repairing inconsistencies with ReVision
 
 Now, it's time to check out the example from the repository. To do so, right click on the project folder and select 'Check Out' from option menu (see <a href="#fig:{{ fig_step7 }}"> Figure {{ fig_step7 }}</a>).
 
