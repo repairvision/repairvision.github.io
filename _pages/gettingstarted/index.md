@@ -14,12 +14,14 @@ order: 5
 * Eclipse Platform: <a href="https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen1a" target="new">Eclipse Oxygen Modeling Tools</a> (Includes the Eclipse Modeling Framework).
 
 **The newest version of ReVision can be obtained from the following _update site_:**
+{% assign revisionupdatesite = 'https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite' %}
 
- _https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite_
+ * _{{ revisionupdatesite }}_
 
 **Please install a SVN-Connector for repository integration, e.g.:**
+{% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
 
-_https://dl.bintray.com/subclipse/releases/subclipse/latest/_
+* _{{ subclipseupdatesite }}_
 
 ### Quick Introduction
 
@@ -87,9 +89,9 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 
 ##### Step 1.2: Install the ReVision Plug-in
 
-Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the [URL of the ReVision updatesite](#download-and-installation). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
+Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the ReVision updatesite ({{ revisionupdatesite }}). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
 
-Repeat the installation process to install the [SVN-Connector from its update site](#download-and-installation). 
+Repeat the installation process to install the SVN-Connector from its update site ({{ subclipseupdatesite }}). 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
