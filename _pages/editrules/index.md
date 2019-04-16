@@ -10,5 +10,5 @@ ReVision is configured for a particular modeling language by a set of consistenc
 * The edit operations are grouped by their context, the pattern from which they were derived, and the corresponding consistency-rule(s).
 * A consistency-rule is annotated with &lt;&lt;constraint&gt;&gt;.
 * A consistency-preserving edit operation is annotated with &lt;&lt;rule&gt;&gt;.
-* Select an edit operation or a pattern to view the graph transformation rule or graph, respectively.
-  * _Note: The (edge) labels can be moved by Drag'n'Drop._
+* Select a pattern or an edit operation view the graph or transformation rule.
+* _Note:_ The (edge) labels can be moved by Drag'n'Drop.
