@@ -89,9 +89,9 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 
 ##### Step 1.2: Install the ReVision Plug-in
 
-Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the ReVision updatesite ({{ revisionupdatesite }}). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
+Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the ReVision updatesite (_{{ revisionupdatesite }}_). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
 
-Repeat the installation process to install the SVN-Connector from its update site ({{ subclipseupdatesite }}). 
+Repeat the installation process to install the SVN-Connector from its update site (_{{ subclipseupdatesite }}_). 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
