@@ -15138,7 +15138,7 @@ document.addEventListener('click', function(e) {
   var target = e.target || e.srcElement;
 
   if (target.tagName == 'A') {
-    target = target.parentNode;
+    if (target.getAttribute('href') !== '#') {      return;    }    target = target.parentNode;
   }
 
   if (target.tagName !== 'LI') {
