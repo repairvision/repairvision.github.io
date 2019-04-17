@@ -41,8 +41,8 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 * An EAttribute can only be not transient (transient=false), if the used data type is serializable (serializable=true).
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie2.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie2.PNG"/>
+	<a href="{{folderpath}}images/Folie1.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie1.PNG"/>
 	</a>
 </figure>
 
@@ -81,8 +81,8 @@ isEqual(attribute.eType.EDataType::serializable, true)
 * The same also applies for the set of all attributes that are inherited from super-classes.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie6.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie6.PNG"/>
+	<a href="{{folderpath}}images/Folie2.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie2.PNG"/>
 	</a>
 </figure>
 
@@ -137,8 +137,8 @@ forAll(EClass typeClosure in getClosure(attribute.eContainingClass, eSuperTypes)
 * Or a concrete class: interface=false and abstract=false
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie10.PNG"/>
+	<a href="{{folderpath}}images/Folie3.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie3.PNG"/>
 	</a>
 </figure>
 
@@ -173,8 +173,8 @@ implies isEqual(eClass.abstract, true)
 * The same also applies for the set of all features that are inherited from super-classes.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie14.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie14.PNG"/>
+	<a href="{{folderpath}}images/Folie4.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie4.PNG"/>
 	</a>
 </figure>
 
@@ -250,8 +250,8 @@ forAll(EClass eClassX in getClosure(eClass, eSuperTypes) :
 * A container reference must always have a maximum upper bound of 1, because in a (syntax) tree a child element may have maximum one parent element.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie18.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie18.PNG"/>
+	<a href="{{folderpath}}images/Folie5.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie5.PNG"/>
 	</a>
 </figure>
 
@@ -285,8 +285,8 @@ implies isEqual(ref.upperBound, 1)
 * The property 'unique' of an EReferenz indicates, that a list of references of a model instance must not contain duplicates.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie22.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie22.PNG"/>
+	<a href="{{folderpath}}images/Folie6.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie6.PNG"/>
 	</a>
 </figure>
 
@@ -327,8 +327,8 @@ implies isEqual(ref.unique, true)
 * The same also applies for the set of all references that are inherited from super-classes.
     
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie26.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie26.PNG"/>
+	<a href="{{folderpath}}images/Folie7.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie7.PNG"/>
 	</a>
 </figure>
 
@@ -399,8 +399,8 @@ forAll(EClass typeClosure in getClosure(ref.eType, eSuperTypes) :
 * In other words, opposite containment references may not exist.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie30.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie30.PNG"/>
+	<a href="{{folderpath}}images/Folie8.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie8.PNG"/>
 	</a>
 </figure>
 
@@ -445,8 +445,8 @@ implies
 * This property must be consistent for bidirectional references.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie34.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie34.PNG"/>
+	<a href="{{folderpath}}images/Folie9.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie9.PNG"/>
 	</a>
 </figure>
 
@@ -488,8 +488,8 @@ isEqual(reference.eOpposite.transient, true)
 * A bidirectional reference in ecore always consists of a pair of references, not of multiple references!
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie38.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie38.PNG"/>
+	<a href="{{folderpath}}images/Folie10.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie10.PNG"/>
 	</a>
 </figure>
 
@@ -528,8 +528,8 @@ isEqual(reference.eOpposite.eOpposite, reference)
 * A bidirectional reference in ecore always consists of a pair of references, not of just one reference.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie42.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie42.PNG"/>
+	<a href="{{folderpath}}images/Folie11.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie11.PNG"/>
 	</a>
 </figure>
     
@@ -564,8 +564,8 @@ context EReference reference : not(isEqual(reference.eOpposite, reference))
 * An empty string (<““>) is not permitted!
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie46.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie46.PNG"/>
+	<a href="{{folderpath}}images/Folie12.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie12.PNG"/>
 	</a>
 </figure>
 
@@ -629,8 +629,8 @@ and
 * The same also applies for the set of all operations that are inherited from super-classes.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie50.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie50.PNG"/>
+	<a href="{{folderpath}}images/Folie13.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie13.PNG"/>
 	</a>
 </figure>
 
@@ -713,8 +713,8 @@ context EOperation eOperation :
 * The same also applies for the set of all operations that are inherited from super-classes.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie54.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie54.PNG"/>
+	<a href="{{folderpath}}images/Folie14.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie14.PNG"/>
 	</a>
 </figure>
 
@@ -833,8 +833,8 @@ forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes)
 * The name of a parameter must be unique with respect to the defining operation.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie58.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie58.PNG"/>
+	<a href="{{folderpath}}images/Folie15.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie15.PNG"/>
 	</a>
 </figure>
 
@@ -877,8 +877,8 @@ context EParameter eParameter :
 * It not permitted to have multiple Classifiers (EClass, EDataType) with the same name in the same package of an Ecore model.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie62.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie62.PNG"/>
+	<a href="{{folderpath}}images/Folie16.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie16.PNG"/>
 	</a>
 </figure>
 
@@ -922,8 +922,8 @@ forAll(EClass classA in package.eClassifiers :
 * Exceptional, an EOpeation not need to define a return type (void)!
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie66.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie66.PNG"/>
+	<a href="{{folderpath}}images/Folie17.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie17.PNG"/>
 	</a>
 </figure>
 
@@ -960,8 +960,8 @@ not(isEmpty(eTypedElement.eType))
 * According to the ecore meta-model, some features ('eType', 'ePackage', ...) must always be set.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie70.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie70.PNG"/>
+	<a href="{{folderpath}}images/Folie18.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie18.PNG"/>
 	</a>
 </figure>
 
@@ -1010,6 +1010,52 @@ and
 not(isEmpty(eModelElement.EReference::eType)))
 ```
 
+### The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters
+
+* A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
+* If such a case, the attribute, parameter or reference must bound all type parameters to type arguments.
+* A type argument can be another EClass or type parameter of the containing class of the attribute, parameter or reference.
+* A type argument can also be an bound/unbound wildcard '?' extends TYPE'/'?'.
+* The number of type arguments must exactly match the number of defined type parameters.
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie19.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie19.PNG"/>
+	</a>
+</figure>
+
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/Folie20.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie20.PNG"/>
+	</a>
+</figure>
+
+#### OCL Constraint
+
+```
+/*
+The generic type associated with the classifier must not have more arguments then the classifier has type parameters
+*/
+
+inv TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters: 
+self.oclIsTypeOf(EGenericType) 
+and (self.eClassifier.eTypeParameters->size()) <= 
+(self.eTypeArguments->size()) 
+```
+
+#### FOL Constraint
+
+```
+constraint
+TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters
+message 'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
+
+context EGenericType eType:
+isSmallerEqual(size(eType.eTypeArguments), 
+size(eType.eClassifier.eTypeParameters))
+```
+
 ### The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier
 
 * A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
@@ -1019,15 +1065,15 @@ not(isEmpty(eModelElement.EReference::eType)))
 * The number of type arguments must exactly match the number of defined type parameters.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie74.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie74.PNG"/>
+	<a href="{{folderpath}}images/Folie.PNG" target="_blank">
+		<img style="width: 100%" src="{{folderpath}}images/Folie21.PNG"/>
 	</a>
 </figure>
 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/Folie75.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie75.PNG"/>
+		<img style="width: 100%" src="{{folderpath}}images/Folie22.PNG"/>
 	</a>
 </figure>
 
@@ -1055,51 +1101,5 @@ message 'The generic type associated with the classifier is missing type argumen
 
 context EGenericType eType:
 isGreaterEqual(size(eType.eTypeArguments), 
-size(eType.eClassifier.eTypeParameters))
-```
-
-### The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters
-
-* A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
-* If such a case, the attribute, parameter or reference must bound all type parameters to type arguments.
-* A type argument can be another EClass or type parameter of the containing class of the attribute, parameter or reference.
-* A type argument can also be an bound/unbound wildcard '?' extends TYPE'/'?'.
-* The number of type arguments must exactly match the number of defined type parameters.
-
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie79.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie79.PNG"/>
-	</a>
-</figure>
-
-
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie80.PNG" target="_blank">
-		<img style="width: 100%" src="{{folderpath}}images/Folie80.PNG"/>
-	</a>
-</figure>
-
-#### OCL Constraint
-
-```
-/*
-The generic type associated with the classifier must not have more arguments then the classifier has type parameters
-*/
-
-inv TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters: 
-self.oclIsTypeOf(EGenericType) 
-and (self.eClassifier.eTypeParameters->size()) <= 
-(self.eTypeArguments->size()) 
-```
-
-#### FOL Constraint
-
-```
-constraint
-TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters
-message 'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
-
-context EGenericType eType:
-isSmallerEqual(size(eType.eTypeArguments), 
 size(eType.eClassifier.eTypeParameters))
 ```
