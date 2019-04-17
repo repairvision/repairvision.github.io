@@ -82,7 +82,7 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/01.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step1 }}" src="{{folderpath}}images/01.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: Get Started </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step1 }}: New installation of Eclipse</figcaption>
 </figure>
 
 ##### Step 1.2: Install the ReVision Plug-in
@@ -94,7 +94,7 @@ Repeat the installation process to install the SVN-Connector from its update sit
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step2 }}" src="{{folderpath}}images/02.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: How to install new Software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: Install new software </figcaption>
 </figure>
 
 Afterward, you can proceed with the installation by just selecting all tool components and clicking next. See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
@@ -110,7 +110,7 @@ After finishing the installation, you're supposed to restart the Eclipse IDE to 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/04.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step4 }}" src="{{folderpath}}images/04.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to Save and Apply changes </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to save and apply changes </figcaption>
 </figure>
 
 #### Step 2: Setting up the Example Project
@@ -130,7 +130,7 @@ In this step, you should add the [Example Project](repository URL) by clicking o
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/06.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step6 }}" src="{{folderpath}}images/06.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Set the location of the Repository </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Setup the location of the repository </figcaption>
 </figure>
 
 ### Step 3: Repairing inconsistencies with ReVision
@@ -140,7 +140,7 @@ Now, it's time to check out the example from the repository. To do so, right cli
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/07.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: properties of the UML Example created by RepairVision Tool </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Check-out the example project</figcaption>
 </figure>
 
 ##### Step 3.1: Opening the Model Editor
@@ -150,7 +150,7 @@ Now, it's time to check out the example from the repository. To do so, right cli
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/08.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step8 }}" src="{{folderpath}}images/08.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step8 }}: Opening the UML Example </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step8 }}: Opening the UML class and sequence diagram editor</figcaption>
 </figure>
 
 ##### Step 3.2: Adding the ReVision View
@@ -160,19 +160,19 @@ As shown in <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }}</a> ReVisio
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/09.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step9 }}" src="{{folderpath}}images/09.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step9 }}: Having the view of the UML Diagram Editor </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step9 }}: Open the ReVision view</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/10.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step10 }}" src="{{folderpath}}images/10.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Adding the ModelRepair Tool Plugin in to the Eclipse Workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Search for the ReVision view</figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/11.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step11 }}" src="{{folderpath}}images/11.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Showing the ModelRepair Tool Window panel in the Eclipse workspace </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step11 }}: Opened ReVision view (on the right side)</figcaption>
 </figure>
 
 ##### Step 3.3: Validating and Searching for Repairs
@@ -182,7 +182,7 @@ In this step, we will validate the video-on-demand example model. In the view of
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/12.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step12 }}" src="{{folderpath}}images/12.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step12}}: Validation of the Input UML Example Class Diagram </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step12}}: Validation of the video-on-demand sytem example</figcaption>
 </figure>
 
 ##### Step 3.4: Resolving Inconsistencies
@@ -198,7 +198,7 @@ You can select the change sets or parameters and ReVision will highlight them in
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/13.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step13 }}" src="{{folderpath}}images/13.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Recognizing inconsistencies by means of RepairVision Tool and showing the detailed specifications in its panel  </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step13 }}: Binding repair parameters to values</figcaption>
 </figure>
 
 Finally, you can apply the repair for resolving the inconsistency and soon after checking the results (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
@@ -206,5 +206,5 @@ Finally, you can apply the repair for resolving the inconsistency and soon after
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/14.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step14 }}" src="{{folderpath}}images/14.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Appying the recommended model changes by the RepairVision Tool</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Appying the repair</figcaption>
 </figure>
