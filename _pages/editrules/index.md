@@ -20,20 +20,20 @@ ReVision is configured for a particular modeling language by a set of consistenc
 {% endcapture %}
 
 * &lt;&lt;constraint&gt;&gt; AClassThatIsAnInterfaceMustAlsoBeAbstract
-  * <a href="{{ folderpath }}concreteclass/diagram.html">Concrete Class</a>
-  * <a href="{{ folderpath }}abstractclass/diagram.html"> Abstract Class</a>
-  * <a href="{{ folderpath }}interface/diagram.html"> Interface</a>
-    * <a href="{{ folderpath }}rulecreateabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Abstract Class</a>
-    * <a href="{{ folderpath }}ruledeleteabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Abstract Class</a>
-    * <a href="{{ folderpath }}ruletransformabstractclasstoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Concrete Class</a>
-    * <a href="{{ folderpath }}ruletransformabstractclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Interface</a>
-    * <a href="{{ folderpath }}rulecreateconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Concrete Class</a>
-    * <a href="{{ folderpath }}ruledeleteconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Concrete Class</a>
-    * <a href="{{ folderpath }}ruletransformconcreteclasstoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Abstract Class</a>
-    * <a href="{{ folderpath }}ruletransformconcreteclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Interface</a>
-    * <a href="{{ folderpath }}rulecreateinterface/diagram.html">&lt;&lt;rule&gt;&gt; Create: Interface</a>
-    * <a href="{{ folderpath }}ruledeleteinterface/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Interface</a>
-    * <a href="{{ folderpath }}ruletransforminterfacetoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Concrete Class</a>
-    * <a href="{{ folderpath }}ruletransforminterfacetoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Abstract Class</a>
+  * <a href="{{folderpath}}concreteclass/diagram.html">Concrete Class</a>
+  * <a href="{{folderpath}}abstractclass/diagram.html"> Abstract Class</a>
+  * <a href="{{folderpath}}interface/diagram.html"> Interface</a>
+    * <a href="{{folderpath}}rulecreateabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Abstract Class</a>
+    * <a href="{{folderpath}}ruledeleteabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Abstract Class</a>
+    * <a href="{{folderpath}}ruletransformabstractclasstoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Concrete Class</a>
+    * <a href="{{folderpath}}ruletransformabstractclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Interface</a>
+    * <a href="{{folderpath}}rulecreateconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Concrete Class</a>
+    * <a href="{{folderpath}}ruledeleteconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Concrete Class</a>
+    * <a href="{{folderpath}}ruletransformconcreteclasstoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Abstract Class</a>
+    * <a href="{{ folderpath}}ruletransformconcreteclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Interface</a>
+    * <a href="{{folderpath}}rulecreateinterface/diagram.html">&lt;&lt;rule&gt;&gt; Create: Interface</a>
+    * <a href="{{folderpath}}ruledeleteinterface/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Interface</a>
+    * <a href="{{folderpath}}ruletransforminterfacetoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Concrete Class</a>
+    * <a href="{{folderpath}}ruletransforminterfacetoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Abstract Class</a>
 
 __[Show all Consistency-Preserving Edit Operations...](https://repairvision.github.io/_pages/editrules/ecore.html)__
