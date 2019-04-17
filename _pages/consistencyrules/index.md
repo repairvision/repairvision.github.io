@@ -49,8 +49,9 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 #### OCL Constraint
 
 ```
-constraint TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable
-message 'The attribute is not transient so it must have a data type that is serializable'
+/*
+The attribute is not transient so it must have a data type that is serializable
+*/
 
 context EAttribute
 
@@ -63,8 +64,9 @@ self.transient and self.eType.oclIsTypeOf(EDataType) implies
 #### FOL Constraint
 
 ```
-constraint TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable
-message 'The attribute is not transient so it must have a data type that is serializable'
+/*
+The attribute is not transient so it must have a data type that is serializable
+*/
 
 context EAttribute attribute : (
   isEqual(attribute.transient, false) and 
@@ -88,8 +90,9 @@ isEqual(attribute.eType.EDataType::serializable, true)
 #### OCL Constraint
 
 ```
-constraint TwoFeaturesCannotBothBeIDs
-message 'The features \\"{0}\\" and \\"{1}\\" cannot both be IDs'
+/*
+The features \\"{0}\\" and \\"{1}\\" cannot both be IDs
+*/
 
 context EAttribute
 
@@ -113,8 +116,9 @@ forAll(typeClosure |typeClosure .eStructuralFeatures->
 #### FOL Constraint
 
 ```
-constraint TwoFeaturesCannotBothBeIDs
-message 'The features \\"{0}\\" and \\"{1}\\" cannot both be IDs'
+/*
+The features \\"{0}\\" and \\"{1}\\" cannot both be IDs
+*/
 
 context EAttribute attribute : 
 
@@ -143,8 +147,9 @@ forAll(EClass typeClosure in getClosure(attribute.eContainingClass, eSuperTypes)
 #### OCL Constraint
 
 ```
-constraint AClassThatIsAnInterfaceMustAlsoBeAbstract
-message 'A class that is an interface must also be abstract'
+/*
+A class that is an interface must also be abstract
+*/
 
 context EClass
 
@@ -156,8 +161,9 @@ self.oclIsTypeOf(EClass) and self.interface implies (self.abstract)
 #### FOL Constraint
 
 ```
-constraint AClassThatIsAnInterfaceMustAlsoBeAbstract
-message 'A class that is an interface must also be abstract'
+/*
+A class that is an interface must also be abstract
+*/
 
 context EClass eClass: isEqual(eClass.interface, true)
 
@@ -178,8 +184,9 @@ implies isEqual(eClass.abstract, true)
 #### OCL Constraint
 
 ```
-constraint ThereMayNotBeTwoFeaturesNamed
-message 'There may not be two features with the same name'
+/*
+There may not be two features with the same name
+*/
 
 inv ThereMayNotBeTwoFeaturesNamed:
 
@@ -213,8 +220,9 @@ forAll(eClassX | self.oclAsType(EClass).eAllSuperTypes->
 #### FOL Constraint
 
 ```
-constraint ThereMayNotBeTwoFeaturesNamed
-message 'There may not be two features with the same name'
+/*
+There may not be two features with the same name
+*/
 
 context EClass eClass : 
 
@@ -254,8 +262,9 @@ forAll(EClass eClassX in getClosure(eClass, eSuperTypes) :
 #### OCL Constraint
 
 ```
-constraint AContainerReferenceMustHaveUpperBoundOfNot
-message 'A container reference must have upper bound of 1'
+/*
+A container reference must have upper bound of 1
+*/
 
 context EReference
 
@@ -267,8 +276,9 @@ Self.container implies (self.upperBound = 1)
 #### FOL Constraint
 
 ```
-constraint AContainerReferenceMustHaveUpperBoundOfNot
-message 'A container reference must have upper bound of 1'
+/*
+A container reference must have upper bound of 1
+*/
 
 context EReference ref : isEqual(ref.eOpposite.containment, true) 
 
@@ -288,10 +298,9 @@ implies isEqual(ref.upperBound, 1)
 #### OCL Constraint
 
 ```
-constraint
-AContainmentOrBidirectionalReferenceMustBeUniqueIfItsUpperBoundIsDifferentFrom
-message
-'A containment or bidirectional reference must be unique if its upper bound is different from 1'
+/*
+A containment or bidirectional reference must be unique if its upper bound is different from 1
+*/
 
 context EReference
 
@@ -305,10 +314,9 @@ self.unique
 #### FOL Constraint
 
 ```
-constraint 
-AContainmentOrBidirectionalReferenceMustBeUniqueIfItsUpperBoundIsDifferentFrom
-message 
-'A containment or bidirectional reference must be unique if its upper bound is different from 1'
+/* 
+A containment or bidirectional reference must be unique if its upper bound is different from 1
+*/
 
 context EReference ref : (
 (isEqual(ref.containment, true) or not(isEmpty(ref.eOpposite))) and
@@ -331,9 +339,9 @@ implies isEqual(ref.unique, true)
 #### OCL Constraint
 
 ```
-constraint AContainmentReferenceOfATypeWithAContainerFeaturethatRequiresInstancesToBeContainedElsewhereCannotBePopulated
-message 
-'A containment reference of a type with a container feature that requires instances to be contained elsewhere cannot be populated'
+/*
+A containment reference of a type with a container feature that requires instances to be contained elsewhere cannot be populated
+*/
 
 context EReference
 
@@ -363,9 +371,9 @@ self.eType.oclIsTypeOf(EClass)
 #### FOL Constraint
 
 ```
-constraint AContainmentReferenceOfATypeWithAContainerFeaturethatRequiresInstancesToBeContainedElsewhereCannotBePopulated
-message 
-'A containment reference of a type with a container feature that requires instances to be contained elsewhere cannot be populated'
+/*
+A containment reference of a type with a container feature that requires instances to be contained elsewhere cannot be populated
+*/
 
 context EReference ref :
 
@@ -404,8 +412,9 @@ forAll(EClass typeClosure in getClosure(ref.eType, eSuperTypes) :
 #### OCL Constraint
 
 ```
-constraint TheOppositeOfAContainmentReferenceMustNotBeAContainmentReference
-message 'The opposite of a containment reference must not be a containment reference'
+/*
+The opposite of a containment reference must not be a containment reference
+*/
 
 context EReference
 
@@ -423,8 +432,9 @@ implies
 #### FOL Constraint
 
 ```
-constraint TheOppositeOfAContainmentReferenceMustNotBeAContainmentReference
-message 'The opposite of a containment reference must not be a containment reference'
+/*
+The opposite of a containment reference must not be a containment reference
+*/
 
 context EReference eReference : not(isEmpty(eReference.eOpposite)) 
 
@@ -449,9 +459,9 @@ implies
 #### OCL Constraint
 
 ```
-constraint TheOppositeOfATransientReferenceMustBeTransientIfItIsProxyResolving
-message 
-'The opposite of a transient reference must be transient if it is proxy resolving'
+/*
+The opposite of a transient reference must be transient if it is proxy resolving
+*/
 
 context EReference
 
@@ -469,9 +479,9 @@ implies
 #### FOL Constraint
 
 ```
-constraint TheOppositeOfATransientReferenceMustBeTransientIfItIsProxyResolving
-message 
-'The opposite of a transient reference must be transient if it is proxy resolving'
+/* 
+The opposite of a transient reference must be transient if it is proxy resolving
+*/
 
 context EReference reference : isEqual(reference.transient, true) 
 implies (
@@ -493,9 +503,9 @@ isEqual(reference.eOpposite.transient, true)
 #### OCL Constraint
 
 ```
-constraint TheOppositeOfTheOppositeMayNotBeAReferenceDifferentFromThisOne
-message 
-'The opposite of the opposite may not be a reference different from this one'
+/*
+The opposite of the opposite may not be a reference different from this one
+*/
 
 context EReference
 
@@ -511,9 +521,9 @@ implies
 #### FOL Constraint
 
 ```
-constraint TheOppositeOfTheOppositeMayNotBeAReferenceDifferentFromThisOne
-message 
-'The opposite of the opposite may not be a reference different from this one'
+/*
+The opposite of the opposite may not be a reference different from this one
+*/
 
 context EReference reference : not(isEmpty(reference.eOpposite)) 
 implies 
@@ -533,8 +543,9 @@ isEqual(reference.eOpposite.eOpposite, reference)
 #### OCL Constraint
 
 ```
-constraint TheOppositeMayNotBeItsOwnOpposite
-message 'The opposite may not be its own opposite'
+/*
+The opposite may not be its own opposite
+*/
 
 context EReference
 
@@ -546,8 +557,9 @@ self.oclIsTypeOf(EReference) and self.eOpposite<>self
 #### FOL Constraint
 
 ```
-constraint TheOppositeMayNotBeItsOwnOpposite
-message 'The opposite may not be its own opposite'
+/*
+The opposite may not be its own opposite
+*/
 
 context EReference reference : not(isEqual(reference.eOpposite, reference))
 ```
@@ -568,9 +580,9 @@ context EReference reference : not(isEqual(reference.eOpposite, reference))
 #### OCL Constraint
 
 ```
-constraint TheDefaultValueLiteralMustBeAValidLiteralOfTheAttributesType
-message 
-'The default value literal must be a valid literal of the attributes type'
+/*
+The default value literal must be a valid literal of the attributes type
+*/
 
 context EStructuralFeature
 
@@ -601,9 +613,9 @@ self.defaultValueLiteral).oclIsInvalid()
 #### FOL Constraint
 
 ```
-constraint TheDefaultValueLiteralMustBeAValidLiteralOfTheAttributesType
-message 
-'The default value literal must be a valid literal of the attributes type'
+/* 
+The default value literal must be a valid literal of the attributes type
+*/
 
 context EStructuralFeature eStructuralFeature : 
 (not(isInstanceOf(eStructuralFeature.eType, EDataType)) implies 
@@ -634,8 +646,9 @@ and
 #### OCL Constraint
 
 ```
-constraint ThereMayNotBeTwoOperationsAndWithTheSameSignature
-message 'There may not be two operations with the same signature'
+/*
+There may not be two operations with the same signature
+*/
 
 context EOperation 
 
@@ -672,8 +685,9 @@ not(
 #### FOL Constraint
 
 ```
-constraint ThereMayNotBeTwoOperationsAndWithTheSameSignature
-message 'There may not be two operations with the same signature'
+/*
+There may not be two operations with the same signature
+*/
 
 context EOperation eOperation : 
    not(exists(EClass typeClosure in getClosure(eOperation.eContainingClass,
@@ -717,9 +731,9 @@ context EOperation eOperation :
 #### OCL Constraint
 
 ```
-constraint ThereMayNotBeAnOperationWithTheSameSignatureAsAnAccessorMethodForFeature
-message 
-'There may not be an operation with the same signature as an accessor method for a feature'
+/*
+There may not be an operation with the same signature as an accessor method for a feature
+*/
 
 context EOperation 
 
@@ -781,9 +795,9 @@ forAll(typeClosure |
 #### FOL Constraint
 
 ```
-constraint ThereMayNotBeAnOperationWithTheSameSignatureAsAnAccessorMethodForFeature
-message 
-'There may not be an operation with the same signature as an accessor method for a feature'
+/*
+There may not be an operation with the same signature as an accessor method for a feature
+*/
 
 context EOperation operation : 
 
@@ -838,8 +852,9 @@ forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes)
 #### OCL Constraint
 
 ```
-constraint ThereMayNotBeTwoParametersNamed
-message 'There may not be two parameters with the same name'
+/*
+There may not be two parameters with the same name
+*/
 
 context EParameter 
 
@@ -857,8 +872,9 @@ self.oclIsKindOf(EParameter) and
 #### FOL Constraint
 
 ```
-constraint ThereMayNotBeTwoParametersNamed
-message 'There may not be two parameters with the same name'
+/*
+There may not be two parameters with the same name
+*/
 
 context EParameter eParameter :
  not(exists(EParameter otherEParameter in eParameter.eOperation.eParameters :
@@ -881,8 +897,9 @@ context EParameter eParameter :
 #### OCL Constraint
 
 ```
-constraint ThereMayNotBeTwoClassifiersNamed
-message 'There may not be two classifiers with the same name'
+/*
+There may not be two classifiers with the same name
+*/
 
 context EPackage
 
@@ -897,8 +914,9 @@ inv ThereMayNotBeTwoClassifiersNamed:
 #### FOL Constraint
 
 ```
-constraint ThereMayNotBeTwoClassifiersNamed
-message 'There may not be two classifiers with the same name'
+/*
+There may not be two classifiers with the same name
+*/
 
 context EPackage package : 
 forAll(EClass classA in package.eClassifiers : 
@@ -925,8 +943,9 @@ forAll(EClass classA in package.eClassifiers :
 #### OCL Constraint
 
 ```
-constraint TheTypedElementMustHaveAType
-message 'The typed element must have a type'
+/*
+The typed element must have a type
+*/
 
 context ETypedElement
 
@@ -940,8 +959,9 @@ self.eType<>null)
 #### FOL Constraint
 
 ```
-constraint TheTypedElementMustHaveAType
-message 'The typed element must have a type'
+/*
+The typed element must have a type
+*/
 
 context ETypedElement eTypedElement : 
 isInstanceOf(eTypedElement, EOperation) 
@@ -962,8 +982,9 @@ not(isEmpty(eTypedElement.eType))
 #### OCL Constraint
 
 ```
-constraint TheRequiredFeatureOfMustBeSet
-message 'The required feature must be set'
+/*
+The required feature must be set
+*/
 
 context EModelElement 
 
@@ -986,8 +1007,9 @@ and
 #### FOL Constraint
 
 ```
-constraint TheRequiredFeatureOfMustBeSet
-message 'The required feature must be set'
+/*
+The required feature must be set
+*/
 
 context EModelElement eModelElement:
 (isInstanceOf(eModelElement, EAttribute) implies
@@ -1027,14 +1049,13 @@ not(isEmpty(eModelElement.EReference::eType)))
 #### OCL Constraint
 
 ```
-constraint TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier
-message 
-'The generic type associated with the classifier is missing type arguments to match the number of type parameters of the classifier'
+/*
+The generic type associated with the classifier is missing type arguments to match the number of type parameters of the classifier
+*/
 
 context EGenericType
 
-inv
-TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier: 
+inv TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier: 
 
 self.oclIsTypeOf(EGenericType) and 
 (self.eClassifier.eTypeParameters->size()) >=
@@ -1044,9 +1065,9 @@ self.oclIsTypeOf(EGenericType) and
 #### FOL Constraint
 
 ```
-constraint TheGenericTypeAssociatedWithTheClassifierShouldHaveTypeArgumentsToMatchTheNumberOfTypeParametersOfTheClassifier
-message 
-'The generic type associated with the classifier is missing type arguments to match the number of type parameters of the classifier'
+/*
+The generic type associated with the classifier is missing type arguments to match the number of type parameters of the classifier
+*/
 
 context EGenericType eType:
 isGreaterEqual(size(eType.eTypeArguments), 
@@ -1077,13 +1098,11 @@ size(eType.eClassifier.eTypeParameters))
 #### OCL Constraint
 
 ```
-constraint 
-TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters
-message 
-'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
+/*
+The generic type associated with the classifier must not have more arguments then the classifier has type parameters
+*/
 
-inv 
-TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters: 
+inv TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters: 
 self.oclIsTypeOf(EGenericType) 
 and (self.eClassifier.eTypeParameters->size()) <= 
 (self.eTypeArguments->size()) 
@@ -1092,10 +1111,9 @@ and (self.eClassifier.eTypeParameters->size()) <=
 #### FOL Constraint
 
 ```
-constraint
-TheGenericTypeAssociatedWithTheClassifierMustNotHaveArgumentsWhenTheClassifierHasTypeParameters
-message 
-'The generic type associated with the classifier must not have more arguments then the classifier has type parameters'
+/*
+The generic type associated with the classifier must not have more arguments then the classifier has type parameters
+*/
 
 context EGenericType eType:
 isSmallerEqual(size(eType.eTypeArguments), 
