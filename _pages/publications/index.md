@@ -9,7 +9,7 @@ order: 7
 
 .button {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #1abc9c;
   border: 2px solid #1abc9c;
   color: white;
@@ -23,8 +23,7 @@ order: 7
 
 .button:hover {
   background-color: white; 
-  color: white; 
-  border: 2px solid #1abc9c;
+  color: white;
 }
 
 .button span {
@@ -57,7 +56,9 @@ order: 7
 </style>
   
 #### ReVision: A Tool for History-Based Model Repair Recommendations
+
 In: 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion). Gothenburg, Sweden. May 27 - June 3, 2018.
+
 _Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer_
 
 <details>
@@ -68,12 +69,14 @@ Models in Model-Driven Engineering are heavily edited in all stages of software 
 <button class="button" style="vertical-align:middle" onclick="window.location.href='https://ieeexplore.ieee.org/abstract/document/8449456';"><span>Read Paper</span></button>
 
 #### Behandlung von Inkonsistenzen in der verteilten Bearbeitung materialisierter Sichten im Kontext der modellbasierten Softwareentwicklung
+
 Master’s Thesis. University of Siegen. 2017.
+
 _Manuel Ohrndorf_
 
 <details>
 <summary>Read Abstract:</summary>
-In software development, models are used for system analysis and de-sign. In model-driven software development, models are primary artifacts and the formalbasis for the system implementation. A model is an abstraction layer which conceals thetechnical target platform. This increases the re-usability of the developed components.However, this requires the definition of a formal syntax and semantics for the modelinglanguage. Models are usually expressed from various viewpoints, e.g. the data struc-ture and a user interaction. A multi-view modeling environment can be used to buildcomplex system models. A viewpoint can also be constructed by slicing a specific partof the model. This can be helpful in distributing and processing large models acrossa development team. However, a developer can inadvertently introduce inconsistenciesbetween different views. Ensuring the correctness of a model is a key task of the devel-opment process. Therefor, the developers need fully-fledged tool support to deal withinconsistencies.  This work presents an approach to the repair of inconsistencies in adistributed multi-view modeling environment. The introduced tool determines repairsbased on user-defined edit rules. To understand the cause of an inconsistency, the repairalgorithm considers the modifications which have introduced the inconsistency. 
+In software development, models are used for system analysis and design. In model-driven software development, models are primary artifacts and the formalbasis for the system implementation. A model is an abstraction layer which conceals thetechnical target platform. This increases the reusability of the developed components.However, this requires the definition of a formal syntax and semantics for the modelinglanguage. Models are usually expressed from various viewpoints, e.g. the data structure and a user interaction. A multi-view modeling environment can be used to buildcomplex system models. A viewpoint can also be constructed by slicing a specific partof the model. This can be helpful in distributing and processing large models acrossa development team. However, a developer can inadvertently introduce inconsistenciesbetween different views. Ensuring the correctness of a model is a key task of the development process. Therefor, the developers need fully-fledged tool support to deal withinconsistencies.  This work presents an approach to the repair of inconsistencies in adistributed multi-view modeling environment. The introduced tool determines repairsbased on user-defined edit rules. To understand the cause of an inconsistency, the repairalgorithm considers the modifications which have introduced the inconsistency. 
 </details>
 
 <button class="button" style="vertical-align:middle" onclick="window.location.href='http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf';"><span>Read Thesis</span></button>
