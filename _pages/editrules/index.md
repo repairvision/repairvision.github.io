@@ -26,7 +26,8 @@ ReVision is configured for a particular modeling language by a set of consistenc
     * <a href="rulecreateconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Concrete Class</a>
     * <a href="ruledeleteconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Concrete Class</a></li>
     * <a href="ruletransformconcreteclasstoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Abstract Class</a>
-    * <a href="ruletransformconcreteclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Interface</a>       * <a href="rulecreateinterface/diagram.html">&lt;&lt;rule&gt;&gt; Create: Interface</a>
+    * <a href="ruletransformconcreteclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Interface</a>
+    * <a href="rulecreateinterface/diagram.html">&lt;&lt;rule&gt;&gt; Create: Interface</a>
     * <a href="ruledeleteinterface/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Interface</a>
     * <a href="ruletransforminterfacetoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Concrete Class</a>
     * <a href="ruletransforminterfacetoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Abstract Class</a>
