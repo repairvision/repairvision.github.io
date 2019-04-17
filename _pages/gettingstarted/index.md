@@ -5,6 +5,8 @@ permalink: "/gettingstarted/"
 order: 5
 ---
 
+{% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
+
 ### Example Project
 
 * Video on Demand System (UML) Project <a href="https://github.com/mohrndorf/revision-example.git" target="new">https://github.com/mohrndorf/revision-example.git</a>
@@ -26,10 +28,6 @@ order: 5
 ### Quick Introduction
 
 In this Section, we illustrate the essential steps to install and work with ReVision. First, we show the [installation](#step-1-installation) of ReVision. Second, we [setting up a running example](#step-2-setting-up-the-example-project). At the end, we show how to find and repair inconsistencies in the running example by [using ReVision](#step-3-repairing-inconsistencies-with-revision).
-
-{% capture folderpath %}
-{{ site.url }}/{{ page.path | remove: page.name }}
-{% endcapture %}
 
 {% assign fig = 0 %}
 
