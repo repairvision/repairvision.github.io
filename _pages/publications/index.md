@@ -68,21 +68,14 @@ order: 7
   * Manuel Ohrndorf
   * Master's Thesis. University of Siegen. 2017.
   
- <ul>
-<div class="tx">
-<b><p>ReVision: A Tool for History-Based Model Repair Recommendations</p></b>
-</div>
-   <ul>  
-      <li>Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer</li>
-      <li>In: 2018 IEEE/ACM 40th International Conference on Software 
-          Engineering: Companion (ICSE-Companion). Gothenburg, Sweden. May 27 - 
-          June 3, 2018.</li>  
-   </ul>
+
+### ReVision: A Tool for History-Based Model Repair Recommendations
+#### Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer
+In: 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion). Gothenburg, Sweden. May 27 - June 3, 2018.
 
 <details>
-  <summary>Read Abstract: </summary>
-  <p> Models in Model-Driven Engineering are heavily edited in all stages of software development and can become temporarily inconsistent. In general, there are many alternatives to fix an inconsistency, the actual choice is left to the discretion of the developer. Model repair tools should support developers by proposing a short list of repair alternatives. Such recommendations will be only accepted in practice if the generated proposals are plausible and understandable. Current approaches, which mostly focus on fully automatic, non-interactive model repairs, fail in meeting these requirements. This paper proposes a new approach to generate repair proposals for inconsistencies that were introduced by incomplete editing processes which can be located in the version history of a model. Such an incomplete editing process is extended to a full execution of a consistency-preserving edit operation. We demonstrate our repair tool \toolname using a simplified multi-view UML model of a video on demand system, a screencast is provided at http://pi.informatik.uni-siegen.de/projects/SiLift/icse2018/.</p>
- 
+<summary>Read Abstract:</summary>
+Models in Model-Driven Engineering are heavily edited in all stages of software development and can become temporarily inconsistent. In general, there are many alternatives to fix an inconsistency, the actual choice is left to the discretion of the developer. Model repair tools should support developers by proposing a short list of repair alternatives. Such recommendations will be only accepted in practice if the generated proposals are plausible and understandable. Current approaches, which mostly focus on fully automatic, non-interactive model repairs, fail in meeting these requirements. This paper proposes a new approach to generate repair proposals for inconsistencies that were introduced by incomplete editing processes which can be located in the version history of a model. Such an incomplete editing process is extended to a full execution of a consistency-preserving edit operation. We demonstrate our repair tool \toolname using a simplified multi-view UML model of a video on demand system, a screencast is provided at http://pi.informatik.uni-siegen.de/projects/SiLift/icse2018/.
 </details>
 
 <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://ieeexplore.ieee.org/abstract/document/8449456';"><span>Read Paper</span></button>
@@ -104,6 +97,6 @@ Sichten im Kontext der modellbasierten Softwareentwicklung</p></b>
   
 </details>
 
-<button class="button" style="vertical-align:middle" onclick="window.location.href = 'http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf';"><span>Read Paper</span></button>
+<button class="button" style="vertical-align:middle" onclick="window.location.href = 'http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf';"><span>Read Thesis</span></button>
 
 </ul>
