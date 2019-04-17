@@ -188,14 +188,14 @@ and
 self.oclAsType(EClass).eAllSuperTypes->append(self.oclAsType(EClass))->forAll(eClassX |  
 self.oclAsType(EClass).eAllSuperTypes->append(self.oclAsType(EClass))->forAll(eClassY | 
 eClassX<>eClassY implies 
-                 ( 
-                     eClassX.eStructuralFeatures-> forAll(featureX |  
-                     eClassY.eStructuralFeatures-> forAll(featureY |     
-                     featureX.name<>featureY.name     
-                 )  
-             ) 
-        ) 
-    ) 
+    ( 
+      eClassX.eStructuralFeatures-> forAll(featureX |  
+      eClassY.eStructuralFeatures-> forAll(featureY |     
+      featureX.name<>featureY.name     
+    )  
+   ) 
+  ) 
+ ) 
 ) 
 ```
 
@@ -208,21 +208,21 @@ message 'There may not be two features with the same name'
 context EClass eClass : 
 
 forAll(EStructuralFeature featureA in eClass.eStructuralFeatures :
-      forAll(EStructuralFeature featureB in eClass.eStructuralFeatures : 
-             not(isEqual(featureA, featureB)) implies not(isEqual(featureA.name, featureB.name))
-      )
+  forAll(EStructuralFeature featureB in eClass.eStructuralFeatures : 
+    not(isEqual(featureA, featureB)) implies not(isEqual(featureA.name, featureB.name))
+ )
 )
 and
 forAll(EClass eClassX in getClosure(eClass, eSuperTypes) : 
-      forAll(EClass eClassY in getClosure(eClass, eSuperTypes) : 
-             (not(isEqual(eClassX, eClassY)) implies
-                  forAll(EStructuralFeature featureX in eClassX.eStructuralFeatures :
-                        forAll(EStructuralFeature featureY in eClassY.eStructuralFeatures : 
-                              not(isEqual(featureX.name, featureY.name))
-                        )
-                  )
-             )
-       )
+   forAll(EClass eClassY in getClosure(eClass, eSuperTypes) : 
+     (not(isEqual(eClassX, eClassY)) implies
+       forAll(EStructuralFeature featureX in eClassX.eStructuralFeatures :
+          forAll(EStructuralFeature featureY in eClassY.eStructuralFeatures : 
+            not(isEqual(featureX.name, featureY.name))
+    )
+   )
+  )
+ )
 )
 ```
 
@@ -348,16 +348,16 @@ context EReference ref :
 isEqual(ref.containment, true) implies (
 isInstanceOf(ref.eType, EClass) implies (
 forAll(EClass typeClosure in getClosure(ref.eType, eSuperTypes) : 
-    forAll(EStructuralFeature feature in typeClosure.eStructuralFeatures : 
-           (isInstanceOf(feature, EReference) and isEqual(feature.EReference::eOpposite.containment, true)) 
-          implies (
-              isEqual(feature.EReference::lowerBound, 0)
-              or
-              isEqual(feature.EReference::eOpposite, ref)
-                ) 
-           )
-       )
+  forAll(EStructuralFeature feature in typeClosure.eStructuralFeatures : 
+    (isInstanceOf(feature, EReference) and isEqual(feature.EReference::eOpposite.containment, true)) 
+    implies (
+      isEqual(feature.EReference::lowerBound, 0)
+    or
+      isEqual(feature.EReference::eOpposite, ref)
+    ) 
    )
+  )
+ )
 )
 ```
 
@@ -541,12 +541,10 @@ inv TheDefaultValueLiteralMustBeAValidLiteralOfTheAttributesType:
 (not(self.eType.oclIsTypeOf(EDataType)) implies self.defaultValueLiteral = null) 
 and 
 ( 
-  self.eType.oclIsTypeOf(EEnum) 
-  implies  
-  ( 
+self.eType.oclIsTypeOf(EEnum) 
+  implies (   
     not (self.defaultValueLiteral=null) 
-    implies  
-    ( 
+    implies ( 
       self.eType.oclAsType(EEnum).eLiterals->forAll(literal | 
       self.defaultValueLiteral=literal.toString() 
       ) 
@@ -568,9 +566,9 @@ context EStructuralFeature eStructuralFeature :
     isEmpty(eStructuralFeature.defaultValueLiteral))
 and
 (isInstanceOf(eStructuralFeature.eType, EEnum) implies 
-    forAll(EEnumLiteral literal in eStructuralFeature.eType.EEnum::eLiterals : 
-          isEqual(eStructuralFeature.defaultValueLiteral, literal.name)
-    )
+  forAll(EEnumLiteral literal in eStructuralFeature.eType.EEnum::eLiterals : 
+      isEqual(eStructuralFeature.defaultValueLiteral, literal.name)
+  )
 )
 and
 (isInstanceOf(eStructuralFeature.eType, EDataType) implies
@@ -601,28 +599,28 @@ inv ThereMayNotBeTwoOperationsAndWithTheSameSignature:
 self.oclIsTypeOf(EOperation)  
 implies  
 not( 
-  self.eContainingClass.eAllSuperTypes-> append(self.eContainingClass)-> 
-  exists(typeClosure|typeClosure.oclAsType(EClass).eOperations-> 
-    exists(otherEOperation| 
-      otherEOperation<>self  
-      and 
-         self.name=otherEOperation.name 
-      and 
-         self.eParameters->size() = otherEOperation.eParameters->size() 
-      and 
-      ( 
-        (self.eParameters->isEmpty() and otherEOperation.eParameters->isEmpty()) 
-        or 
-           self.eParameters->exists(eParameter | 
-               otherEOperation.eParameters->exists(otherEParameter | 
-               eParameter.eType=otherEParameter.eType 
-           and 
-               self.eParameters->indexOf(eParameter)=otherEOperation.eParameters->indexOf(otherEParameter) 
-          ) 
-        ) 
-      ) 
+ self.eContainingClass.eAllSuperTypes-> append(self.eContainingClass)-> 
+ exists(typeClosure|typeClosure.oclAsType(EClass).eOperations-> 
+ exists(otherEOperation| 
+   otherEOperation<>self  
+   and 
+      self.name=otherEOperation.name 
+   and 
+      self.eParameters->size() = otherEOperation.eParameters->size() 
+   and 
+   ( 
+    (self.eParameters->isEmpty() and otherEOperation.eParameters->isEmpty()) 
+     or 
+     self.eParameters->exists(eParameter | 
+     otherEOperation.eParameters->exists(otherEParameter | 
+     eParameter.eType=otherEParameter.eType 
+     and 
+     self.eParameters->indexOf(eParameter)=otherEOperation.eParameters->indexOf(otherEParameter) 
+     ) 
     ) 
+   ) 
   ) 
+ ) 
 )
 ```
 
@@ -633,29 +631,29 @@ constraint ThereMayNotBeTwoOperationsAndWithTheSameSignature
 message 'There may not be two operations with the same signature'
 
 context EOperation eOperation : 
-        not(exists(EClass typeClosure in getClosure(eOperation.eContainingClass, eSuperTypes) : 
-                exists(EOperation otherEOpperation in typeClosure.eOperations :
-                       not(isEqual(eOperation, otherEOpperation)) 
-                       and
-                       isEqual(eOperation.name, otherEOpperation.name)
-                       and
-                       isEqual(size(eOperation.eParameters), size(otherEOpperation.eParameters))
-                       and
-                       ((isEmpty(eOperation.eParameters) and isEmpty(otherEOpperation.eParameters))
-                       or
-                       exists(EParameter eParameter in eOperation.eParameters :
-                             exists(EParameter otherEParameter in otherEOpperation.eParameters :
-                                    not(isEqual(eParameter, otherEParameter)) 
-                                    and
-                                    isEqual(eParameter.eType, otherEParameter.eType)
-                                    and
-                                    isEqual(indexOf(eOperation, eParameters, eParameter),
-                                        indexOf(otherEOpperation, eParameters, otherEParameter)
-                                    )
-                              )
-                       ))
-                 )
-          ))
+   not(exists(EClass typeClosure in getClosure(eOperation.eContainingClass, eSuperTypes) : 
+   exists(EOperation otherEOpperation in typeClosure.eOperations :
+      not(isEqual(eOperation, otherEOpperation)) 
+      and
+      isEqual(eOperation.name, otherEOpperation.name)
+      and
+      isEqual(size(eOperation.eParameters), size(otherEOpperation.eParameters))
+      and
+      ((isEmpty(eOperation.eParameters) and isEmpty(otherEOpperation.eParameters))
+      or
+      exists(EParameter eParameter in eOperation.eParameters :
+      exists(EParameter otherEParameter in otherEOpperation.eParameters :
+      not(isEqual(eParameter, otherEParameter)) 
+      and
+      isEqual(eParameter.eType, otherEParameter.eType)
+      and
+      isEqual(indexOf(eOperation, eParameters, eParameter),
+      indexOf(otherEOpperation, eParameters, otherEParameter)
+          )
+        )
+     ))
+   )
+))
 ```
 
 ### There may not be an Operation with the same Signature as an Accessor Method for Feature
@@ -689,35 +687,42 @@ and
   ) 
 ) 
 or     
-self.eContainingClass.oclAsType(EClass).eAllSuperTypes->append(self.eContainingClass.oclAsType(EClass))->forAll(typeClosure |  
-    typeClosure.oclAsType(EClass).eStructuralFeatures->forAll(feature | 
-    ( 
-      ( 
-        (self.eParameters->size() = 1 and feature.upperBound = 1 and self.eParameters->forAll(parameter | parameter.eType = feature.eType))  
-         implies (self.name <> 'set'.concat(feature.name.at(1).toUpperCase()).concat(feature.name.substring(2, feature.name.size()))) 
-        ) 
+self.eContainingClass.oclAsType(EClass).eAllSuperTypes->append(self.eContainingClass.oclAsType(EClass))->
+forAll(typeClosure |  
+  typeClosure.oclAsType(EClass).eStructuralFeatures->forAll(feature | 
+  ( 
+   ( 
+    (self.eParameters->size() = 1 and feature.upperBound = 1 and self.eParameters->
+     forAll(parameter | parameter.eType = feature.eType)) implies
+      (self.name <> 'set'.concat(feature.name.at(1).toUpperCase()).
+       concat(feature.name.substring(2, feature.name.size()))) 
+      ) 
     and 
       (  
-        (self.eParameters->size()=0) 
-         implies (self.name <> 'get'.concat(feature.name.at(1).toUpperCase()).concat(feature.name.substring(2, feature.name.size()))) 
-        ) 
+       (self.eParameters->size()=0) implies 
+       (self.name <> 'get'.concat(feature.name.at(1).toUpperCase()).
+        concat(feature.name.substring(2, feature.name.size()))) 
+       ) 
     and 
       ( 
-        (self.eParameters->size()=0) 
-         implies (self.name <> 'is'.concat(feature.name.at(1).toUpperCase()).concat(feature.name.substring(2, feature.name.size())))        
-        ) 
+       (self.eParameters->size()=0) implies 
+       (self.name <> 'is'.concat(feature.name.at(1).toUpperCase()).
+        concat(feature.name.substring(2, feature.name.size())))        
+       ) 
     and 
       ( 
-        (self.eParameters->size()=0) 
-         implies (self.name <> 'isSet'.concat(feature.name.at(1).toUpperCase()).concat(feature.name.substring(2, feature.name.size()))) 
-        ) 
+       (self.eParameters->size()=0) implies
+       (self.name <> 'isSet'.concat(feature.name.at(1).toUpperCase()).
+        concat(feature.name.substring(2, feature.name.size()))) 
+       ) 
     and 
       ( 
-        (self.eParameters->size()=0) 
-         implies (self.name <> 'unSet'.concat(feature.name.at(1).toUpperCase()).concat(feature.name.substring(2, feature.name.size())))    
-        ) 
+       (self.eParameters->size()=0) implies
+       (self.name <> 'unSet'.concat(feature.name.at(1).toUpperCase()).
+        concat(feature.name.substring(2, feature.name.size())))    
       ) 
-   ) 
+    ) 
+  ) 
 ) 
 ```
 
@@ -730,40 +735,40 @@ message 'There may not be an operation with the same signature as an accessor me
 context EOperation operation : 
 
 exists(EAnnotation annotation in operation.eAnnotations :
-       isEqual(annotation.source, 'http://www.eclipse.org/emf/2002/GenModel')
-       and
-       exists(EStringToStringMapEntry detail in annotation.details :
-              isEqual(detail.key, 'suppressedVisibility')
-              and
-              isEqual(detail.value, 'true')
-       )
+   isEqual(annotation.source, 'http://www.eclipse.org/emf/2002/GenModel')
+   and
+   exists(EStringToStringMapEntry detail in annotation.details :
+   isEqual(detail.key, 'suppressedVisibility')
+   and
+   isEqual(detail.value, 'true')
+   )
 )
 or
 forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes) : 
-       forAll(EStructuralFeature feature in typeClosure.eStructuralFeatures :
-             ((isEqual(size(operation.eParameters), 1) and 
-                     forAll(EParameter parameter in operation.eParameters : 
-                            isEqual(parameter.eType, feature.eType)
-             )) implies not(
-                     isEqual(operation.name, concatenate('set', capitalize(feature.name)))
+  forAll(EStructuralFeature feature in typeClosure.eStructuralFeatures :
+       ((isEqual(size(operation.eParameters), 1) and 
+       forAll(EParameter parameter in operation.eParameters : 
+         isEqual(parameter.eType, feature.eType)
+            )) implies not(
+         isEqual(operation.name, concatenate('set', capitalize(feature.name)))
              ))
-             and
-             (isEqual(size(operation.eParameters), 0) implies not(
-                     isEqual(operation.name, concatenate('get', capitalize(feature.name)))
-             ))
-             and
-             (isEqual(size(operation.eParameters), 0) implies not(
-                     isEqual(operation.name, concatenate('is', capitalize(feature.name)))
-             ))
-             and
-             (isEqual(size(operation.eParameters), 0) implies not(
-                     isEqual(operation.name, concatenate('isSet', capitalize(feature.name)))
-             ))
-             and
-             (isEqual(size(operation.eParameters), 0) implies not(
-                     isEqual(operation.name, concatenate('unset', capitalize(feature.name)))
-             ))
-        )
+       and
+       (isEqual(size(operation.eParameters), 0) implies not(
+         isEqual(operation.name, concatenate('get', capitalize(feature.name)))
+            ))
+       and
+       (isEqual(size(operation.eParameters), 0) implies not(
+         isEqual(operation.name, concatenate('is', capitalize(feature.name)))
+            ))
+       and
+       (isEqual(size(operation.eParameters), 0) implies not(
+         isEqual(operation.name, concatenate('isSet', capitalize(feature.name)))
+            ))
+       and
+       (isEqual(size(operation.eParameters), 0) implies not(
+         isEqual(operation.name, concatenate('unset', capitalize(feature.name)))
+    ))
+  )
 )
 ```
 
@@ -830,7 +835,7 @@ context EPackage
 inv ThereMayNotBeTwoClassifiersNamed: 
     self.eClassifiers->forAll(classA| not(self.eClassifiers->
     exists(classB|classA.name=classB.name and classA<>classB)
-   )
+  )
 ) 
 ```
 
@@ -841,11 +846,11 @@ constraint ThereMayNotBeTwoClassifiersNamed
 message 'There may not be two classifiers with the same name'
 
 context EPackage package : 
-        forAll(EClass classA in package.eClassifiers : 
-               not(exists(EClass classB in package.eClassifiers : 
-                           isEqual(classA.name, classB.name) and not(isEqual(classA, classB)) 
-                 ))
-         )
+forAll(EClass classA in package.eClassifiers : 
+   not(exists(EClass classB in package.eClassifiers : 
+   isEqual(classA.name, classB.name) and not(isEqual(classA, classB)) 
+ ))
+)
 ```
 
 ### The Typed Element must have a Type
