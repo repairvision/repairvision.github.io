@@ -17,8 +17,6 @@ ReVision is configured for a particular modeling language by a set of consistenc
 
 #### Example: Interface, Abstract and Concrete Class
 
-{{folderpath}}concreteclass/diagram.html1
-
 * &lt;&lt;constraint&gt;&gt; AClassThatIsAnInterfaceMustAlsoBeAbstract
   * <a href="{{folderpath}}concreteclass/diagram.html">Concrete Class</a>
   * <a href="{{folderpath}}abstractclass/diagram.html"> Abstract Class</a>
