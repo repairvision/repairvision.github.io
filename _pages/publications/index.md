@@ -11,7 +11,7 @@ order: 7
   display: inline-block;
   border-radius: 2px;
   background-color: #1abc9c;
-  border: none;
+  border: 2px solid #1abc9c;
   color: white;
   text-align: center;
   font-size: 15px;
@@ -55,16 +55,7 @@ order: 7
 }
 
 </style>
-
-* [ReVision: A Tool for History-Based Model Repair Recommendations](https://ieeexplore.ieee.org/abstract/document/8449456)
-  * Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer
-  * In: 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion). Gothenburg, Sweden. May 27 - June 3, 2018.
-
-* [Behandlung von Inkonsistenzen in der verteilten Bearbeitung materialisierter Sichten im Kontext der modellbasierten Softwareentwicklung](http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf)
-  * Manuel Ohrndorf
-  * Master's Thesis. University of Siegen. 2017.
   
-
 #### ReVision: A Tool for History-Based Model Repair Recommendations
 In: 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion). Gothenburg, Sweden. May 27 - June 3, 2018.
 _Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer_
