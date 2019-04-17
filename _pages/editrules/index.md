@@ -24,7 +24,7 @@ ReVision is configured for a particular modeling language by a set of consistenc
     * <a href="ruletransformabstractclasstoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Concrete Class</a>
     * <a href="ruletransformabstractclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Abstract Class - To - Interface</a>
     * <a href="rulecreateconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Create: Concrete Class</a>
-    * <a href="ruledeleteconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Concrete Class</a></li>
+    * <a href="ruledeleteconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Delete: Concrete Class</a>
     * <a href="ruletransformconcreteclasstoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Abstract Class</a>
     * <a href="ruletransformconcreteclasstointerface/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Concrete Class - To - Interface</a>
     * <a href="rulecreateinterface/diagram.html">&lt;&lt;rule&gt;&gt; Create: Interface</a>
@@ -32,4 +32,4 @@ ReVision is configured for a particular modeling language by a set of consistenc
     * <a href="ruletransforminterfacetoconcreteclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Concrete Class</a>
     * <a href="ruletransforminterfacetoabstractclass/diagram.html">&lt;&lt;rule&gt;&gt; Transform: Interface - To - Abstract Class</a>
 
-__[Show all rule...](https://repairvision.github.io/_pages/editrules/ecore.html)__
+__[Show all Consistency-Preserving Edit Operations...](https://repairvision.github.io/_pages/editrules/ecore.html)__
