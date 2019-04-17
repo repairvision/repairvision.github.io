@@ -11,12 +11,12 @@ order: 2
 
 In this Section, we demonstrate the set of constraints for Ecore which we have yet defined and evaluated with ReVision. In the following, we represent the consistency rules and their descriptions by two kind of grammars: the Object Constraint Language (OCL) as defined by the [Object Managment Group](https://www.omg.org/spec/OCL/About-OCL/) and our First-Order Logic Language (FOL) that we've defined for ReVision.
 
-* [The Attribute is not Transient So it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
+* [The Attribute is not Transient so it must have a Data Type that is Serializable](#the-attribute-is-not-transient-so-it-must-have-a-data-type-that-is-serializable)
 * [Two Features can not both be IDs](#two-features-can-not-both-be-ids)
 * [A Class that is an Interface must also be Abstract](#a-class-that-is-an-interface-must-also-be-abstract)
-* [There may not be two Features named](#there-may-not-be-two-features-named)
-* [A Container Reference must have UpperBound Of Not](#a-container-reference-must-have-upperbound-of-not)
-* [A Containment or bidirectional Reference must be Unique if its UpperBound is different from](#a-containment-or-bidirectional-reference-must-be-unique-if-its-upperbound-is-different-from)
+* [There may not be two Features with the same Name](#there-may-not-be-two-features-with-the-same-name)
+* [A Container Reference must have Upper Bound of 1](#a-container-reference-must-have-upper-bound-of-1)
+* [A Containment or bidirectional Reference must be Unique if its Upper Bound is different from 1](#a-containment-or-bidirectional-reference-must-be-unique-if-its-upper-bound-is-different-from-1)
 * [A Containment Reference of a Type with a Container Feature that requires Instances to be Contained elsewhere can not be populated](#a-containment-reference-of-a-type-with-a-container-feature-that-requires-instances-to-be-contained-elsewhere-can-not-be-populated)
 * [The Opposite Of a Containment Reference must not be a Containment Reference](#the-opposite-of-a-containment-reference-must-not-be-a-containment-reference)
 * [The Opposite of a Transient Reference must be Transient if it is Proxy Resolving](#the-opposite-of-a-transient-reference-must-be-transient-if-it-is-proxy-resolving)
@@ -25,12 +25,12 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 * [The Default Value Literal must be a Valid Literal of the Attributes Type](#the-default-value-literal-must-be-a-valid-literal-of-the-attributes-type)
 * [There may not be two Operations and with the same Signature](#there-may-not-be-two-operations-and-with-the-same-signature)
 * [There may not be an Operation with the same Signature as an Accessor Method for Feature](#there-may-not-be-an-operation-with-the-same-signature-as-an-accessor-method-for-feature)
-* [There may not be two Parameters named](#there-may-not-be-two-parameters-named)
-* [There may not be two Classifiers named](#there-may-not-be-two-classifiers-named)
+* [There may not be two Parameters with the same Name](#there-may-not-be-two-parameters-with-the-same-name)
+* [There may not be two Classifiers with the same Name](#there-may-not-be-two-classifiers-with-the-same-name)
 * [The Typed Element must have a Type](#the-typed-element-must-have-a-type)
 * [The Required Feature of must be set](#the-required-feature-of-must-be-set)
-* [The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier](#the-generic-type-associated-with-the-classifier-should-have-type-arguments-to-match-the-number-of-type-parameters-of-the-classifier)
-* [The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters](#the-generic-type-associated-with-the-classifier-must-not-have-arguments-when-the-classifier-has-type-parameters)
+* [The Generic Type Associated with the Classifier is missing Type Arguments to Match the Number of Type Parameters of the Classifier](#the-generic-type-associated-with-the-classifier-is-missing-type-arguments-to-match-the-number-of-type-parameters-of-the-classifier)
+* [The Generic Type Associated with the Classifier must not have more Arguments then the Classifier has Type Parameters](#the-generic-type-associated-with-the-classifier-must-not-have-more-arguments-then-the-classifier-has-type-parameters)
 
 
 ### The Attribute is not Transient So it must have a Data Type that is Serializable
@@ -167,7 +167,7 @@ context EClass eClass: isEqual(eClass.interface, true)
 implies isEqual(eClass.abstract, true)
 ```
 
-### There may not be two Features named
+### There may not be two Features with the same Name
 
 * Two references or properties with the same name are not permitted in one EClass.
 * The same also applies for the set of all features that are inherited from super-classes.
@@ -242,7 +242,7 @@ forAll(EClass eClassX in getClosure(eClass, eSuperTypes) :
 )
 ```
 
-### A Container Reference must have UpperBound Of Not
+### A Container Reference must have Upper Bound of 1
  
 * The containment references of an ecore (meta) model define the syntax tree of a model instance.
 * Optionally, to each containment reference, an opposed reference can be defined.
@@ -280,7 +280,7 @@ context EReference ref : isEqual(ref.eOpposite.containment, true)
 implies isEqual(ref.upperBound, 1)
 ```
 
-### A Containment or bidirectional Reference must be Unique if its UpperBound is different from 
+### A Containment or bidirectional Reference must be Unique if its Upper Bound is different from 1
 
 * The property 'unique' of an EReferenz indicates, that a list of references of a model instance must not contain duplicates.
 
@@ -828,7 +828,7 @@ forAll(EClass typeClosure in getClosure(operation.eContainingClass, eSuperTypes)
 )
 ```
 
-### There may not be two Parameters named
+### There may not be two Parameters with the same Name
 
 * The name of a parameter must be unique with respect to the defining operation.
 
@@ -872,7 +872,7 @@ context EParameter eParameter :
 ))
 ```
 
-### There may not be two Classifiers named
+### There may not be two Classifiers with the same Name
 
 * It not permitted to have multiple Classifiers (EClass, EDataType) with the same name in the same package of an Ecore model.
 
@@ -1010,7 +1010,7 @@ and
 not(isEmpty(eModelElement.EReference::eType)))
 ```
 
-### The Generic Type associated with the Classifier must not have Arguments when the Classifier has Type Parameters
+### The Generic Type associated with the Classifier must not have more Arguments then the Classifier has Type Parameters
 
 * A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
 * If such a case, the attribute, parameter or reference must bound all type parameters to type arguments.
@@ -1056,7 +1056,7 @@ isSmallerEqual(size(eType.eTypeArguments),
 size(eType.eClassifier.eTypeParameters))
 ```
 
-### The Generic Type associated with the Classifier should have Type Arguments to match the number of Type Parameters of the Classifier
+### The Generic Type Associated with the Classifier is Missing Type Arguments to Match the Number of Type Parameters of the Classifier
 
 * A type (EClass, EDataType) of an attribute, a parameter or a reference can be defined with generic type parameters.
 * If such a case, the attribute, parameter or reference must bound all type parameters to type arguments.
@@ -1065,14 +1065,14 @@ size(eType.eClassifier.eTypeParameters))
 * The number of type arguments must exactly match the number of defined type parameters.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie.PNG" target="_blank">
+	<a href="{{folderpath}}images/Folie21.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie21.PNG"/>
 	</a>
 </figure>
 
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/Folie75.PNG" target="_blank">
+	<a href="{{folderpath}}images/Folie22.PNG" target="_blank">
 		<img style="width: 100%" src="{{folderpath}}images/Folie22.PNG"/>
 	</a>
 </figure>
