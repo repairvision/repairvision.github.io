@@ -16,7 +16,7 @@ ReVision is configured for a particular modeling language by a set of consistenc
 #### Example: Interface, Abstract and Concrete Class
 
 {% capture folderpath %}
-{{ site.url }}/{{ page.path | remove: page.name }}
+{{ site.url }}/{{ page.path | remove: page.name | strip }}
 {% endcapture %}
 
 * &lt;&lt;constraint&gt;&gt; AClassThatIsAnInterfaceMustAlsoBeAbstract
