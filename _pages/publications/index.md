@@ -5,6 +5,8 @@ permalink: "/publications/"
 order: 7
 ---
 
+{% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
+
 <style>
 .tx:hover{
 color:  #1abc9c;
@@ -94,7 +96,7 @@ color: #1abc9c;
 
 
 
-<img src="paper1.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
+<img src="{{folderpath}}paper1.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
 
 
 <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://ieeexplore.ieee.org/abstract/document/8449456';"><span>Read Paper</span></button>
@@ -122,7 +124,7 @@ Sichten im Kontext der modellbasierten Softwareentwicklung</p></b>
 
 
 
-<img src="paper2.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
+<img src="{{folderpath}}paper2.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
 
 
 <button class="button" style="vertical-align:middle" onclick="window.location.href = 'http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf';"><span>Read Paper</span></button>
