@@ -94,7 +94,7 @@ color: #1abc9c;
 
 <br></br>
 
-<img src="test1.gif" itemprop="image" style="margin:auto; width:200px; height:200px">
+<img src="paper1.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
 
 <br></br>
 <button class="button" style="vertical-align:middle" onclick="window.location.href = 'https://ieeexplore.ieee.org/abstract/document/8449456';"><span>Read Paper</span></button>
@@ -122,7 +122,7 @@ Sichten im Kontext der modellbasierten Softwareentwicklung</p></b>
 
 <br></br>
 
-<img src="test2.png" itemprop="image" style="margin:auto; width:200px; height:200px">
+<img src="paper2.PNG" itemprop="image" style="margin:auto; width:200px; height:200px">
 
 <br></br>
 <button class="button" style="vertical-align:middle" onclick="window.location.href = 'http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf';"><span>Read Paper</span></button>
