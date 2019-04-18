@@ -84,7 +84,7 @@ Models in Model-Driven Engineering are heavily edited in all stages of software 
 
 #### Behandlung von Inkonsistenzen in der verteilten Bearbeitung materialisierter Sichten im Kontext der modellbasierten Softwareentwicklung
 
-Master’s Thesis. University of Siegen. 2017.
+Master's Thesis. University of Siegen. 2017.
 
 _Manuel Ohrndorf_
 
