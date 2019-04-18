@@ -78,7 +78,7 @@ Models in Model-Driven Engineering are heavily edited in all stages of software 
 </p></div>
 </details>
 
-<img src="{{folderpath}}images/icse2018.png" itemprop="image" style="margin:auto; width:100%">
+<img src="{{folderpath}}images/2018icse.png" itemprop="image" style="margin:auto; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('https://ieeexplore.ieee.org/abstract/document/8449456', '_blank')"><span>Read Paper</span></button>
 
@@ -95,6 +95,6 @@ In software development, models are used for system analysis and design. In mode
 </p></div>
 </details>
 
-<img src="{{folderpath}}images/thesis2017.png" itemprop="image" style="margin:auto; text-align:left; width:100%">
+<img src="{{folderpath}}images/2017thesis.png" itemprop="image" style="margin:auto; text-align:left; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf', '_blank')"><span>Read Thesis</span></button>
