@@ -73,28 +73,28 @@ _Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Timo Kehrer_
 
 <details>
 <summary><strong>Read Abstract:</strong></summary>
-<div class="dv"><p align="JUSTIFY"> 
+<div class="dv"><p align="justify"> 
 Models in Model-Driven Engineering are heavily edited in all stages of software development and can become temporarily inconsistent. In general, there are many alternatives to fix an inconsistency, the actual choice is left to the discretion of the developer. Model repair tools should support developers by proposing a short list of repair alternatives. Such recommendations will be only accepted in practice if the generated proposals are plausible and understandable. Current approaches, which mostly focus on fully automatic, non-interactive model repairs, fail in meeting these requirements. This paper proposes a new approach to generate repair proposals for inconsistencies that were introduced by incomplete editing processes which can be located in the version history of a model. Such an incomplete editing process is extended to a full execution of a consistency-preserving edit operation. We demonstrate our repair tool \toolname using a simplified multi-view UML model of a video on demand system, a screencast is provided at http://pi.informatik.uni-siegen.de/projects/SiLift/icse2018/.
 </p></div>
 </details>
 
-<img src="{{folderpath}}paper1.PNG" itemprop="image" style="margin:auto; text-align:left; width:200px">
+<img src="{{folderpath}}paper1.PNG" itemprop="image" style="margin:auto; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('https://ieeexplore.ieee.org/abstract/document/8449456', '_blank')"><span>Read Paper</span></button>
 
 #### Behandlung von Inkonsistenzen in der verteilten Bearbeitung materialisierter Sichten im Kontext der modellbasierten Softwareentwicklung
 
-Masterâ€™s Thesis. University of Siegen. 2017.
+Master’s Thesis. University of Siegen. 2017.
 
 _Manuel Ohrndorf_
 
 <details>
 <summary><strong>Read Abstract:</strong></summary>
-<div class="dv"><p align="JUSTIFY"> 
+<div class="dv"><p align="justify"> 
 In software development, models are used for system analysis and design. In model-driven software development, models are primary artifacts and the formalbasis for the system implementation. A model is an abstraction layer which conceals thetechnical target platform. This increases the reusability of the developed components.However, this requires the definition of a formal syntax and semantics for the modelinglanguage. Models are usually expressed from various viewpoints, e.g. the data structure and a user interaction. A multi-view modeling environment can be used to buildcomplex system models. A viewpoint can also be constructed by slicing a specific partof the model. This can be helpful in distributing and processing large models acrossa development team. However, a developer can inadvertently introduce inconsistenciesbetween different views. Ensuring the correctness of a model is a key task of the development process. Therefor, the developers need fully-fledged tool support to deal withinconsistencies.  This work presents an approach to the repair of inconsistencies in adistributed multi-view modeling environment. The introduced tool determines repairsbased on user-defined edit rules. To understand the cause of an inconsistency, the repairalgorithm considers the modifications which have introduced the inconsistency.
 </p></div>
 </details>
 
-<img src="{{folderpath}}paper2.PNG" itemprop="image" style="margin:auto; text-align:left; width:200px">
+<img src="{{folderpath}}paper2.PNG" itemprop="image" style="margin:auto; text-align:left; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('http://pi.informatik.uni-siegen.de/mohrndorf/downloads/2017-04-29_mohrndorf_MA2017.pdf', '_blank')"><span>Read Thesis</span></button>
