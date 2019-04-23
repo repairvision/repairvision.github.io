@@ -7,23 +7,29 @@ order: 5
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
 
-### Example Project
+{% assign eclipseversion = '2019-03' %}
+{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2019-03/r/eclipse-modeling-tools' %}
 
-* Video on Demand System (UML) Project <a href="https://github.com/mohrndorf/revision-example.git" target="new">https://github.com/mohrndorf/revision-example.git</a>
+{% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
+{% assign revisionupdatesite = 'https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite' %}
+{% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-03' %}
+
+{% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
 ### Download and Installation
 
-* Eclipse Platform: <a href="https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen1a" target="new">Eclipse Oxygen Modeling Tools</a> (Includes the Eclipse Modeling Framework).
+1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a> (Includes the Eclipse Modeling Framework).
+1. Please install a SVN-Connector for repository integration, e.g.:
+   * __{{ subclipseupdatesite }}__
+1. The newest version of __ReVision__ can be obtained from the following _update site_:
+   * __{{ revisionupdatesite }}__
 
-**The newest version of ReVision can be obtained from the following _update site_:**
-{% assign revisionupdatesite = 'https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite' %}
+### Example Project
 
- * _{{ revisionupdatesite }}_
-
-**Please install a SVN-Connector for repository integration, e.g.:**
-{% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
-
-* _{{ subclipseupdatesite }}_
+1. Install/Update Papyrus from update site
+   * __{{ papyrusupdatesite }}__
+1. Import Video on Demand System (UML) Project via SVN
+   * __{{ exampleproject }}__
 
 ### Quick Introduction
 
