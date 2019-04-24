@@ -19,16 +19,16 @@ order: 5
 ### Download and Installation
 
 1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(Includes the Eclipse Modeling Framework).
-1. Please install a SVN-Connector for repository integration, e.g.:
+1. Please install a SVN-Connector for repository integration:
    * __{{ subclipseupdatesite }}__
-1. The newest version of __ReVision__ can be obtained from the following _update site_:
+1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
 
 ### Example Project
 
-1. Install/Update Papyrus from update site
+1. Install/Update Papyrus from the update site:
    * <font size="2"><strong>{{ papyrusupdatesite }}</strong></font>
-1. Import Video on Demand System (UML) Project via SVN
+1. Import Video on Demand System (UML) Project via SVN repository:
    * __{{ exampleproject }}__
 
 ### Quick Introduction
@@ -42,6 +42,9 @@ In this Section, we illustrate the essential steps to install and work with ReVi
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step2 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step2a = fig %}
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step3 = fig %}
@@ -93,9 +96,9 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 
 ##### Step 1.2: Install the ReVision Plug-in
 
-Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the ReVision updatesite (_{{ revisionupdatesite }}_). To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
+Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the update site. To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
 
-Repeat the installation process to install the SVN-Connector from its update site (_{{ subclipseupdatesite }}_). 
+First install the SVN-Connector (needed by ReVision for repository integration) from its update site (_{{ subclipseupdatesite }}_). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
@@ -103,7 +106,13 @@ Repeat the installation process to install the SVN-Connector from its update sit
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: Install new software </figcaption>
 </figure>
 
-Afterward, you can proceed with the installation by just selecting all tool components and clicking next. See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/02a.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step2a }}" src="{{folderpath}}images/02a.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step2a }}: Install new software </figcaption>
+</figure>
+
+Afterward, you can proceed with the installation of the ReVision by the the plug-ins from the update site (_{{ revisionupdatesite }}_). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/03.png" target="_blank">
@@ -111,7 +120,7 @@ Afterward, you can proceed with the installation by just selecting all tool comp
 	<figcaption style="text-align: center">Fig. {{ fig_step3 }}: Download wizard for the Updating websites </figcaption>
 </figure>
 
-After finishing the installation, you're supposed to restart the Eclipse IDE to add the Tool to the IDE.
+After finishing the installations, you're supposed to restart the Eclipse IDE to add the Tool to the IDE.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/04.png" target="_blank">
