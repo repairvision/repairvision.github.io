@@ -44,8 +44,8 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 	</a>
 </figure>
 
-#### OCL Constraint
-
+<details>
+<summary>OCL Constraint</summary>
 ```
 /*
 The attribute is not transient so it must have a data type that is serializable
@@ -58,6 +58,7 @@ inv TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable:
 self.transient and self.eType.oclIsTypeOf(EDataType) implies
 (self.eType.oclAsType(EDataType).serializable)
 ```
+</summary>
 
 #### FOL Constraint
 
