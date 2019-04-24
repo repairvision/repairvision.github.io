@@ -98,26 +98,34 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 
 Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the update site. To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
 
-First install the SVN-Connector (needed by ReVision for repository integration) from its update site (_{{ subclipseupdatesite }}_). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
-
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step2 }}" src="{{folderpath}}images/02.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: Install new software </figcaption>
 </figure>
 
+First install the SVN-Connector (needed by ReVision for repository integration) from its update site (_{{ subclipseupdatesite }}_). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02a.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step2a }}" src="{{folderpath}}images/02a.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step2a }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step2a }}: Instllation Wizard for SVN-Connector</figcaption>
 </figure>
 
-Afterward, you can proceed with the installation of the ReVision by the the plug-ins from the update site (_{{ revisionupdatesite }}_). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
+As a second prequeset (recommended) check for updates of Papyrus UML tool on the update site ({{ papyrusupdatesite }}).  See <a href="#fig:{{ fig_step2b }}"> Figure {{ fig_step2b }}</a> below.
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/02b.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step2b}}" src="{{folderpath}}images/02b.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step2b }}: Instllation Wizard for Papyrus</figcaption>
+</figure>
+
+Afterward, you can proceed with the installation of the ReVision selecting the the plug-ins from the update site (_{{ revisionupdatesite }}_). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/03.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step3 }}" src="{{folderpath}}images/03.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step3 }}: Download wizard for the Updating websites </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step3 }}: Instllation Wizard for ReVision</figcaption>
 </figure>
 
 After finishing the installations, you're supposed to restart the Eclipse IDE to add the Tool to the IDE.
