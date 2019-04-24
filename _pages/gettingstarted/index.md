@@ -96,7 +96,7 @@ To begin with, first [download](#download-and-installation) and open the Eclipse
 
 ##### Step 1.2: Install the ReVision Plug-in
 
-Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URL of the update site. To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
+Now you should install ReVision from the Eclipse Install Manager. Go to 'Help -> Install New Software...' and insert the URLs of the update sites and follow the installation process for required tools and ReVision. To do so, click on Help and select Install New Software from the Options Menu. See <a href="#fig:{{ fig_step2 }}">Figure {{ fig_step2 }}</a> below.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02.png" target="_blank">
@@ -112,7 +112,7 @@ First install the SVN-Connector (needed by ReVision for repository integration) 
 	<figcaption style="text-align: center">Fig. {{ fig_step2a }}: Instllation Wizard for SVN-Connector</figcaption>
 </figure>
 
-As a second prequeset (recommended) check for updates of Papyrus UML tool on the update site ({{ papyrusupdatesite }}).  See <a href="#fig:{{ fig_step2b }}"> Figure {{ fig_step2b }}</a> below.
+As a second prerequisite (recommended) check for updates of Papyrus UML tool on the update site (<font size="2"><strong>{{ papyrusupdatesite }}</strong></font>). See <a href="#fig:{{ fig_step2b }}"> Figure {{ fig_step2b }}</a> below.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02b.png" target="_blank">
