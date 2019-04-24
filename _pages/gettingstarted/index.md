@@ -11,7 +11,7 @@ order: 5
 {% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2019-03/r/eclipse-modeling-tools' %}
 
 {% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
-{% assign revisionupdatesite = 'https://pi.informatik.uni-siegen.de/projects/repairvision/updatesite' %}
+{% assign revisionupdatesite = 'https://repairvision.github.io/updatesite/releases/2019-03' %}
 {% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-03' %}
 
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
@@ -27,7 +27,7 @@ order: 5
 ### Example Project
 
 1. Install/Update Papyrus from update site
-   * <font size="1">__{{ papyrusupdatesite }}__</font>
+   * <font size="2"><strong>{{ papyrusupdatesite }}</strong></font>
 1. Import Video on Demand System (UML) Project via SVN
    * __{{ exampleproject }}__
 
