@@ -18,7 +18,7 @@ order: 5
 
 ### Download and Installation
 
-1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(Includes the Eclipse Modeling Framework).
+1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(Includes the Eclipse Modeling Framework):
 1. Please install a SVN-Connector for repository integration:
    * __{{ subclipseupdatesite }}__
 1. The newest version of __ReVision__ can be obtained from the following update site:
@@ -45,6 +45,9 @@ In this Section, we illustrate the essential steps to install and work with ReVi
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step2a = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step2b = fig %}
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step3 = fig %}
@@ -104,7 +107,7 @@ Now you should install ReVision from the Eclipse Install Manager. Go to 'Help ->
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: Install new software </figcaption>
 </figure>
 
-First install the SVN-Connector (needed by ReVision for repository integration) from its update site (_{{ subclipseupdatesite }}_). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
+First install the SVN-Connector (needed by ReVision for repository integration) from its update site (__{{ subclipseupdatesite }}__). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/02a.png" target="_blank">
@@ -120,7 +123,7 @@ As a second prerequisite (recommended) check for updates of Papyrus UML tool on 
 	<figcaption style="text-align: center">Fig. {{ fig_step2b }}: Instllation Wizard for Papyrus</figcaption>
 </figure>
 
-Afterward, you can proceed with the installation of the ReVision selecting the the plug-ins from the update site (_{{ revisionupdatesite }}_). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
+Afterward, you can proceed with the installation of the ReVision selecting the the plug-ins from the update site (__{{ revisionupdatesite }}__). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/03.png" target="_blank">
