@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-05-27 12:00
+date: {{ "now" | date: "%Y-%m-%d %H:%M" }}
 title: "History-based Model Repair Recommendations"
 description: Introduction to ReVision
 comments: false
