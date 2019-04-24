@@ -44,7 +44,8 @@ In this Section, we demonstrate the set of constraints for Ecore which we have y
 	</a>
 </figure>
 
-#### OCL Constraint
+<details>
+<summary><strong>OCL Constraint</strong></summary>
 
 ```
 /*
@@ -59,7 +60,10 @@ self.transient and self.eType.oclIsTypeOf(EDataType) implies
 (self.eType.oclAsType(EDataType).serializable)
 ```
 
-#### FOL Constraint
+</details>
+
+<details>
+<summary><strong>FOL Constraint</strong></summary>
 
 ```
 constraint TheAttributeIsNotTransientSoItMustHaveADataTypeThatIsSerializable
@@ -72,6 +76,8 @@ context EAttribute attribute : (
 implies 
 isEqual(attribute.eType.EDataType::serializable, true)
 ```
+
+</details>
 
 ### Two Features can not both be IDs
 
