@@ -18,7 +18,7 @@ order: 5
 
 ### Download and Installation
 
-1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a> (Includes the Eclipse Modeling Framework).
+1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(Includes the Eclipse Modeling Framework).
 1. Please install a SVN-Connector for repository integration, e.g.:
    * __{{ subclipseupdatesite }}__
 1. The newest version of __ReVision__ can be obtained from the following _update site_:
@@ -27,7 +27,7 @@ order: 5
 ### Example Project
 
 1. Install/Update Papyrus from update site
-   * __{{ papyrusupdatesite }}__
+   * <font size="1">__{{ papyrusupdatesite }}__</font>
 1. Import Video on Demand System (UML) Project via SVN
    * __{{ exampleproject }}__
 
