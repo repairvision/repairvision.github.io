@@ -1106,10 +1106,11 @@ size(eType.eClassifier.eTypeParameters))
 // Add details tag to code boxes:
 window.onload = function(){
 	// $('.highlighter-rouge').wrap('<details/>').before('<summary>Expression</summary>');
+	
 	$('H4').each(function () {
 		var code = $(this).next('.highlighter-rouge');
-    		$(this).html('<summary>' + $(this).text() + '</summary>'+ code.html());
-    		$(this).wrapInner('<details>');
+	    	$(this).wrap('<details>');
+		$(this).replaceWith('<summary><strong>' + $(this).text() + '</strong></summary>'+ code.html());
     		code.html('');
 	});
 };
