@@ -1109,9 +1109,10 @@ window.onload = function(){
 	
 	$('H4').each(function () {
 		var code = $(this).next('.highlighter-rouge');
-	    	$(this).wrap('<details>');
+		$(this).wrap('<p>');
+		$(this).wrap('<details>');
 		$(this).replaceWith('<summary><strong>' + $(this).text() + '</strong></summary>'+ code.html());
-    		code.html('');
+		code.html('');
 	});
 };
 </script>
