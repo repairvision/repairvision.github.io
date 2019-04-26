@@ -1103,7 +1103,6 @@ size(eType.eClassifier.eTypeParameters))
 ```
 
 <script>
-$( document ).ready(function() {
-	$('.highlighter-rouge').wrap('<details><summary>Expression</summary></details>');
-});
+// Add details tag to code boxes:
+$('.highlighter-rouge').wrap('<details/>').before('<summary>Expression</summary>');
 </script>
