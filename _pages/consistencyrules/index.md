@@ -1111,7 +1111,7 @@ window.onload = function(){
 		var code = $(this).next('.highlighter-rouge');
 		$(this).wrap('<p>');
 		$(this).wrap('<details>');
-		$(this).replaceWith('<summary><strong>' + $(this).text() + '</strong></summary>'+ code.html());
+		$(this).replaceWith('<summary><strong>Show ' + $(this).text() + '</strong></summary>'+ code.html());
 		code.html('');
 	});
 };
