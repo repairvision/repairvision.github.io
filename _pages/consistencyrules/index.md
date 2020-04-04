@@ -1101,3 +1101,18 @@ context EGenericType eType:
 isGreaterEqual(size(eType.eTypeArguments), 
 size(eType.eClassifier.eTypeParameters))
 ```
+
+<script>
+// Add details tag to code boxes:
+window.onload = function(){
+	// $('.highlighter-rouge').wrap('<details/>').before('<summary>Expression</summary>');
+	
+	$('H4').each(function () {
+		var code = $(this).next('.highlighter-rouge');
+		$(this).wrap('<p>');
+		$(this).wrap('<details>');
+		$(this).replaceWith('<summary><strong>Show ' + $(this).text() + '</strong></summary>'+ code.html());
+		code.html('');
+	});
+};
+</script>
