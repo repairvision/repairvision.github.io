@@ -2,7 +2,7 @@
 layout: page
 title:  "Evaluation"
 permalink: "/evaluation/"
-order: 4
+order: 5
 ---
 
 We evaluate our approach using real-world Ecore models from the Eclipse Git repositories. We extracted 28 model histories containing 638 resolved inconsistencies. These projects have a development time of more than a decade. The experimental data set can be found at [GitHub](https://github.com/repairvision/repairvision/tree/master/data.evaluation/org.eclipse.git_2018-08-22). The data set was processed in multiple steps:

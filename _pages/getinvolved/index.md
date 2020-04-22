@@ -2,7 +2,7 @@
 layout: page
 title:  " Get Involved"
 permalink: "/getinvolved/"
-order: 6
+order: 7
 ---
 
 The [source code of ReVision](https://github.com/repairvision/repairvision/) can be found as [project on GitHub](https://github.com/repairvision/repairvision/graphs/contributors).

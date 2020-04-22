@@ -2,7 +2,7 @@
 layout: page
 title:  "Edit Rules"
 permalink: "/editrules/"
-order: 3
+order: 4
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}

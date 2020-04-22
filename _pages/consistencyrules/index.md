@@ -2,7 +2,7 @@
 layout: page
 title:  "Consistency Rules"
 permalink: "/consistencyrules/"
-order: 2
+order: 3
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}

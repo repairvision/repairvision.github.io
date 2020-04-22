@@ -2,7 +2,7 @@
 layout: page
 title:  "Publications"
 permalink: "/publications/"
-order: 7
+order: 6
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}

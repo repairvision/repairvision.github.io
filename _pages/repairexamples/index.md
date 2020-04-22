@@ -2,7 +2,7 @@
 layout: page
 title:  "Repair Examples"
 permalink: "/repairexamples/"
-order: 1
+order: 2
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
