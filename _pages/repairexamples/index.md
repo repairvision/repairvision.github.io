@@ -3,14 +3,14 @@ layout: page
 title:  "Repair Examples"
 permalink: "/repairexamples/"
 exclude: true
-order: 6
+order: 7
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
 
 {% assign fig = 0 %}
 
-In this section we give some minimal examples of model inconsistencies and their repairs collected from literature.
+In this section we give some minimal examples of model inconsistencies and their repairs collected from the literature.
 
 ### Create Interface Operation
 

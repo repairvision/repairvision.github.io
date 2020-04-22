@@ -3,7 +3,7 @@ layout: page
 title:  "Publications and Literature"
 permalink: "/publications/"
 exclude: false
-order: 5
+order: 6
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
@@ -68,7 +68,7 @@ order: 5
 
 #### Repair Examples
 
-[Some minimal examples of model inconsistencies and their repairs collected from literature.](/repairexamples/)
+[Examples of model inconsistencies and their repairs collected from the literature.](/repairexamples/)
   
 #### ReVision: A Tool for History-Based Model Repair Recommendations
 
