@@ -2,6 +2,7 @@
 layout: page
 title:  "Repair Examples"
 permalink: "/repairexamples/"
+exclude: true
 order: 2
 ---
 
