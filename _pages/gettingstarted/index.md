@@ -17,21 +17,23 @@ order: 5
 
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
+Read the [quick introduction](#quick-introduction) for a step-by-step introduction or start by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
+
 ### Download and Installation
 
 1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(includes the Eclipse Modeling Framework):
 1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
 
-_Note:_ ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+_Note:_ ReVision provides an all-in-one update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
   * {{ subclipseupdatesite }}
   * {{ papyrusupdatesite }}
      
 ### Example Project
 
-1. Import Video on Demand System (UML) Project via SVN repository:
+1. Import Video on Demand System (UML) Project as __SVN repository__ (Currently, ReVision only support SVN, so we have to import the Git repository via SVN):
    * __{{ exampleproject }}__
-1. Proceed with the [steps below starting with step 3.1](Step 3.1: Opening the Model Editor) to test ReVision.
+1. Proceed with the [steps below starting with step 3](#step-3-repairing-inconsistencies-with-revision) to test ReVision.
 
 ### Quick Introduction
 
