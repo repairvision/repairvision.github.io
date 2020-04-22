@@ -31,7 +31,7 @@ _Note:_ ReVision provides an all-in-one update including SVNKit (for repository 
      
 ### Example Project
 
-1. Import Video on Demand System (UML) Project as **SVN repository**. (Currently, ReVision only support SVN, so we have to import the Git repository via SVN):
+1. Import Video on Demand System (UML) Project as **SVN repository**. (ReVision currently only support SVN, so we have to import the Git repository via SVN.):
    * __{{ exampleproject }}__
 1. Proceed with the [steps below starting with step 3](#step-3-repairing-inconsistencies-with-revision) to test ReVision.
 
@@ -127,7 +127,7 @@ _Note:_ ReVision provides an all-in-one update including SVNKit (for repository 
 
 #### Step 2: Setting up the Example Project
 
-##### Step 2.1: Adding the Repository
+##### Step 2.1: Adding the Example Repository
 
 In the following, we will add the repository to our video-on-demand example model. To do so, click open perspective from the 'Window' menu and select 'SVN Repository Exploring', then click on the 'Open' Button (see <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }}</a>).
 
@@ -137,7 +137,7 @@ In the following, we will add the repository to our video-on-demand example mode
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
-In this step, you should add the [Example Project](repository URL) by clicking on 'New Repository Location' from 'File' menu. At the end, click on 'Finish' button (see <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>).
+In this step, you should add the example repository by clicking on 'New Repository Location' from the 'File' menu and copy the Url  **{{ exampleproject }}**. (ReVision currently only support SVN, so we have to import the Git repository via SVN.) At the end, click on 'Finish' button (see <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/06.png" target="_blank">
