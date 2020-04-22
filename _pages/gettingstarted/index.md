@@ -11,7 +11,7 @@ order: 5
 {% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-modeling-tools' %}
 
 {% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
-{% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-03' %}
+{% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2020-03' %}
 
 {% assign revisionupdatesite = 'https://repairvision.github.io/updatesite/releases/latest' %}
 
@@ -22,14 +22,17 @@ order: 5
 1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(includes the Eclipse Modeling Framework):
 1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
-   * Provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
-    * {{ subclipseupdatesite }}
-    * {{ papyrusupdatesite }}
+
+
+* Note: ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+  * {{ subclipseupdatesite }}
+  * {{ papyrusupdatesite }}
      
 ### Example Project
 
 1. Import Video on Demand System (UML) Project via SVN repository:
    * __{{ exampleproject }}__
+1. Proceed with the [3.1](Step 3.1: Opening the Model Editor) to test ReVision.
 
 ### Quick Introduction
 
