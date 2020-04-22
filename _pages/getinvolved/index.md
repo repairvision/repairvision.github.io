@@ -6,9 +6,16 @@ exclude: false
 order: 8
 ---
 
+#### Contact:
+
+If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:mohrndorf@informatik.uni-siegen.de). 
+
+#### Source Code:
+
 The [source code of ReVision](https://github.com/repairvision/repairvision/) can be found as [project on GitHub](https://github.com/repairvision/repairvision/graphs/contributors).
 
-__Required Equipment:__
+#### Required Equipment:
+
 * [Eclipse Modeling Tools IDE](https://www.eclipse.org/downloads/packages/)
 * Xtext (can be installed from Eclipse Marketplace)
 * Sirius (Specifier) (can be installed from Eclipse Marketplace)
