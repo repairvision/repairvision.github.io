@@ -2,6 +2,7 @@
 layout: page
 title:  "Getting Started"
 permalink: "/gettingstarted/"
+exclude: false
 order: 1
 ---
 

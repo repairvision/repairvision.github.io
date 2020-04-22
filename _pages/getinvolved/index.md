@@ -2,6 +2,7 @@
 layout: page
 title:  " Get Involved"
 permalink: "/getinvolved/"
+exclude: false
 order: 7
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title:  "Contact"
 permalink: "/contact/"
+exclude: false
 order: 8
 ---
 

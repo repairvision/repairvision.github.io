@@ -2,7 +2,8 @@
 layout: page
 title:  "Publications and Literature"
 permalink: "/publications/"
-order: 6
+exclude: false
+order: 5
 ---
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
