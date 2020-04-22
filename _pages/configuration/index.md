@@ -8,7 +8,7 @@ order: 2
 
 #### Experimental Tool Configuration
 
-[The tool configuration (including consistency rules and edit rules for Ecore) which we have been defined and evaluated with ReVision can be found here.](/evaluation/))
+[The tool configuration (including consistency rules and edit rules for Ecore) which we have been defined and evaluated with ReVision can be found here.](/evaluation/)
 
 #### Definition of Consistency Rules
 
