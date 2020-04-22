@@ -7,27 +7,27 @@ order: 5
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
 
-{% assign eclipseversion = '2019-03' %}
-{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2019-03/r/eclipse-modeling-tools' %}
+{% assign eclipseversion = '2020-03' %}
+{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-modeling-tools' %}
 
 {% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
-{% assign revisionupdatesite = 'https://repairvision.github.io/updatesite/releases/2019-03' %}
 {% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-03' %}
+
+{% assign revisionupdatesite = 'https://repairvision.github.io/updatesite/releases/latest' %}
 
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
 ### Download and Installation
 
-1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(Includes the Eclipse Modeling Framework):
-1. Please install a SVN-Connector for repository integration:
-   * __{{ subclipseupdatesite }}__
+1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(includes the Eclipse Modeling Framework):
 1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
-
+   * Provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+    * {{ subclipseupdatesite }}
+    * {{ papyrusupdatesite }}
+     
 ### Example Project
 
-1. Install/Update Papyrus from the update site:
-   * <font size="2"><strong>{{ papyrusupdatesite }}</strong></font>
 1. Import Video on Demand System (UML) Project via SVN repository:
    * __{{ exampleproject }}__
 
@@ -42,12 +42,6 @@ In this Section, we illustrate the essential steps to install and work with ReVi
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step2 = fig %}
-
-{% assign fig = fig | plus: 1 %}
-{% assign fig_step2a = fig %}
-
-{% assign fig = fig | plus: 1 %}
-{% assign fig_step2b = fig %}
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step3 = fig %}
@@ -105,22 +99,6 @@ Now you should install ReVision from the Eclipse Install Manager. Go to 'Help ->
 	<a href="{{folderpath}}images/02.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step2 }}" src="{{folderpath}}images/02.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step2 }}: Install new software </figcaption>
-</figure>
-
-First install the SVN-Connector (needed by ReVision for repository integration) from its update site (__{{ subclipseupdatesite }}__). See <a href="#fig:{{ fig_step2a }}"> Figure {{ fig_step2a }}</a> below. 
-
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/02a.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step2a }}" src="{{folderpath}}images/02a.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step2a }}: Instllation Wizard for SVN-Connector</figcaption>
-</figure>
-
-As a second prerequisite (recommended) check for updates of Papyrus UML tool on the update site (<font size="2"><strong>{{ papyrusupdatesite }}</strong></font>). See <a href="#fig:{{ fig_step2b }}"> Figure {{ fig_step2b }}</a> below.
-
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/02b.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step2b}}" src="{{folderpath}}images/02b.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step2b }}: Instllation Wizard for Papyrus</figcaption>
 </figure>
 
 Afterward, you can proceed with the installation of the ReVision selecting the the plug-ins from the update site (__{{ revisionupdatesite }}__). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
