@@ -6,10 +6,10 @@ exclude: false
 order: 2
 ---
 
-#### Ecore Consistency Rules
+#### Experimental Tool Configuration
 
-Here you will find the [constraints for Ecore](/consistencyrules/) which we have been defined and [evaluated](/evaluation/) with ReVision.
+[The tool configuration (including consistency rules and edit rules for Ecore) which we have been defined and evaluated with ReVision can be found here.](/evaluation/))
 
-#### Ecore Edit Rules
+#### Definition of Consistency Rules
 
-Here you will find the [consistency-preserving edit operations (CPEOs)](/editrules/) which we have been defined and [evaluated](/evaluation/) with ReVision.
+#### Definition of Edit Rules

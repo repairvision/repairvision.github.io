@@ -20,6 +20,8 @@ order: 1
 
 Read the [Quick Introduction](#quick-introduction) for a step-by-step installation and tutorial or start directly by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
 
+If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:mohrndorf@informatik.uni-siegen.de). 
+
 ### Download and Installation
 
 1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(includes the Eclipse Modeling Framework):

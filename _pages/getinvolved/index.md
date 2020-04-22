@@ -16,9 +16,9 @@ The [source code of ReVision](https://github.com/repairvision/repairvision/) can
 
 #### Required Equipment:
 
-* [Eclipse Modeling Tools IDE](https://www.eclipse.org/downloads/packages/)
-* Xtext (can be installed from Eclipse Marketplace)
-* Sirius (Specifier) (can be installed from Eclipse Marketplace)
-* OCL SDK (update site: http://download.eclipse.org/modeling/mdt/ocl/updates/releases/latest)
-* GMF Tooling (update site: http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.2.1/)
-* Papyrus (can be installed from Eclipse Marketplace)
+* __[Eclipse Modeling Tools IDE](https://www.eclipse.org/downloads/packages/)__
+* __Xtext__ (can be installed from Eclipse Marketplace)
+* __Sirius__ (Specifier) (can be installed from Eclipse Marketplace)
+* __OCL SDK__ (update site: http://download.eclipse.org/modeling/mdt/ocl/updates/releases/latest)
+* __GMF Tooling__ (update site: http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.2.1/)
+* __Papyrus__ (can be installed from Eclipse Marketplace)
