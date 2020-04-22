@@ -23,8 +23,7 @@ order: 5
 1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
 
-
-* Note: ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+_Note:_ ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
   * {{ subclipseupdatesite }}
   * {{ papyrusupdatesite }}
      
@@ -32,7 +31,7 @@ order: 5
 
 1. Import Video on Demand System (UML) Project via SVN repository:
    * __{{ exampleproject }}__
-1. Proceed with the [3.1](Step 3.1: Opening the Model Editor) to test ReVision.
+1. Proceed with the [steps below starting with step 3.1](Step 3.1: Opening the Model Editor) to test ReVision.
 
 ### Quick Introduction
 
@@ -119,6 +118,10 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 	<img style="width: 400px" id="fig:{{ fig_step4 }}" src="{{folderpath}}images/04.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to save and apply changes </figcaption>
 </figure>
+
+_Note:_ ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+  * {{ subclipseupdatesite }}
+  * {{ papyrusupdatesite }}
 
 #### Step 2: Setting up the Example Project
 
