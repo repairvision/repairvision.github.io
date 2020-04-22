@@ -17,7 +17,7 @@ order: 5
 
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
-Read the [quick introduction](#quick-introduction) for a step-by-step introduction or start by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
+Read the [Quick Introduction](#quick-introduction) for a step-by-step installation and tutorial or start directly by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
 
 ### Download and Installation
 
@@ -31,7 +31,7 @@ _Note:_ ReVision provides an all-in-one update including SVNKit (for repository 
      
 ### Example Project
 
-1. Import Video on Demand System (UML) Project as __SVN repository__ (Currently, ReVision only support SVN, so we have to import the Git repository via SVN):
+1. Import Video on Demand System (UML) Project as **SVN repository**. (Currently, ReVision only support SVN, so we have to import the Git repository via SVN):
    * __{{ exampleproject }}__
 1. Proceed with the [steps below starting with step 3](#step-3-repairing-inconsistencies-with-revision) to test ReVision.
 
@@ -121,7 +121,7 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to save and apply changes </figcaption>
 </figure>
 
-_Note:_ ReVision provides an All-In-One update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+_Note:_ ReVision provides an all-in-one update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
   * {{ subclipseupdatesite }}
   * {{ papyrusupdatesite }}
 
