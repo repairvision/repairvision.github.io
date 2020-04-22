@@ -6,10 +6,10 @@ exclude: false
 order: 2
 ---
 
-#### Consistency Rules
+#### Ecore Consistency Rules
 
-Here you can find the [constraints for Ecore](/consistencyrules/) which we have been defined and [evaluated](/evaluation/) with ReVision.
+Here you will find the [constraints for Ecore](/consistencyrules/) which we have been defined and [evaluated](/evaluation/) with ReVision.
 
-#### Edit Rules
+#### Ecore Edit Rules
 
-Here you can find the [consistency-preserving edit operations (CPEOs)] which we have been defined and [evaluated](/evaluation/) with ReVision.
+Here you will find the [consistency-preserving edit operations (CPEOs)](/editrules/) which we have been defined and [evaluated](/evaluation/) with ReVision.
