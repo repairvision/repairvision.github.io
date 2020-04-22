@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Publications"
+title:  "Publications and Literature"
 permalink: "/publications/"
 order: 6
 ---
@@ -64,6 +64,10 @@ order: 6
 }
 
 </style>
+
+#### Repair Examples
+
+[Some minimal examples of model inconsistencies and their repairs collected from literature.](/repairexamples/)
   
 #### ReVision: A Tool for History-Based Model Repair Recommendations
 
