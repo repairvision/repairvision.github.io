@@ -8,9 +8,9 @@ order: 5
 
 #### Experimental Tool Configuration
 
-* __Ecore Consistency Rules:__ [The constraints for Ecore which we have been defined and evaluated with ReVision can be found here.](/consistencyrules/)
+__Ecore Consistency Rules:__ [The constraints for Ecore which we have been defined and evaluated with ReVision can be found here.](/consistencyrules/)
 
-* __Ecore Edit Rules:__ [The consistency-preserving edit operations (CPEOs) which we have been defined and evaluated with ReVision can be found here.](/editrules/)
+__Ecore Edit Rules:__ [The consistency-preserving edit operations (CPEOs) which we have been defined and evaluated with ReVision can be found here.](/editrules/)
 
 #### Evaluation Subject
 
