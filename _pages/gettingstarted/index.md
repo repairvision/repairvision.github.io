@@ -107,6 +107,10 @@ Now you should install ReVision from the Eclipse Install Manager. Go to 'Help ->
 
 Afterward, you can proceed with the installation of the ReVision selecting the the plug-ins from the update site (__{{ revisionupdatesite }}__). See <a href="#fig:{{ fig_step3 }}"> Figure {{ fig_step3 }}</a> below.
 
+_Note:_ ReVision provides an all-in-one update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
+  * {{ subclipseupdatesite }}
+  * {{ papyrusupdatesite }}
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/03.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step3 }}" src="{{folderpath}}images/03.png"/></a>
@@ -121,10 +125,6 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 	<figcaption style="text-align: center">Fig. {{ fig_step4 }}: Restart Eclipse to save and apply changes </figcaption>
 </figure>
 
-_Note:_ ReVision provides an all-in-one update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
-  * {{ subclipseupdatesite }}
-  * {{ papyrusupdatesite }}
-
 #### Step 2: Setting up the Example Project
 
 ##### Step 2.1: Adding the Example Repository
@@ -137,7 +137,7 @@ In the following, we will add the repository to our video-on-demand example mode
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
-In this step, you should add the example repository by clicking on 'New Repository Location' from the 'File' menu and copy the Url  **{{ exampleproject }}**. (ReVision currently only support SVN, so we have to import the Git repository via SVN.) At the end, click on 'Finish' button (see <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>).
+In this step, you should add the example repository by clicking on 'New Repository Location' from the 'File' menu and copy the repository URL (__{{ exampleproject }}__). (ReVision currently only support SVN, so we have to import the Git repository via SVN.) At the end, click on 'Finish' button (see <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/06.png" target="_blank">
