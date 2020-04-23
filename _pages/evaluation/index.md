@@ -12,6 +12,8 @@ __Ecore Consistency Rules:__ [The constraints for Ecore which we have been defin
 
 __Ecore Edit Rules:__ [The consistency-preserving edit operations (CPEOs) which we have been defined and evaluated with ReVision can be found here.](/editrules/)
 
+__[All generated edit operations for Ecore can be browsed here](https://repairvision.github.io/_pages/editrules/ecore.html)__
+
 #### Evaluation Subject
 
 We evaluate our approach using real-world Ecore models from the Eclipse Git repositories. We extracted 28 model histories containing 638 resolved inconsistencies. These projects have a development time of more than a decade. The experimental data set can be found at [GitHub](https://github.com/repairvision/repairvision/tree/master/data.evaluation/org.eclipse.git_2018-08-22). The data set was processed in multiple steps:
