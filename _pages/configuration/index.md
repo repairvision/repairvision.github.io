@@ -10,6 +10,8 @@ order: 2
 
 [The tool configuration (including consistency rules and edit rules for Ecore) which we have been defined and evaluated with ReVision can be found here.](/evaluation/)
 
+#### Demonstration Tool Configuration
+
 #### Definition of Consistency Rules
 
 #### Definition of Edit Rules
