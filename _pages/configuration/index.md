@@ -29,37 +29,37 @@ order: 2
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/2_3_constraint_wizard.png" target="_blank">
+	<a href="{{folderpath}}images/2_3_constraint_wizard.png.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step23 }}" src="{{folderpath}}images/2_3_constraint_wizard.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step23 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/2_4_constraint_wizard.png" target="_blank">
+	<a href="{{folderpath}}images/2_4_constraint_wizard.png.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step24 }}" src="{{folderpath}}images/2_4_constraint_wizard.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step24 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/3_1_constraint_editor" target="_blank">
+	<a href="{{folderpath}}images/3_1_constraint_editor.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step31 }}" src="{{folderpath}}images/3_1_constraint_editor.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step31 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/3_2_constraint_editor" target="_blank">
+	<a href="{{folderpath}}images/3_2_constraint_editor.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step32 }}" src="{{folderpath}}images/3_2_constraint_editor.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step32 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/3_3_constraint_editor" target="_blank">
+	<a href="{{folderpath}}images/3_3_constraint_editor.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step33 }}" src="{{folderpath}}images/3_3_constraint_editor.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step33 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/3_4_constraint_editor" target="_blank">
+	<a href="{{folderpath}}images/3_4_constraint_editor.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step34 }}" src="{{folderpath}}images/3_4_constraint_editor.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step34 }}: ReVision Configuration </figcaption>
 </figure>
