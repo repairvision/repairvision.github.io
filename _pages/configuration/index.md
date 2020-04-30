@@ -19,49 +19,49 @@ order: 2
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_1_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step21 }}" src="{{folderpath}}images/2_1_constraint_wizard.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step21 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step21 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_2_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step22 }}" src="{{folderpath}}images/2_2_constraint_wizard.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step22 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step22 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_3_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step23 }}" src="{{folderpath}}images/2_3_constraint_wizard.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step23 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step23 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_4_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step24 }}" src="{{folderpath}}images/2_4_constraint_wizard.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step24 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step24 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_1_constraint_editor" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step31 }}" src="{{folderpath}}images/3_1_constraint_editor.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step31 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step31 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_2_constraint_editor" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step32 }}" src="{{folderpath}}images/3_2_constraint_editor.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step32 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step32 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_3_constraint_editor" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step33 }}" src="{{folderpath}}images/3_3_constraint_editor.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step33 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step33 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_4_constraint_editor" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step34 }}" src="{{folderpath}}images/3_4_constraint_editor.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step34 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step34 }}: ReVision Configuration </figcaption>
 </figure>
 
 #### Definition of Edit Rules
@@ -69,41 +69,41 @@ order: 2
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_1_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step41 }}" src="{{folderpath}}images/4_1_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step41 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step41 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_2_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step42 }}" src="{{folderpath}}images/4_2_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step42 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step42 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_3_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step43 }}" src="{{folderpath}}images/4_3_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_3_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step43 }}" src="{{folderpath}}images/4_3_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_4_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step44 }}" src="{{folderpath}}images/4_4_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step44 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step44 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_5_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step45 }}" src="{{folderpath}}images/4_5_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step45 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step45 }}: ReVision Configuration </figcaption>
 </figure>
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_6_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step46 }}" src="{{folderpath}}images/4_6_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step46 }}: Install new software </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step46 }}: ReVision Configuration </figcaption>
 </figure>
