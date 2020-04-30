@@ -12,9 +12,62 @@ order: 2
 
 [The tool configuration (including consistency rules and edit rules for Ecore) which we have been defined and evaluated with ReVision can be found here.](/evaluation/)
 
-#### Demonstration Tool Configuration
+#### Tool Configuration Demonstration
 
-#### Definition of Consistency Rules
+{% assign fig = 0 %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step21 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step22 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step23 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step23 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step24 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step31 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step32 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step33 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step33 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step34 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step41 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step42 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step43 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step44 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step45 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step46 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step47 = fig %}
+
+##### Definition of Consistency Rules
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_1_constraint_wizard.png" target="_blank">
@@ -64,7 +117,7 @@ order: 2
 	<figcaption style="text-align: center">Fig. {{ fig_step34 }}: ReVision Configuration </figcaption>
 </figure>
 
-#### Definition of Edit Rules
+##### Definition of Edit Rules
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_1_edit_rule_generator.png" target="_blank">
@@ -106,4 +159,10 @@ order: 2
 	<a href="{{folderpath}}images/4_6_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step46 }}" src="{{folderpath}}images/4_6_edit_rule_generator.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step46 }}: ReVision Configuration </figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/4_7_edit_rule_generator.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step47 }}" src="{{folderpath}}images/4_7_edit_rule_generator.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step47 }}: ReVision Configuration </figcaption>
 </figure>
