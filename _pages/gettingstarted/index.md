@@ -133,7 +133,7 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 
 #### Step 2: Setting up the Example Project
 
-In the following, we will add the repository of our Video-on-Demand example model using Git. (Alternatively, you can follow the [SVN introductions](svn-project-import.md).)  
+In the following, we will add the repository of our Video-on-Demand example model using Git. (Alternatively, you can follow the [SVN introductions](/gettingstarted/svn-project-import).)  
 
 ##### Step 2.1: Adding the Example Repository
 

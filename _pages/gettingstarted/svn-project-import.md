@@ -1,3 +1,12 @@
+---
+layout: page
+title:  "SVN Project Import"
+permalink: "/gettingstarted/svn-project-import"
+exclude: true
+---
+
+{% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
+
 {% assign fig = 0 %}
 
 {% assign fig = fig | plus: 1 %}
