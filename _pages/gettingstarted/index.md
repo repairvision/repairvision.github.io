@@ -60,7 +60,10 @@ In this Section, we illustrate the essential steps to install and work with ReVi
 {% assign fig_step5 = fig %}
 
 {% assign fig = fig | plus: 1 %}
-{% assign fig_step6 = fig %}
+{% assign fig_step6a = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step6b = fig %}
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step7 = fig %}
@@ -130,33 +133,45 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 
 #### Step 2: Setting up the Example Project
 
+In the following, we will add the repository of our Video-on-Demand example model using Git. (Alternatively, you can follow the [SVN introductions](/gettingstarted/svn-project-import).)  
+
 ##### Step 2.1: Adding the Example Repository
 
-In the following, we will add the repository to our video-on-demand example model. To do so, click open perspective from the 'Window' menu and select 'SVN Repository Exploring', then click on the 'Open' Button (see <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }}</a>).
+Click on 'Perspective -> Open Perspective -> Other'  from the 'Window' menu and select 'Git' (see <a href="#fig:{{ fig_step5 }}">Figure {{ fig_step5 }}</a>).
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/05.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step5 }}" src="{{folderpath}}images/05.png"/></a>
+	<a href="{{folderpath}}images/05-git.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step5 }}" src="{{folderpath}}images/05-git.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
-In this step, you should add the example repository by clicking on 'New Repository Location' from the 'File' menu and copy the repository URL (__{{ exampleproject }}__). (ReVision currently only support SVN, so we have to import the Git repository via SVN.) At the end, click on 'Finish' button (see <a href="#fig:{{ fig_step6 }}">Figure {{ fig_step6 }}</a>).
+In this step, you will add the example repository. Therefore, first copy the repository URL (__{{ exampleproject }}__) and then select 'Clone a Git Repositry' from the Git view (see <a href="#fig:{{ fig_step6a }}">Figure {{ fig_step6a }}</a>). You should see the dialog shown in <a href="#fig:{{ fig_step6b }}">Figure {{ fig_step6b }}</a>, click on 'Finish'.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/06.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step6 }}" src="{{folderpath}}images/06.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step6 }}: Setup the location of the repository </figcaption>
+	<a href="{{folderpath}}images/06a-git.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step6a }}" src="{{folderpath}}images/06a-git.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step6a }}: Setup the location of the repository </figcaption>
+</figure>
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/06b-git.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step6b }}" src="{{folderpath}}images/06b-git.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step6b }}: Setup the location of the repository </figcaption>
+</figure>
+
+##### Step 2.2: Importing the Example Project
+
+Now, it's time to import the example from the repository. To do so, right click on the project folder and select 'Import Projects' from context menu (see <a href="#fig:{{ fig_step7 }}"> Figure {{ fig_step7 }}</a>). Follow the import wizard and click 'Finish'.
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/07-git.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Check-out the example project</figcaption>
 </figure>
 
 ### Step 3: Repairing inconsistencies with ReVision
 
-Now, it's time to check out the example from the repository. To do so, right click on the project folder and select 'Check Out' from option menu (see <a href="#fig:{{ fig_step7 }}"> Figure {{ fig_step7 }}</a>).
-
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/07.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Check-out the example project</figcaption>
-</figure>
+Now switch back to the 'Modeling' perspective to see the imported project.
 
 ##### Step 3.1: Opening the Model Editor
 
