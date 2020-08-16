@@ -133,7 +133,7 @@ After finishing the installations, you're supposed to restart the Eclipse IDE to
 
 #### Step 2: Setting up the Example Project
 
-In the following, we will add the repository of our Video-on-Demand example model using Git. (Alternatively, you can follow the [SVN introductions](/gettingstarted/svn-project-import).)  
+In the following, we will add the repository of our Video-on-Demand example model using Git. (Alternatively, you can follow the [SVN introductions](svn-project-import).)  
 
 ##### Step 2.1: Adding the Example Repository
 
@@ -141,16 +141,16 @@ Click on 'Perspective -> Open Perspective -> Other'  from the 'Window' menu and 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/05-git.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step5 }}" src="{{folderpath}}images/05-git.png"/></a>
+	<img style="width: 300px" id="fig:{{ fig_step5 }}" src="{{folderpath}}images/05-git.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step5 }}: Adding the Repository perspective </figcaption>
 </figure>
 
-In this step, you will add the example repository. Therefore, first copy the repository URL (__{{ exampleproject }}__) and then select 'Clone a Git Repositry' from the Git view (see <a href="#fig:{{ fig_step6a }}">Figure {{ fig_step6a }}</a>). You should see the dialog shown in <a href="#fig:{{ fig_step6b }}">Figure {{ fig_step6b }}</a>, click on 'Finish'.
+In this step, you will add the example repository. Therefore, first copy the repository URL (__{{ exampleproject }}__) and then select 'Clone a Git Repositry' from the Git view (see <a href="#fig:{{ fig_step6a }}">Figure {{ fig_step6a }}</a>). Follow the wizard dialog shown in <a href="#fig:{{ fig_step6b }}">Figure {{ fig_step6b }}</a> and click on 'Finish'.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/06a-git.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step6a }}" src="{{folderpath}}images/06a-git.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step6a }}: Setup the location of the repository </figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step6a }}: Clone the repository </figcaption>
 </figure>
 
 <figure class="aligncenter">
