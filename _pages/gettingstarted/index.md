@@ -195,7 +195,7 @@ As shown in <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }}</a> ReVisio
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/10.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step10 }}" src="{{folderpath}}images/10.png"/></a>
+	<img style="width: 300px" id="fig:{{ fig_step10 }}" src="{{folderpath}}images/10.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step10 }}: Search for the ReVision view</figcaption>
 </figure>
 
