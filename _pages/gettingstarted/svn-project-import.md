@@ -5,6 +5,8 @@ permalink: "/gettingstarted/svn-project-import"
 exclude: true
 ---
 
+{% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
+
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
 {% assign fig = 0 %}
