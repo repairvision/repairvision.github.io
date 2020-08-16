@@ -8,8 +8,8 @@ order: 1
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
 
-{% assign eclipseversion = '2020-03' %}
-{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2020-03/r/eclipse-modeling-tools' %}
+{% assign eclipseversion = '2020-06' %}
+{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-modeling-tools' %}
 
 {% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
 {% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2020-03' %}
@@ -34,7 +34,7 @@ _Note:_ ReVision provides an all-in-one update including SVNKit (for repository 
      
 ### Example Project
 
-1. Import Video on Demand System (UML) Project as **SVN repository**. (ReVision currently only support SVN, so we have to import the Git repository via SVN.):
+1. Import Video on Demand System (UML) project from the following repository. The repository can be imported to Eclipse by Git or SVN:
    * __{{ exampleproject }}__
 1. Proceed with the [steps below starting with step 3](#step-3-repairing-inconsistencies-with-revision) to test ReVision.
 
