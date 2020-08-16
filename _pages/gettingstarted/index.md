@@ -166,7 +166,7 @@ Now, it's time to import the example from the repository. To do so, right click 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/07-git.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07-git.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Check-out the example project</figcaption>
+	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Import the example project</figcaption>
 </figure>
 
 ### Step 3: Repairing inconsistencies with ReVision
@@ -185,7 +185,7 @@ Now switch back to the 'Modeling' perspective to see the imported project.
 
 ##### Step 3.2: Adding the ReVision View
 
-As shown in <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }}</a> ReVision is placed in an additional view next to the model editor. To open the view, go to 'Show View', then 'Others' (see <a href="#fig:{{ fig_step9 }}"> Figure {{ fig_step9 }}</a>) and search for 'Model Repair' in the 'Show View' wizard (see <a href="#fig:{{ fig_step10 }}"> Figure {{ fig_step10 }}</a>). Finally, select and open the 'Model Repair' view.
+As shown in <a href="#fig:{{ fig_step11 }}"> Figure {{ fig_step11 }}</a> ReVision is placed in an additional view next to the model editor. To open the view, go to 'Show View', then 'Others' (see <a href="#fig:{{ fig_step9 }}"> Figure {{ fig_step9 }}</a>) and search for 'revision' (see <a href="#fig:{{ fig_step10 }}"> Figure {{ fig_step10 }}</a>). Finally, select and open the 'ReVision' view.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/09.png" target="_blank">
