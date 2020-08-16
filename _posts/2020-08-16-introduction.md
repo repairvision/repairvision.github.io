@@ -19,3 +19,12 @@ ReVision proposes a new approach to generate repair proposals which is based on 
 * <strong>Second Corrective Edit Step:&#91;4:21&#93;:</strong> <a href="https://youtu.be/k2OaGVwBnf8?t=261" target="new">Correction of the Message Sender</a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k2OaGVwBnf8" frameborder="0" allowfullscreen></iframe>
+
+### ReVision for Eclipse 2020-06 Released
+
+<figure class="aligncenter">
+	<a href="assets/img/2019-04-24-2019-03-release.png" target="_blank">
+	<img style="width: 100%" src="assets/img/2019-04-24-2019-03-release.png"/></a>
+</figure>
+
+[Getting Started](gettingstarted)
