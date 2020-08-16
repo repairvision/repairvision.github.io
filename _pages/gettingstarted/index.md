@@ -165,7 +165,7 @@ Now, it's time to import the example from the repository. To do so, right click 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/07-git.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07.png"/></a>
+	<img style="width: 400px" id="fig:{{ fig_step7 }}" src="{{folderpath}}images/07-git.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step7 }}: Check-out the example project</figcaption>
 </figure>
 
