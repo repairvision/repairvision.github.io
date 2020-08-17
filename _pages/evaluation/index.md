@@ -21,7 +21,7 @@ __Ecore Edit Rules:__ [The consistency-preserving edit operations (CPEOs) which 
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_1_constraint_wizard.png" target="_blank">
-	<img style="width: 400px" id="fig:consistency-example-interface-cpeo.png" src="{{folderpath}}images/consistency-example-interface-cpeo.png"/></a>
+	<img style="width: 550px" id="fig:consistency-example-interface-cpeo.png" src="{{folderpath}}images/consistency-example-interface-cpeo.png"/></a>
 </figure>
 
 __[All generated edit operations for Ecore can be browsed here](https://repairvision.github.io/_pages/editrules/ecore.html)__
