@@ -6,11 +6,23 @@ exclude: false
 order: 5
 ---
 
+{% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
+
 #### Experimental Tool Configuration
 
 __Ecore Consistency Rules:__ [The constraints for Ecore which we have been defined and evaluated with ReVision can be found here.](/consistencyrules/)
 
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/consistency-example-interface-constraint.png" target="_blank">
+	<img style="width: 400px" id="fig:consistency-example-interface-constraint" src="{{folderpath}}images/consistency-example-interface-constraint.png"/></a>
+</figure>
+
 __Ecore Edit Rules:__ [The consistency-preserving edit operations (CPEOs) which we have been defined and evaluated with ReVision can be found here.](/editrules/)
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/2_1_constraint_wizard.png" target="_blank">
+	<img style="width: 400px" id="fig:consistency-example-interface-cpeo.png" src="{{folderpath}}images/consistency-example-interface-cpeo.png"/></a>
+</figure>
 
 __[All generated edit operations for Ecore can be browsed here](https://repairvision.github.io/_pages/editrules/ecore.html)__
 

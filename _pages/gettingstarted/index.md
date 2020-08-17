@@ -22,6 +22,13 @@ If you are interested in this project, or you have any trouble with downloading/
 
 Read the [Quick Introduction](#quick-introduction) for a step-by-step installation and tutorial or start directly by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
 
+- [Download and Installation](#download-and-installation)
+- [Example Project](#example-project)
+- [Quick Introduction](#quick-introduction)
+- [Step 1: Installation](#step-1-installation)
+- [Step 2: Setting up the Example Project](#step-2-setting-up-the-example-project)
+- [Step 3: Repairing inconsistencies with ReVision](#step-3-repairing-inconsistencies-with-revision)
+
 ### Download and Installation
 
 1. Download Eclipse Platform: <a href="{{ eclipseversionurl }}" target="new">Eclipse {{ eclipseversion }} Modeling Tools</a><br/>(includes the Eclipse Modeling Framework):
