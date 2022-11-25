@@ -20,7 +20,7 @@ ReVision proposes a new approach to generate repair proposals which is based on 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k2OaGVwBnf8" frameborder="0" allowfullscreen></iframe>
 
-### ReVision for Eclipse 2020-06 Released
+### ReVision for Eclipse 2022-09 Released
 
 <figure class="aligncenter">
 	<a href="assets/img/2019-04-24-2019-03-release.png" target="_blank">

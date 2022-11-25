@@ -8,11 +8,13 @@ order: 1
 
 {% capture folderpath %}{{ site.url }}/{{ page.path | remove: page.name }}{% endcapture %}
 
-{% assign eclipseversion = '2020-06' %}
-{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-modeling-tools' %}
+{% assign eclipseversion = '2022-09' %}
+{% assign eclipseversionurl = 'https://www.eclipse.org/downloads/packages/release/2022-09/r/eclipse-modeling-tools' %}
 
-{% assign subclipseupdatesite = 'https://dl.bintray.com/subclipse/releases/subclipse/latest/' %}
-{% assign papyrusupdatesite = 'http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2020-03' %}
+{% assign papyrusupdatesite = 'https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2022-06' %}
+{% assign gmftoolingupdatesite = 'http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.2.1/' %}
+{% assign oclupdatesite = 'http://download.eclipse.org/modeling/mdt/ocl/updates/releases/latest' %}
+{% assign subclipseupdatesite = 'http://eclipse.svnkit.com/1.10.x' %}
 
 {% assign revisionupdatesite = 'https://repairvision.github.io/updatesite/releases/latest' %}
 
@@ -35,9 +37,11 @@ Read the [Quick Introduction](#quick-introduction) for a step-by-step installati
 1. The newest version of __ReVision__ can be obtained from the following update site:
    * __{{ revisionupdatesite }}__
 
-_Note:_ ReVision provides an all-in-one update including SVNKit (for repository integration) and Papyrus (for UML modeling) from the following update sites:
-  * {{ subclipseupdatesite }}
-  * {{ papyrusupdatesite }}
+_Note:_ ReVision provides an all-in-one update including the following update sites:
+  * Papyrus: {{ papyrusupdatesite }}
+  * GMF Tooling: {{ gmftoolingupdatesite }}
+  * OCL: {{ oclupdatesite }}
+  * SVNKit: {{ subclipseupdatesite }}
      
 ### Example Project
 
