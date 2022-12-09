@@ -38,10 +38,10 @@ Read the [Quick Introduction](#quick-introduction) for a step-by-step installati
    * __{{ revisionupdatesite }}__
 
 _Note:_ ReVision provides an all-in-one update including the following update sites:
-  * Papyrus: <sub>{{ papyrusupdatesite }}</sub>
-  * GMF Tooling: <sub>{{ gmftoolingupdatesite }}</sub>
-  * OCL: <sub>{{ oclupdatesite }}</sub>
-  * SVNKit: <sub>{{ subclipseupdatesite }}</sub>
+  * <font size="4">Papyrus: {{ papyrusupdatesite }}</font>
+  * <font size="4">GMF Tooling: <sub>{{ gmftoolingupdatesite }}</font>
+  * <font size="4">OCL: {{ oclupdatesite }}</font>
+  * <font size="4">SVNKit: {{ subclipseupdatesite }}</font>
      
 ### Example Project
 
@@ -99,6 +99,12 @@ In this Section, we illustrate the essential steps to install and work with ReVi
 
 {% assign fig = fig | plus: 1 %}
 {% assign fig_step14 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step15 = fig %}
+
+{% assign fig = fig | plus: 1 %}
+{% assign fig_step16 = fig %}
 
 #### Step 1: Installation
 
@@ -232,7 +238,7 @@ In this step, we will validate the video-on-demand example model. In the view of
 
 * __Parameters:__ Some of the repairs have parameters that need to be supplied with additional arguments. For example, go to the parameter 'toLifeline' of the repair 'Move Operation And Change Message Target'. Select the argument '<Lifeline> mirror' and then select 'Set Parameter' form the context menu or from the toolbar.
 * __Recognized Changes:__ ReVision recognized these changes as origin of the defect of the inconsistency. Those changes were extracted from the version history of the model.
-* __Complementing Changes:__ The changes that are proposed by ReVision to repair the selected inconsistency. The set of both change (Recognized and Complementing) refer to the consistency-preserving edit operation 'Move Operation And Sync Message'.
+* __Complementing Changes:__ The changes that are proposed by ReVision to repair the selected inconsistency. The set of both change (Recognized and Complementing) refer to the consistency-preserving edit operation 'Move Operation And Change Message Target'.
 
 You can select the change sets or parameters and ReVision will highlight them in model editor (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
 
@@ -244,8 +250,33 @@ You can select the change sets or parameters and ReVision will highlight them in
 
 Finally, you can apply the repair for resolving the inconsistency and soon after checking the results (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
 
+_Note: Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes. _
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/14.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step14 }}" src="{{folderpath}}images/14.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step14 }}: Appying the repair</figcaption>
 </figure>
+
+After applying a repair, ReVision automatically checks for new or remaining inconsistencies. 
+In our repair scenario we have introduced a new inconsistency 'A message can only be send between lifelines which are connected by an association' (see <a href="#fig:{{ fig_step15 }}">Figure {{ fig_step15 }}</a>). 
+In this case, there is no association between class User and Server, i.e., the objects online:User and mirror:Server cannot (directly) communicate with each other.
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/15.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step15 }}" src="{{folderpath}}images/15.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step15 }}: Incrementally checking for inconsistencies</figcaption>
+</figure>
+
+This inconsistency can be incrementally repaired by applying the complementation of 'Move Message'.
+This repair additionally changes the sender of the message disconnect from the lifeline online:User to the mirror:Server.
+
+_Note: Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes. _
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/16.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step16 }}" src="{{folderpath}}images/16.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step16 }}: Appying the final repair</figcaption>
+</figure>
+
+Congratulations, the inconsistency between the class and sequence diagram is now fixed!
