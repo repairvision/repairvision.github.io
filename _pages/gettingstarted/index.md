@@ -20,7 +20,7 @@ order: 1
 
 {% assign exampleproject = 'https://github.com/mohrndorf/revision-example.git' %}
 
-If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:mohrndorf@informatik.uni-siegen.de). 
+If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:manuel.ohrndorf@unibe.ch). 
 
 Read the [Quick Introduction](#quick-introduction) for a step-by-step installation and tutorial or start directly by [downloading ReVision](#download-and-installation) and the [example project](#example-project).
 

@@ -8,7 +8,7 @@ order: 8
 
 #### Contact:
 
-If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:mohrndorf@informatik.uni-siegen.de). 
+If you are interested in this project, or you have any trouble with downloading/installing the tool, please concact [Manuel Ohrndorf](mailto:manuel.ohrndorf@unibe.ch). 
 
 #### Source Code:
 
