@@ -250,7 +250,7 @@ You can select the change sets or parameters and ReVision will highlight them in
 
 Finally, you can apply the repair for resolving the inconsistency and soon after checking the results (see <a href="#fig:{{ fig_step14 }}">Figure {{ fig_step14 }}</a>).
 
-_Note: Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes. _
+_Note:_ Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/14.png" target="_blank">
@@ -271,7 +271,7 @@ In this case, there is no association between class User and Server, i.e., the o
 This inconsistency can be incrementally repaired by applying the complementation of 'Move Message'.
 This repair additionally changes the sender of the message disconnect from the lifeline online:User to the mirror:Server.
 
-_Note: Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes. _
+_Note:_ Sometimes it's necessary to correct the layout of messages in the Papyrus sequence diagram after applying changes.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/16.png" target="_blank">
