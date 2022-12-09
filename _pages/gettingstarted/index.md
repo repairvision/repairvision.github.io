@@ -38,10 +38,10 @@ Read the [Quick Introduction](#quick-introduction) for a step-by-step installati
    * __{{ revisionupdatesite }}__
 
 _Note:_ ReVision provides an all-in-one update including the following update sites:
-  * <font size="4">Papyrus: {{ papyrusupdatesite }}</font>
-  * <font size="4">GMF Tooling: <sub>{{ gmftoolingupdatesite }}</font>
-  * <font size="4">OCL: {{ oclupdatesite }}</font>
-  * <font size="4">SVNKit: {{ subclipseupdatesite }}</font>
+  * <sub>Papyrus: {{ papyrusupdatesite }}</sub>
+  * <sub>GMF Tooling: {{ gmftoolingupdatesite }}</sub>
+  * <sub>OCL: {{ oclupdatesite }}</sub>
+  * <sub>SVNKit: {{ subclipseupdatesite }}</sub>
      
 ### Example Project
 
@@ -279,4 +279,4 @@ _Note: Sometimes it's necessary to correct the layout of messages in the Papyrus
 	<figcaption style="text-align: center">Fig. {{ fig_step16 }}: Appying the final repair</figcaption>
 </figure>
 
-Congratulations, the inconsistency between the class and sequence diagram is now fixed!
+Congratulations, the inconsistency between the class and sequence diagram is fixed!
