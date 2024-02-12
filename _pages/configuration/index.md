@@ -15,7 +15,7 @@ order: 2
 #### Tool Configuration Demonstration
 
 The configuration of ReVision is provided by so-called Eclipse plug-in projects.
-ReVision provides project setup wizards for the configuration of consistency rules (aka. constraints) and edit rules (aka. consistency-preserving edit operations).
+ReVision provides project setup wizards for the configuration of consistency rules (aka. constraints) and edit rules (aka. consistency-preserving edit operations) plug-in projects.
 
 - [Definition of Edit Rules](#definition-of-edit-rules)
 - [Definition of Consistency Rules](#definition-of-consistency-rules)
@@ -134,7 +134,7 @@ If you are in the workspace in which you develop your meta-model, you have to ru
 Clicking `Finish` initializes your new plug-in in the Eclipse Workspace (check your Project Explorer).
 If not automatically opened, go to and open the constraint definition file (see Fig. {{ fig_step34  }} and {{ fig_step31 }}):
 
-- io.repairvision.github.<modeling language name>.constraints -> src -> io.repairvision.github.<modeling language name>.constraints -> <modeling language name>.fol
+- `io.repairvision.github.<modeling language name>.constraints -> src -> io.repairvision.github.<modeling language name>.constraints -> <modeling language name>.fol`
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_4_constraint_editor.png" target="_blank">
@@ -148,14 +148,15 @@ If not automatically opened, go to and open the constraint definition file (see 
 	<figcaption style="text-align: center">Fig. {{ fig_step31 }}: ReVision Configuration </figcaption>
 </figure>
 
-The *.fol file first specifies the modeling language by the `domain` keyword and the namespace URI of the Ecore meta-model.
+The `*.fol` file first specifies the modeling language by the `domain` keyword and the namespace URI of the modeling language's Ecore meta-model.
 This line should have been already inserted by the project wizard.
 
 After that, you can define the consistency rules.
-As shown in Fig. {{ fig_step32 }}, a consistency rule definition starts with the 'constraint' keyword, followed by a unique name for the constraint and a colon `:`.
+As shown in Fig. {{ fig_step32 }}, a consistency rule definition starts with the `constraint` keyword, followed by a unique name for the constraint and a colon `:`.
 The second keyword `message` defines a description for the developer that is shown if the constraint is violated.
 Next, after the `context` keyword the context type is specified, i.e., the type of the context element in a model's abstract syntax tree starting from which the constraint is validated.
 For example, in Fig. {{ fig_step32 }}, the context type is `DFA` and the variable `dfa` refers to the context element (similar to `self` in OCL).
+Moreover, as shown in Fig. {{ fig_step32 }}, the editor supports auto-completion (`ctrl+space`) for meta-model types and syntax fragments.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_2_constraint_editor.png" target="_blank">
@@ -165,7 +166,7 @@ For example, in Fig. {{ fig_step32 }}, the context type is `DFA` and the variabl
 
 The constraint must be a Boolean expression that is validated on the context element. 
 A constraint can be constructed using the following grammar.
-For the sake of readability, terminals are enclosed with a space rather than quotation marks:
+For the sake of readability, terminals in the following grammar definition are enclosed with a space rather than quotation marks:
 
 ````
 <Constraint> ::= constraint <RuleName> message <String> context <Variable> : <Formula>
@@ -174,6 +175,7 @@ For the sake of readability, terminals are enclosed with a space rather than quo
 <VarName> ::= <ID>
 ````
 
+In general, IDs are unique names that can be referenced in a certain scope.
 IDs that conflict with keywords can be escaped by a `^` prefix.
 Strings are surrounded by `'` or `"` quotation marks with the escape sequences `\"` and `\'`. 
 Escape sequences starting with `\ ` are only allowed for the literals`\b`, `\t`, and so on.
@@ -214,8 +216,8 @@ and a quantifier computes a Boolean value by evaluating a formula on all element
                | exists( <Variable> in <Term> : <Formula> )
 ````
 
-A navigation expression starts at a variable, e.g., `state`, followed by the name of the attribute or reference (`EStructuralFeature`) in the meta-model, e.g., `state.name`.
-A type cast is performed by `::` followed by the type's name (`EClassifier`) in the meta-model, e.g., `transition.source::State.name`.
+A navigation expression starts at a variable, e.g., `state`, followed by the name of the attribute or reference (`EStructuralFeature`) in the meta-model, e.g., `state.isStart`.
+A type cast is performed by `::` followed by the type's name (`EClassifier`) in the meta-model, e.g., `transition.to::State.name` if `transition.to` would return an abstract type like `Vertex`.
 
 ````
 <Term> ::= <VarName>< . <<EClassifier> :: >?<EStructuralFeature>>+
@@ -232,6 +234,7 @@ A type cast is performed by `::` followed by the type's name (`EClassifier`) in 
 ````
 
 Fig. {{ fig_step34 }} shows a meta-model for a simple Deterministic Finite Automaton (DFA).
+Please note that a navigation expression term that returns an EBoolean, e.g., `state.isStart`, (currently) has to be converted explicitly to a Boolean, e.g., `isEqual(state.isStart, true)`.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/0_5_metamodel.png" target="_blank">
@@ -312,7 +315,7 @@ On the same page (see Fig. {{ fig_step45 }}), if registered consistency rules ar
 	<figcaption style="text-align: center">Fig. {{ fig_step45 }}: ReVision Configuration </figcaption>
 </figure>
 
-Actually, ReVision can generate edit rules from concrete modeling examples.
+ReVision can generate edit rules from concrete modeling examples.
 A modeling example is translated into a graph pattern, which can be further modified and annotated by an edit rule developer.
 Such graph patterns are then combined into edit rules.
 Fig. {{ fig_step46 }} shows the catalog for the graph patterns, which can be opened for editing in a graphical editor.
@@ -341,12 +344,12 @@ As shown in Fig. {{ fig_step47 }}, the project contains the following files:
 
 - - -
 
-`(!)` In order for ReVision to discover your edit rules, the constraint plug-in must be registered in the Eclipse instance you in which you running the repair tool.
-If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rules plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+`(!)` In order for ReVision to discover your edit rules, the constraint plug-in must be registered in the Eclipse instance in which you running the ReVision repair tool.
+If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rule plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
 
 `(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
 You can link the project instead of copying it.
 
-For production, plug-ins can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
+`(!)` For production, plug-ins can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
 
 - - -
