@@ -90,7 +90,7 @@ The approach is evaluated using histories of real-world models obtained from pop
 </div>
 </details>
 
-<img src="{{folderpath}}images/2021tosem.png" itemprop="image" style="margin:auto; width:100%">
+<img src="{{folderpath}}images/2023thesis.png" itemprop="image" style="margin:auto; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('https://ubbern.swisscovery.slsp.ch/permalink/41SLSP_UBE/17e6d97/alma99117481803805511', '_blank')"><span>Read Paper</span></button>
 
@@ -111,6 +111,8 @@ Our interactive repair tool ReVision [Oh18], aims at generating repair proposals
 </p>
 </div>
 </details>
+
+<img src="{{folderpath}}images/2023se.png" itemprop="image" style="margin:auto; width:100%">
 
 <button class="button" style="vertical-align:middle" onclick="window.open('https://dl.gi.de/server/api/core/bitstreams/66b308f5-cf4c-433f-98fa-ed6ec3099ab9/content', '_blank')"><span>Read Paper</span></button>
 
