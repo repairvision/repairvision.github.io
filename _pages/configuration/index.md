@@ -112,7 +112,7 @@ On the 'Next' page specify the 'Document Types', i.e., the meta-model of the mod
 Use the search field to find the meta-model by its namespace URI.
 
 <figure class="aligncenter">
-	<a href="{{folderpath}}images/2_4_constraint_wizard.png.png" target="_blank">
+	<a href="{{folderpath}}images/2_4_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step24 }}" src="{{folderpath}}images/2_4_constraint_wizard.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step24 }}: ReVision Configuration </figcaption>
 </figure>
@@ -149,52 +149,67 @@ For example, in Fig. {{ fig_step32 }}, the context type is 'DFA' and the variabl
 	<figcaption style="text-align: center">Fig. {{ fig_step32 }}: ReVision Configuration </figcaption>
 </figure>
 
-The constraint must be a Boolean expression that is validated on the context element:
+The constraint must be a Boolean expression that is validated on the context element. (In the following, for the sake of readability, terminals are not enclosed in quotation marks.:
 
-- constraint <RuleName> message <String> context <Variable> : <Formula>
-- <RuleName> ::= <ID>
-- <Variable> ::= <EClassifier> <VarName>
-- <VarName> ::= <ID>
-- <ID> ::= ^?<a..z|A..Z|_><a..z|A..Z|_|0..9>*;
+````
+<Constraint> ::= constraint <RuleName> message <String> context <Variable> : <Formula>
+<RuleName> ::= <ID>
+<Variable> ::= <EClassifier> <VarName>
+<VarName> ::= <ID>
+````
 
 IDs that conflict with keywords can be escaped by a ^ prefix.
-Strings are surrounded by ' or " quotation marks.
+Strings are surrounded by ' or " quotation marks with the escape sequences \" and \'. (In the following \b, \t, ... are meant as literals).
 
-- <Formula> ::= <Boolean> | <BinaryFormula> | <Predicate> | <Quantifier> | not( <Formula> ) | ( <Formula> )
-- <Boolean> ::= true | false
+````
+<ID> ::= ( ^ )?( a..z | A..Z | _ )( a..z | A..Z | _ | 0..9 )*
+<String> ::= " ( \b | \t | \n | \f | \r | \u | \" | \' | \\ | !( \ | " ))* "
+           | ' ( \b | \t | \n | \f | \r | \u | \" | \' | \\ | !( \ | ' ))* '
+<Integer> ::= ( 0..9 )+
+````
+
+A formula computes a Boolean value; a binary formula combines two Boolean formula results; a predicate computes a Boolean value from a term; a quantifier computes a Boolean value by evaluating a formula on all elements in a given set.
+
+````
+<Formula> ::= <Boolean> | <BinaryFormula> | <Predicate> | <Quantifier> | not( <Formula> ) | ( <Formula> )
+<Boolean> ::= true | false
+
 
 - <BinaryFormula> ::= <Formula> = <Formula> 
-    - | <Formula> implies <Formula> 
-    - | <Formula> xor <Formula> 
-    - | <Formula> or <Formula> 
-    - | <Formula> and <Formula>
+                    | <Formula> implies <Formula> 
+                    | <Formula> xor <Formula> 
+                    | <Formula> or <Formula> 
+                    | <Formula> and <Formula>
 
-- <Predicate> ::= isEqual(<Term>, <Term>) 
-    - | isGreater(<Term>, <Term>)
-    - | isGreaterEqual(<Term>, <Term>)
-    - | isSmaller(<Term>, <Term>)
-    - | isSmallerEqual(<Term>, <Term>)
-    - | isEmpty(<Term>)
-    - | isInstanceOf(<Term>, <EClassifier>)
-    - | isValueLiteralOf(<Term>, <EDataType>)
+- <Predicate> ::= isEqual(<Term> , <Term> ) 
+                | isGreater(<Term> , <Term> )
+                | isGreaterEqual(<Term>, <Term>)
+                | isSmaller(<Term>, <Term>)
+                | isSmallerEqual(<Term>, <Term>)
+                | isEmpty(<Term>)
+                | isInstanceOf(<Term>, <EClassifier>)
+                | isValueLiteralOf(<Term>, <EDataType>)
 
-- <Quantifier> ::= forAll(<Variable> in <Term> : <Formula>)
-    - | exists(<Variable> in <Term> : <Formula>)
+- <Quantifier> ::= forAll( <Variable> in <Term> : <Formula> )
+                 | exists( <Variable> in <Term> : <Formula> )
+````
 
 A navigation expression starts at a variable, e.g., 'state', followed by the name of the attribute or reference (EStructuralFeature) in the meta-model, e.g., 'state.name'.
 A type cast is performed by '::' followed by the type's name (EClassifier) in the meta-model, e.g., transition.source::State.name.
 
-- <Term> ::= <VarName><.<<EClassifier>::>?<EStructuralFeature>>+
-    - | getContainer(<Term>)
-    - | getContainments(<Term>)
-    - | getClosure(<Term>, <EStructuralFeature>)
-    - | size(<Term>)
-    - | indexOf(<Term>, <EStructuralFeature>, <Term>)
-    - | concatenate(<Term>, <Term>)
-    - | capitalize(<Term>)
-    - | asClassifier(<Term>)
-    - | asDataType(<Term>)
-    - | <Integer> | <String> | <Boolean>
+````
+<Term> ::= <VarName><.<<EClassifier>::>?<EStructuralFeature>>+
+         | getContainer(<Term>)
+         | getContainments(<Term>)
+         | getClosure(<Term>, <EStructuralFeature>)
+         | size(<Term>)
+         | indexOf(<Term>, <EStructuralFeature>, <Term>)
+         | concatenate(<Term>, <Term>)
+         | capitalize(<Term>)
+         | asClassifier(<Term>)
+         | asDataType(<Term>)
+         | <Integer> | <String> | <Boolean>
+````
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_3_constraint_editor.png" target="_blank">
