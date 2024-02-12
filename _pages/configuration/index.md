@@ -208,7 +208,7 @@ and a quantifier computes a Boolean value by evaluating a formula on all element
               | isGreaterEqual( <Term> , <Term> )
               | isSmaller( <Term> , <Term> )
               | isSmallerEqual( <Term> , <Term> )
-              | isEmpty( <Term>)
+              | isEmpty( <Term> )
               | isInstanceOf( <Term> , <EClassifier> )
               | isValueLiteralOf( <Term> , <EDataType> )
 
@@ -218,6 +218,7 @@ and a quantifier computes a Boolean value by evaluating a formula on all element
 
 A navigation expression starts at a variable, e.g., `state`, followed by the name of the attribute or reference (`EStructuralFeature`) in the meta-model, e.g., `state.isStart`.
 A type cast is performed by `::` followed by the type's name (`EClassifier`) in the meta-model, e.g., `transition.to::State.name` if `transition.to` would return an abstract type like `Vertex`.
+The constraint editor supports auto-completion for such navigation expressions or type casts.
 
 ````
 <Term> ::= <VarName>< . <<EClassifier> :: >?<EStructuralFeature>>+
@@ -265,6 +266,9 @@ If you are in the workspace in which you developed your constraints, you have to
 
 `(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the constraint plug-in into your primary `meta-model development` workspace.
 You can link the project instead of copying it.
+Than start a second Eclipse instance from the primary workspace.
+If you make changes to the configuration you may have to reload the second instance.
+(Basically, edit rules will be dynamically reloaded, change to constraints are not.)
 
 - - -
 
@@ -332,9 +336,9 @@ As shown in Fig. {{ fig_step47 }}, the project contains the following files:
 - __editrules:__ The [EMF Henshin](https://projects.eclipse.org/projects/modeling.emft.henshin) graph transformation rules representing the edit rules.
 - __examples:__ The folder structure and the contained concrete modeling examples are automatically transformed into graph patterns (assuming Eclipse's `Project -> Build Automatically` is enabled).
 - __patterns:__ Contains the graph patterns and an intermediate representation of the edit rules.
-    - patterns.aird: The graphical representation of the graph patterns.
-    - patterns.graphpattern: The model storing the graph patterns.
-    - editrules.graphpattern: An intermediate representation of the edit rules that are translated into Henshin rules.
+    - __patterns.aird:__ The graphical representation of the graph patterns.
+    - __patterns.graphpattern:__ The model storing the graph patterns.
+    - __editrules.graphpattern:__ An intermediate representation of the edit rules that are translated into Henshin rules.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_7_edit_rule_generator.png" target="_blank">
@@ -347,8 +351,11 @@ As shown in Fig. {{ fig_step47 }}, the project contains the following files:
 `(!)` In order for ReVision to discover your edit rules, the constraint plug-in must be registered in the Eclipse instance in which you running the ReVision repair tool.
 If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rule plug-in registered and loaded, e.g., from the `plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application`.
 
-`(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
+`(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development -> ReVision workspace`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
 You can link the project instead of copying it.
+Than start a second Eclipse instance from the primary workspace.
+If you make changes to the configuration you may have to reload the second instance.
+(Basically, edit rules will be dynamically reloaded, change to constraints are not.)
 
 `(!)` For production, plug-ins can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
 
