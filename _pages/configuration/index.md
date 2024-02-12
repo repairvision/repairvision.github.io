@@ -114,11 +114,12 @@ The remaining settings should look similar to Fig. {{ fig_step23 }}.
 On the `Next` page, specify the `Document Types`, i.e., the meta-model of the modeling language.
 Use the search field to find the meta-model by its namespace URI.
 
-___
+- - -
+
 (!) Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
 If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
-___
-    
+
+- - -
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_4_constraint_wizard.png" target="_blank">
