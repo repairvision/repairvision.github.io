@@ -121,7 +121,7 @@ Use the search field to find the meta-model by its namespace URI.
 - - -
 
 `(!)` Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
-If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the `plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application`.
 
 - - -
 
@@ -258,10 +258,10 @@ The next step is to create a plug-in project that specifies the edit rule (aka. 
 - - -
 
 `(!)` Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
-If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the `plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application`.
 
 `(!)` Moreover, if you want to initialize the edit rules based on the specified constraints, the constraint plug-in must be registered in the Eclipse instance you are currently running.
-If you are in the workspace in which you developed your constraints, you have to run a second Eclipse instance with that constraint plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+If you are in the workspace in which you developed your constraints, you have to run a second Eclipse instance with that constraint plug-in registered and loaded, e.g., from the `plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application`.
 
 `(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the constraint plug-in into your primary `meta-model development` workspace.
 You can link the project instead of copying it.
@@ -345,7 +345,7 @@ As shown in Fig. {{ fig_step47 }}, the project contains the following files:
 - - -
 
 `(!)` In order for ReVision to discover your edit rules, the constraint plug-in must be registered in the Eclipse instance in which you running the ReVision repair tool.
-If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rule plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rule plug-in registered and loaded, e.g., from the `plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application`.
 
 `(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
 You can link the project instead of copying it.
