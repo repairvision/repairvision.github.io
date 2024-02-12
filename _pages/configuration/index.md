@@ -116,7 +116,7 @@ Use the search field to find the meta-model by its namespace URI.
 
 - - -
 
-(!) Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
+`(!)` Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
 If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
 
 - - -
@@ -172,7 +172,7 @@ For the sake of readability, terminals are enclosed with a space rather than quo
 
 IDs that conflict with keywords can be escaped by a `^` prefix.
 Strings are surrounded by `'` or `"` quotation marks with the escape sequences `\"` and `\'`. 
-In the following, `\b`, `\t`, ... are meant as literals.
+Escape sequences starting with `\ ` are only allowed for the literals`\b`, `\t`, and so on.
 
 ````
 <ID> ::= ( ^ )?( a..z | A..Z | _ )( a..z | A..Z | _ | 0..9 )*
@@ -246,11 +246,34 @@ Fig. {{ fig_step33 }} shows some example consistency rules for this DFA.
 
 ##### Definition of Edit Rules
 
+The next step is to create a plug-in project that specifies the edit rule (aka. consistency-preserving edit operations) for an existing modeling language, i.e., a meta-model defined using the Ecore modeling language.
+
+- - -
+
+`(!)` Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
+If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+
+`(!)` Moreover, if you want to initialize the edit rules based on the specified constraints, the constraint plug-in must be registered in the Eclipse instance you are currently running.
+If you are in the workspace in which you developed your constraints, you have to run a second Eclipse instance with that constraint plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+
+`(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the constraint plug-in into your primary `meta-model development` workspace.
+You can link the project instead of copying it.
+
+- - -
+
+To initialize an edit rule plug-in project go to:
+
+- `File -> New -> Other... -> ReVision -> Edit Rule Plug-in Project`
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_1_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step41 }}" src="{{folderpath}}images/4_1_edit_rule_generator.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step41 }}: ReVision Configuration </figcaption>
 </figure>
+
+Select the `Edit Rule Plug-in Project` wizard and click `Next`.
+Specify a `Project name`, e.g., `io.repairvision.github.<modeling language name>.editrules`.
+The remaining settings should look similar to Fig. {{ fig_step42 }}.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_2_edit_rule_generator.png" target="_blank">
@@ -258,17 +281,18 @@ Fig. {{ fig_step33 }} shows some example consistency rules for this DFA.
 	<figcaption style="text-align: center">Fig. {{ fig_step42 }}: ReVision Configuration </figcaption>
 </figure>
 
-<figure class="aligncenter">
-	<a href="{{folderpath}}images/4_3_edit_rule_generator.png" target="_blank">
-	<img style="width: 400px" id="fig:{{ fig_step43 }}" src="{{folderpath}}images/4_3_edit_rule_generator.png"/></a>
-	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: ReVision Configuration </figcaption>
-</figure>
+In the project wizard, click `Next`.
+Specify a plug-in `Name`, e.g., `Edit Rules <Modeling Language Name>`.
+The remaining settings should look similar to Fig. {{ fig_step43 }}.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_3_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step43 }}" src="{{folderpath}}images/4_3_edit_rule_generator.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step43 }}: ReVision Configuration </figcaption>
 </figure>
+
+On the `Next` page, specify the `Document Types`, i.e., the meta-model of the modeling language.
+Use the search field to find the meta-model by its namespace URI.
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_4_edit_rule_generator.png" target="_blank">
@@ -276,11 +300,19 @@ Fig. {{ fig_step33 }} shows some example consistency rules for this DFA.
 	<figcaption style="text-align: center">Fig. {{ fig_step44 }}: ReVision Configuration </figcaption>
 </figure>
 
+On the same page (see Fig. {{ fig_step45 }}), if registered consistency rules are found, you can select the constraints for which the wizard will infer simple initial edit rules. 
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_5_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step45 }}" src="{{folderpath}}images/4_5_edit_rule_generator.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step45 }}: ReVision Configuration </figcaption>
 </figure>
+
+Actually, ReVision can generate edit rules from concrete modeling examples.
+A modeling example is translated into a graph pattern, which can be further modified and annotated by an edit rule developer.
+Such graph pattern are then combined into edit rules.
+Fig. {{ fig_step46 }} shows the catalog for the graph patterns, which can be opened for edited them in a graphical editor.
+Details about this concept are described in our journal paper [History-based Model Repair Recommendations](https://dl.acm.org/doi/abs/10.1145/3419017).
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_6_edit_rule_generator.png" target="_blank">
@@ -288,8 +320,29 @@ Fig. {{ fig_step33 }} shows some example consistency rules for this DFA.
 	<figcaption style="text-align: center">Fig. {{ fig_step46 }}: ReVision Configuration </figcaption>
 </figure>
 
+As shown in Fig. {{ fig_step47 }}, the project contains the following files:
+
+- __editrules:__ The [EMF Henshin](https://projects.eclipse.org/projects/modeling.emft.henshin) graph transformation rules representing the edit rules.
+- __examples:__ The folder structure and the contained concrete modeling examples are automatically transformed into graph patterns (assuming Eclipse's `Project -> Build Automatically` is enabled).
+- __patterns:__ Contains the graph patterns and an intermediate representation of the edit rules.
+    - patterns.aird: The graphical representation of the graph patterns.
+    - patterns.graphpattern: The model storing the graph patterns.
+    - editrules.graphpattern: An intermediate representation of the edit rules that are translated into Henshin rules.
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/4_7_edit_rule_generator.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step47 }}" src="{{folderpath}}images/4_7_edit_rule_generator.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step47 }}: ReVision Configuration </figcaption>
 </figure>
+
+- - -
+
+`(!)` In order for ReVision to discover your edit rules, the constraint plug-in must be registered in the Eclipse instance you in which you running the repair tool.
+If you are in the workspace in which you developed your edit rules, you have to run a second Eclipse instance with that edit rules plug-in registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+
+`(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
+You can link the project instead of copying it.
+
+For production plug-in can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
+
+- - -
