@@ -16,6 +16,10 @@ order: 2
 
 The configuration of ReVision is provided by so-called Eclipse plug-in projects.
 ReVision provides project setup wizards for the configuration of consistency rules (aka. constraints) and edit rules (aka. consistency-preserving edit operations).
+
+- [Definition of Edit Rules](#definition-of-edit-rules)
+- [Definition of Consistency Rules](#definition-of-consistency-rules)
+
 In general, the project wizards can be found in Eclipse: 
 
 - `File -> New -> Other... -> ReVision`
@@ -261,7 +265,7 @@ You can link the project instead of copying it.
 
 - - -
 
-To initialize an edit rule plug-in project go to:
+To initialize an edit rule plug-in project, go to:
 
 - `File -> New -> Other... -> ReVision -> Edit Rule Plug-in Project`
 
@@ -310,8 +314,8 @@ On the same page (see Fig. {{ fig_step45 }}), if registered consistency rules ar
 
 Actually, ReVision can generate edit rules from concrete modeling examples.
 A modeling example is translated into a graph pattern, which can be further modified and annotated by an edit rule developer.
-Such graph pattern are then combined into edit rules.
-Fig. {{ fig_step46 }} shows the catalog for the graph patterns, which can be opened for edited them in a graphical editor.
+Such graph patterns are then combined into edit rules.
+Fig. {{ fig_step46 }} shows the catalog for the graph patterns, which can be opened for editing in a graphical editor.
 Details about this concept are described in our journal paper [History-based Model Repair Recommendations](https://dl.acm.org/doi/abs/10.1145/3419017).
 
 <figure class="aligncenter">
@@ -343,6 +347,6 @@ If you are in the workspace in which you developed your edit rules, you have to 
 `(!)` To avoid nesting multiple Eclipse workspace instances (`meta-model development -> constraint development -> edit rule development`), you can import (`File -> Import -> Existing Projects into Workspace`) the edit rules plug-in into your primary development workspace.
 You can link the project instead of copying it.
 
-For production plug-in can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
+For production, plug-ins can be deployed as drop-ins (`File -> Export -> Plug-in Development -> Deployable plug-ins and fragments -> Destination: <the dropins folder of the Eclipse installation>`) or as part of an Eclipse update site.
 
 - - -
