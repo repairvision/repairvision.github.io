@@ -18,9 +18,9 @@ The configuration of ReVision is provided by so-called Eclipse plug-in projects.
 ReVision provides project setup wizards for the configuration of consistency rules (aka. constraints) and edit rules (aka. consistency-preserving edit operations).
 In general, the project wizards can be found in Eclipse: 
 
-- File -> New -> Other... -> ReVision
-    - Constraint Plug-in Project
-    - Edit Rule Plug-in Project
+- `File -> New -> Other... -> ReVision`
+    - `Constraint Plug-in Project`
+    - `Edit Rule Plug-in Project`
 
 {% assign fig = 0 %}
 
@@ -52,6 +52,9 @@ In general, the project wizards can be found in Eclipse:
 {% assign fig_step33 = fig %}
 
 {% assign fig = fig | plus: 1 %}
+{% assign fig_step34 = fig %}
+
+{% assign fig = fig | plus: 1 %}
 {% assign fig_step33 = fig %}
 
 {% assign fig = fig | plus: 1 %}
@@ -80,7 +83,7 @@ In general, the project wizards can be found in Eclipse:
 As the first step, we create a plug-in project that specifies the consistency rules for an existing modeling language, i.e., a meta-model defined using the Ecore modeling language.
 In Eclipse go to:
 
-- File -> New -> Other... -> ReVision -> Constraint Plug-in Project
+- `File -> New -> Other... -> ReVision -> Constraint Plug-in Project`
 
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_1_constraint_wizard.png" target="_blank">
@@ -111,6 +114,12 @@ The remaining settings should look similar to Fig. {{ fig_step23 }}.
 On the `Next` page, specify the `Document Types`, i.e., the meta-model of the modeling language.
 Use the search field to find the meta-model by its namespace URI.
 
+___
+(!) Please note that this assumes that your meta-model is registered in the Eclipse instance you are currently running.
+If you are in the workspace in which you develop your meta-model, you have to run a second Eclipse instance with that meta-model registered and loaded, e.g., from the plugin.xml -> Overview (Tab) -> Testing (Section) -> Launch an Eclipse application.
+___
+    
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/2_4_constraint_wizard.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step24 }}" src="{{folderpath}}images/2_4_constraint_wizard.png"/></a>
@@ -138,7 +147,7 @@ The *.fol file first specifies the modeling language by the `domain` keyword and
 This line should have been already inserted by the project wizard.
 
 After that, you can define the consistency rules.
-As shown in Fig. {{ fig_step32 }}, a consistency rule definition starts with the 'constraint' keyword, followed by a unique name for the constraint and a colon ':'.
+As shown in Fig. {{ fig_step32 }}, a consistency rule definition starts with the 'constraint' keyword, followed by a unique name for the constraint and a colon `:`.
 The second keyword `message` defines a description for the developer that is shown if the constraint is violated.
 Next, after the `context` keyword the context type is specified, i.e., the type of the context element in a model's abstract syntax tree starting from which the constraint is validated.
 For example, in Fig. {{ fig_step32 }}, the context type is `DFA` and the variable `dfa` refers to the context element (similar to `self` in OCL).
@@ -217,11 +226,22 @@ A type cast is performed by `::` followed by the type's name (`EClassifier`) in 
          | <Integer> | <String> | <Boolean>
 ````
 
+Fig. {{ fig_step34 }} shows a meta-model for a simple Deterministic Finite Automaton (DFA).
+
+<figure class="aligncenter">
+	<a href="{{folderpath}}images/0_5_metamodel.png" target="_blank">
+	<img style="width: 400px" id="fig:{{ fig_step34 }}" src="{{folderpath}}images/0_5_metamodel.png"/></a>
+	<figcaption style="text-align: center">Fig. {{ fig_step34 }}: ReVision Configuration </figcaption>
+</figure>
+
+Fig. {{ fig_step33 }} shows some example consistency rules for this DFA.
+
 <figure class="aligncenter">
 	<a href="{{folderpath}}images/3_3_constraint_editor.png" target="_blank">
 	<img style="width: 400px" id="fig:{{ fig_step33 }}" src="{{folderpath}}images/3_3_constraint_editor.png"/></a>
 	<figcaption style="text-align: center">Fig. {{ fig_step33 }}: ReVision Configuration </figcaption>
 </figure>
+
 
 ##### Definition of Edit Rules
 
