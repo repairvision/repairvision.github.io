@@ -92,7 +92,7 @@ The approach is evaluated using histories of real-world models obtained from pop
 
 <img src="{{folderpath}}images/2023thesis.png" itemprop="image" style="margin:auto; width:100%">
 
-<button class="button" style="vertical-align:middle" onclick="window.open('https://ubbern.swisscovery.slsp.ch/permalink/41SLSP_UBE/17e6d97/alma99117481803805511', '_blank')"><span>Read Paper</span></button>
+<button class="button" style="vertical-align:middle" onclick="window.open('https://ubbern.swisscovery.slsp.ch/permalink/41SLSP_UBE/17e6d97/alma99117481803805511', '_blank')"><span>Read Thesis</span></button>
 
 #### A Summary of ReVision: History-based Model Repair Recommendations
 
