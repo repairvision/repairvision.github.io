@@ -96,7 +96,7 @@ The approach is evaluated using histories of real-world models obtained from pop
 
 #### A Summary of ReVision: History-based Model Repair Recommendations
 
-In: : Software Engineering 2023
+In: Software Engineering 2023
 
 _Manuel Ohrndorf, Christopher Pietsch, Udo Kelter, Lars Grunske, Timo Kehrer_
 
